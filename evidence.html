@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Evidence and status · LabSense AI</title>
+<meta name="description" content="Research prototype for clinicians: a patient's lab reports read into one dated, source-linked history, with what the evidence cannot support.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LabSense AI">
+<meta property="og:title" content="LabSense AI: a patient's lab reports, read as one source-linked history">
+<meta property="og:description" content="Research prototype for clinicians: a patient's lab reports read into one dated, source-linked history, with what the evidence cannot support.">
+<meta property="og:url" content="https://lsa-health.github.io/evidence.html">
+<meta property="og:image" content="https://lsa-health.github.io/assets/og/labsense_og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Three synthetic lab reports with the urine albumin to creatinine ratio row highlighted, joined to one history chart of 42, 88 and 156 mg/g.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LabSense AI: a patient's lab reports, read as one source-linked history">
+<meta name="twitter:description" content="Research prototype for clinicians: a patient's lab reports read into one dated, source-linked history, with what the evidence cannot support.">
+<meta name="twitter:image" content="https://lsa-health.github.io/assets/og/labsense_og.png">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/v5.css">
+<link rel="stylesheet" href="assets/submission.css">
+<link rel="stylesheet" href="assets/v6.css">
+<link rel="stylesheet" href="assets/v6_moats.css">
+<link rel="stylesheet" href="assets/v6_2.css">
+<link rel="stylesheet" href="assets/v7.css">
+<script src="assets/v6.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap"><a class="brand" href="index.html"><svg viewBox="0 0 30 16" aria-hidden="true"><circle cx="4" cy="8" r="3.2" fill="#2e3fd0"/><path d="M7 8 H22" stroke="#2e3fd0" stroke-width="1.6"/><path d="M24 2 H28 V14 H24" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>LabSense</a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="mb-bars" aria-hidden="true"></span>Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="#labels">Labels</a><a href="#testing">Testing</a><a href="#status">Status</a><a href="#records">Run records</a><a href="#compare">Comparison</a><a class="go" href="index.html#access">Evaluation access</a></nav></div></header>
+<main id="main">
+<section class="band evid-page" aria-labelledby="ev-top">
+<div class="wrap">
+<p class="eyebrow">Evidence and status</p><h1 id="ev-top" class="evid-h1">What has been tested, on what, and what is not done.</h1>
+<p class="lede">Every figure here holds only for the test set named beside it: synthetic cases written for testing. None of it is clinical validation. This page carries the detail the home page leaves out.</p>
+</div></section>
+
+<section class="band alt" id="labels" aria-labelledby="lab-h"><div class="wrap">
+<h2 id="lab-h">Labels used on these pages</h2>
+<div class="legend"><ul>
+<li><span class="tag capture">Screen capture</span> the local prototype&rsquo;s own screen</li>
+<li><span class="tag recorded">Recorded</span> output of a test run, redrawn for legibility</li>
+<li><span class="tag illus">Illustration</span> how it works, not a screen</li>
+<li><span class="tag live">Live in the local prototype</span> on our machine, not online</li>
+<li><span class="tag evaluated">Evaluated</span> in a measured test</li>
+<li><span class="tag planned">Planned</span> not built</li>
+<li><span class="tag open">Open item</span> known gap, recorded for repair</li>
+</ul></div>
+</div></section>
+
+<section class="band" id="testing" aria-labelledby="ts-h"><div class="wrap">
+<h2 id="ts-h">Testing so far</h2>
+<ul class="metrics">
+<li><span class="v">243 / 243</span><b>printed values read exactly by the conventional reader</b><span class="s">46 synthetic PDFs across 15 cases (C01 to C15)</span><span class="tag evaluated">Evaluated</span></li>
+<li><span class="v">87 / 87 and 75 / 75</span><b>printed rows read exactly by an AI extraction path</b><span class="s">two measured five-case evaluations; the prototype shown on the home page uses the conventional reader</span><span class="tag evaluated">Evaluated</span></li>
+<li><span class="v">65.0 to 77.5 of 80</span><b>scorable rubric points, per case</b><span class="s">13 synthetic cases scored with the rubric; in those cases no missed critical value, no false all-clear, no wrong-patient data, no invented value</span><span class="tag evaluated">Evaluated</span></li>
+<li><span class="v">Refused</span><b>reports printed for another patient, before storage</b><span class="s">browser test runs, synthetic cases C13 and C24</span><span class="tag recorded">Recorded</span></li>
+</ul>
+<div class="eng"><h3>Historical records: engineering tests only</h3><p>Report reading has also been run locally on a small set of historical laboratory records, including a 30-page multi-panel history. These are engineering tests of reading, kept separate from everything above. They are not clinical validation, they were not used in anyone&rsquo;s care, and nothing from them is shown on these pages.</p></div>
+</div></section>
+
+<section class="band alt" id="status" aria-labelledby="sts-h"><div class="wrap">
+<div class="status6"><h3 id="sts-h">Engineering and clinical status, 2 November 2026</h3><ul class="status-list">
+<li><b>History in a new browser</b><span>A browser with nothing saved rebuilds a patient&rsquo;s History from the stored record, including held and qualitative results and an empty or failed load: 15 of 15 checks in a local test.</span><span class="tag evaluated">Evaluated</span></li>
+<li><b>A recorded encounter, restored</b><span>In an earlier local run, both stages, with the questions, the answer and its receipt, were shown read-only in a new browser exactly as recorded, behind a switch that is off by default.</span><span class="tag evaluated">Evaluated</span></li>
+<li><b>Fresh-session recovery</b><span>Not demonstrated. In the latest full run, exporting again after a full page reload stored a second copy, so the restored after-answers stage no longer matched the original. The full Results and Source Trace screens are not rebuilt in a new session, and source documents are not kept.</span><span class="tag open">Open item</span></li>
+<li><b>Conflicting readings</b><span>Two same-date readings of one test are both shown at equal weight and which is right is not resolved; the stored record keeps one as its row value, and the card names it. A grade the readings disagree on is withheld. Whether a conflicted test may drive the leading finding is a clinical policy question recorded for the clinical owner. Keeping such a conflict in the stored patient record was tested with a controlled response only.</span><span class="tag open">Open item</span></li>
+<li><b>Clinical rules</b><span>A licensed clinician who heads the LabSense clinical governance panel co-signed a limited set of rules on 29 September 2026, for example how unreadable reports and unverified results must be shown. That is approval of specific rules.</span><span class="tag recorded">Recorded</span></li>
+<li><b>Clinical validation</b><span>Not done. The outputs have not been independently clinically validated; several reading rules and the trend wording await clinical review. Some screens can still label the same result or urgency inconsistently; known cases are recorded for repair.</span><span class="tag planned">Not yet</span></li>
+</ul></div>
+<div class="not-yet"><span class="tag planned">Clinical validation: not yet</span><span class="tag planned">Real-patient use: none</span><span class="tag planned">Regulatory clearance: none</span><span class="tag planned">Pilot: none agreed</span><span class="tag planned">Users or customers: none yet</span><span class="tag planned">Head-to-head comparison: not run</span></div>
+</div></section>
+
+<section class="band" id="records" aria-labelledby="rec-h"><div class="wrap">
+<h2 id="rec-h">Run records behind the home page</h2>
+<ul class="rec-list">
+<li><b>Product journey</b><span>Synthetic case L07U (three PDFs, fictional laboratory), local prototype test run RUN-145, 1 November 2026, accepted on re-score (RUN-145R); conventional extraction; frontend 8364de8, backend 7ecb5c13. The same receipt appears in every L07U run since RUN-132. Quoted wording is from the screen; layouts are redrawn for legibility. This receipt establishes that the answer changed the named kidney disease severity; it does not establish that every other part of the case is correct.</span></li>
+<li><b>Results cards</b><span>Synthetic cases L07U and L02, local prototype with the original card design restored, runs of 2 November 2026 with acceptance passed on both cases (clinical review not done). The LDL card (case L02, two same-date readings, 3.4 and 4.6 mmol/L) is from build c5b9003, run K3, after the repair that shows both readings at equal weight; the other cards are from build 2199d21. The LDL capture is cropped above the card&rsquo;s general description of the test.</span></li>
+<li><b>Behaviours on the home page</b><span>One history across reports: L07U, C16, C24. Across panels: C13, L07U. Identity refusal and hold for review: C13, C17, C24. Held and qualitative results: L07U. Units kept apart: C24. Conflicting readings: L02. Receipts and uncertain answers: L07U, C13.</span></li>
+<li><b>Film</b><span>Synthetic case C13, 2 min 50 s, corrected render of 1 November 2026: the answer was used and no possibility moved; no change in ranking is shown.</span></li>
+</ul>
+</div></section>
+
+<section class="band alt" id="compare" aria-labelledby="cmp-h"><div class="wrap">
+<h2 id="cmp-h">Comparison with seven products</h2>
+<p class="cmp-p">A reading of the public material of seven products reviewed on 29 October 2026: Function Health, InsideTracker and Superpower (consumer testing), Docus and BloodGPT (report explainers), OpenEvidence (a clinical literature assistant) and Health Gorilla (record exchange). It is not a tested comparison. Their accuracy figures are their own claims and were not checked. We did not find LabSense&rsquo;s shown behaviours in the material we reviewed; that is an absence of evidence, not proof that the products lack them.</p>
+<div class="moat-grid two">
+<div class="moat-col ahead"><h3>Where others are ahead</h3><ul>
+<li>Their own blood draws and laboratory networks</li>
+<li>Distribution, brand and funding</li>
+<li>Clinicians in the loop today</li>
+<li>AI chat over a member&rsquo;s lab history, already on the market</li>
+<li>Connections to laboratory and hospital systems</li>
+</ul></div>
+<div class="moat-col later"><h3>Also prospective</h3><ul>
+<li>Record-exchange networks used as a source of reports, rather than competed with <span class="tag planned">Planned</span></li>
+</ul></div>
+</div>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap"><div>LabSense AI, research prototype. Supports clinicians&rsquo; assessment; does not provide an autonomous clinical diagnosis. Not clinically validated; no regulatory clearance. Every case shown is synthetic.</div><div class="foot-links"><a href="evidence.html">Evidence and status</a><a href="mailto:nafees.kundi@gmail.com">Contact</a></div></div></footer>
+</body>
+</html>

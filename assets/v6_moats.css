@@ -1,0 +1,8 @@
+/* prepared moat section (review only; linked only by build_site.py --with-moats) */
+.moat-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.moat-col{border:1px solid var(--rule);border-radius:var(--r);padding:22px;background:var(--bg)}
+.moat-col.later{border-style:dashed}
+.moat-col h3{font:400 22px/1.2 var(--display);margin:0 0 10px}
+.moat-col ul{margin:0;padding-left:18px;color:var(--ink-2);font-size:15px}.moat-col li{margin-bottom:10px}
+.moat-col .tag{margin-left:6px;vertical-align:1px}
+@media (max-width:1080px){.moat-grid{grid-template-columns:1fr}}

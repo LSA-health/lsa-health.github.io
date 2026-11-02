@@ -1,0 +1,34 @@
+/* Submission page additions to the v5 design system (v5.css stays the source of the tokens). */
+.film{margin:0}
+.film video{display:block;width:100%;height:auto;border-radius:var(--r);background:#0c1316;box-shadow:var(--shadow);aspect-ratio:16/9}
+.film figcaption{margin-top:12px}
+.film-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:10px;font-size:15px}
+.film-links a{color:var(--trace)}
+.cards{display:grid;gap:14px;margin-top:8px}
+.cards figure{margin:0}
+.cards img{display:block;width:100%;height:auto;border-radius:var(--r-sm);border:1px solid var(--rule);background:#fff}
+.cards figcaption{font-size:14px;color:var(--ink-3);margin-top:6px}
+.kind{display:inline-block;font:500 12px/1.2 var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.flow{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:10px;counter-reset:f}
+.flow li{counter-increment:f;display:grid;grid-template-columns:2.2em 1fr;gap:6px 10px;align-items:start;background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-sm);padding:12px 14px}
+.flow li::before{content:counter(f,decimal-leading-zero);font:500 14px/1.6 var(--mono);color:var(--trace)}
+.flow b{display:block;font-weight:600}
+.flow span.d{display:block;color:var(--ink-2);font-size:15px}
+.access{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);padding:20px 22px}
+.access p{margin:0 0 10px}
+.access p:last-child{margin-bottom:0}
+@media (min-width:900px){.flow{grid-template-columns:1fr 1fr}}
+/* Phone: the card captures are desktop-width screen captures. Rather than shrink their text below a readable size,
+   each one scrolls sideways inside its own frame (the page itself never scrolls sideways). */
+.cap-frame{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--r-sm)}
+.swipe{display:none;font-size:13px;color:var(--ink-3);margin:4px 0 0}
+@media (max-width:1100px){.cap-frame img{width:auto;max-width:none}.swipe{display:block}}
+.cards{grid-template-columns:minmax(0,1fr)}.cards figure,.cap-frame{min-width:0;max-width:100%}
+.mt12{margin-top:12px}.poster{display:block;width:100%;height:auto;border-radius:var(--r);box-shadow:var(--shadow)}
+.cardtext{margin-top:8px;font-size:15px}
+.cardtext summary{cursor:pointer;color:var(--trace);min-height:44px;display:flex;align-items:center}
+.cardtext summary:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+.cardtext ul{margin:6px 0 0;padding-left:18px;color:var(--ink-2)}
+.cards figcaption a,.film-links a{display:inline-block;min-height:44px;line-height:44px}
+.cap-frame:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.access a{display:inline-block;min-height:44px;line-height:44px}.top .brand{min-height:44px}

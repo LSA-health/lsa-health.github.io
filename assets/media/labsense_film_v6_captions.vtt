@@ -1,0 +1,151 @@
+WEBVTT
+
+00:00.600 --> 00:04.444
+Across months of care, a patient's
+laboratory results arrive in fragments:
+
+00:04.494 --> 00:07.586
+different reports, different
+dates, different formats.
+
+00:07.790 --> 00:10.453
+For a clinician investigating a complex case,
+
+00:10.503 --> 00:15.155
+following a subtle change across those
+reports is slow, and easy to miss.
+
+00:15.400 --> 00:20.360
+LabSense AI helps clinicians investigate
+complex cases and seek a second opinion
+
+00:20.410 --> 00:24.292
+by connecting laboratory findings
+across reports and time.
+
+00:24.490 --> 00:27.769
+The first report asks the user
+to confirm whose report it is.
+
+00:27.819 --> 00:30.798
+Every later report is checked against that answer.
+
+00:30.950 --> 00:32.359
+Each row is read as printed:
+
+00:32.409 --> 00:35.121
+the value, the unit, the
+lab's own reference interval
+
+00:35.171 --> 00:38.339
+and the collection date, with
+a link back to its source.
+
+00:38.690 --> 00:42.602
+LabSense brings these related
+results into one investigation.
+
+00:43.150 --> 00:46.281
+Its leading assessment is a metabolic pattern.
+
+00:46.331 --> 00:48.494
+The supporting finding is HbA1c,
+
+00:48.544 --> 00:53.774
+above its printed interval on all
+three reports, rising from 7.1 to 7.5.
+
+00:54.030 --> 00:57.006
+What limits it: symptom history
+has not been collected,
+
+00:57.056 --> 01:01.762
+and a repeat fasting glucose or glucose
+tolerance test would confirm the pattern.
+
+01:02.310 --> 01:05.800
+A second possibility stays open:
+a kidney or urinary concern.
+
+01:05.850 --> 01:11.090
+Creatinine rose across all three reports,
+and is above its interval in the latest one.
+
+01:11.290 --> 01:16.647
+A urine examination would help tell the possible
+causes apart, and it is not available yet.
+
+01:17.190 --> 01:19.997
+Then it asks a question that
+could change the picture.
+
+01:20.200 --> 01:25.548
+Has a doctor previously diagnosed
+prediabetes, diabetes or metabolic syndrome?
+
+01:26.500 --> 01:29.250
+The answer is yes. LabSense uses it.
+
+01:32.140 --> 01:36.083
+The question about arranging a
+urine test is answered "not sure".
+
+01:36.280 --> 01:39.580
+That answer is recorded, and
+nothing is concluded from it.
+
+01:40.130 --> 01:44.237
+The leading assessment stays metabolic,
+and the urgency stays at review.
+
+01:44.440 --> 01:48.749
+No single diagnosis is confirmed, and
+the missing tests are still needed.
+
+01:49.500 --> 01:51.660
+Clinicians can inspect each step.
+
+01:54.590 --> 01:59.381
+A report printed for a different patient is
+refused, and none of its values are stored.
+
+01:59.580 --> 02:02.989
+The review can be exported,
+with its sources and answers.
+
+02:03.640 --> 02:06.252
+Today, LabSense is a working prototype.
+
+02:06.450 --> 02:09.749
+It has been tested using
+historical laboratory records,
+
+02:09.799 --> 02:14.494
+including a 30-page multi-panel history,
+and challenging synthetic cases.
+
+02:14.700 --> 02:18.826
+It supports diagnostic assessment,
+while clinicians keep responsibility.
+
+02:19.570 --> 02:24.484
+We are targeting clinician-supervised
+evaluation in December 2026.
+
+02:24.690 --> 02:28.836
+Later directions include connecting
+to hospital records through FHIR,
+
+02:28.886 --> 02:31.143
+and adding ECG and wearable data.
+
+02:31.890 --> 02:37.478
+Our ambition is a longitudinal clinical intelligence
+layer, starting with laboratory medicine.
+
+02:37.830 --> 02:40.936
+We welcome clinical partners for that evaluation.
+
+02:41.880 --> 02:46.596
+LabSense AI. Connected evidence for
+better-informed clinical decisions.

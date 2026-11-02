@@ -1,0 +1,190 @@
+/* Submission v6 additions. Tokens and base come from v5.css ("Source Line"); card captures and film from submission.css.
+   Reused: v5 hero type and source line, v5 journey tabs, 4 Oct Direction B dark instrument panel and claim strip. */
+.preview-note{background:var(--open-soft);color:var(--ink);font:500 13px/1.4 var(--mono);border-bottom:1px solid var(--rule)}
+.preview-note .wrap{padding-top:8px;padding-bottom:8px}
+
+/* hero */
+.hero6{padding:72px 0 56px}
+.hero-head{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:end;margin-bottom:44px}
+.hero6 h1{font-size:clamp(42px,6vw,80px);margin:0}
+.hero6 .lede{margin-bottom:24px;font-size:18px}
+
+/* the instrument: printed pages on a dark desk, joined to one history */
+.instrument{margin:0;border-radius:20px;padding:36px 40px 26px;color:#e8eef0;
+  background:radial-gradient(120% 90% at 85% 0%,#1d2b6b 0%,rgba(29,43,107,0) 55%),linear-gradient(160deg,#101d24,#0b1418);
+  box-shadow:0 30px 60px -30px rgba(15,27,33,.55),0 2px 6px rgba(15,27,33,.12)}
+.instrument .trace-viz text{fill:#c9d4d9}
+.instrument .trace-viz .strip-l{font-family:var(--mono);fill:#aebbc1}
+.instrument .trace-viz .chart-k{font-family:var(--mono);letter-spacing:.06em;fill:#aebbc1}
+.instrument .trace-viz .plot{fill:rgba(255,255,255,.03);stroke:rgba(255,255,255,.14)}
+.instrument .trace-viz .band{fill:rgba(143,156,255,.22)}
+.instrument .trace-viz .band-edge{stroke:#8f9cff}
+.instrument .trace-viz .band-l{fill:#c3caff}
+.instrument .trace-viz .grid{stroke:rgba(255,255,255,.08)}
+.instrument .trace-viz .trend{stroke:#e8eef0}
+.instrument .trace-viz .pt.out{fill:#ff9a73;stroke:#0b1418;stroke-width:2.5}
+.instrument .trace-viz .pt-l{font-family:var(--mono);font-weight:500;fill:#fff}
+.instrument .trace-viz .axis,.instrument .trace-viz .tick{font-family:var(--mono)}
+.instrument .trace-viz .trace{stroke:#8f9cff;stroke-width:1.8;stroke-dasharray:none}
+.instrument .trace-viz .anchor{fill:#8f9cff}
+.instrument .trace-viz .strip{filter:drop-shadow(0 10px 18px rgba(0,0,0,.45))}
+.instrument .trace-viz .hl-row{fill:rgba(46,63,208,.10);stroke:#2e3fd0;stroke-width:2}
+.instrument .viz-cap{color:#aebbc1;margin-top:18px}
+.instrument .tag.recorded{color:#c3caff}.instrument .tag.illus{color:#d7dde0}
+@media (prefers-reduced-motion:no-preference){
+  .instrument .trace{stroke-dasharray:1;stroke-dashoffset:1;animation:draw6 1.2s var(--ease) .3s forwards}
+  .instrument .trace.d2{animation-delay:.55s}.instrument .trace.d3{animation-delay:.8s}
+  .instrument .pt{opacity:0;animation:pop .4s var(--ease) 1.4s forwards}
+}
+@keyframes draw6{to{stroke-dashoffset:0}}
+@keyframes pop{to{opacity:1}}
+
+/* the four stages under the hero */
+.path{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.path a{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;padding:16px 18px;border:1px solid var(--rule);border-radius:var(--r);
+  background:var(--surface);color:var(--ink);text-decoration:none;min-height:44px;transition:border-color .2s var(--ease),transform .2s var(--ease)}
+.path a:hover{border-color:var(--trace);transform:translateY(-1px)}
+.path .n{grid-row:span 2;font:500 13px/1.6 var(--mono);color:var(--trace)}
+.path b{font-weight:600}.path a span:last-child{color:var(--ink-3);font-size:14.5px}
+
+.legend{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;font-size:14px;color:var(--ink-3)}
+.legend p{margin:0;font:500 12.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.legend ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px}
+.legend li{display:flex;align-items:center;gap:8px}
+.tag.capture{color:var(--ink)}.tag.illus{color:var(--ink-3);border-style:dotted}
+
+/* journey, v6 content */
+.steps button .t{display:flex;flex-direction:column;gap:2px}
+.steps button .t span{font:400 13px/1.3 var(--ui);color:var(--ink-3)}
+.panel{min-height:0}
+.panel:focus-visible{outline:3px solid var(--focus);outline-offset:-3px}
+.step-k{font:500 12.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--trace-deep);margin:0 0 10px}
+.panel h4{font:600 15px/1.3 var(--ui);margin:0 0 6px}
+.panel-grid.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin-top:22px}
+.page-fig,.card-fig{margin:18px 0 0}
+.page-fig figcaption,.card-fig figcaption{font-size:14px;color:var(--ink-3);margin-top:8px}
+.page-fig figcaption a,.card-fig figcaption a{display:inline-block;min-height:44px;line-height:44px}
+.page-svg{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:var(--r-sm);background:#fff;box-shadow:var(--shadow)}
+.page-svg .hl-row{fill:rgba(46,63,208,.08);stroke:#2e3fd0;stroke-width:3}
+.card-fig .tag{margin-bottom:8px}
+.card-fig img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:var(--r-sm);background:#fff}
+.chart-frame{border:1px solid var(--rule);border-radius:var(--r);padding:14px 10px 6px;background:var(--surface)}
+.chart-frame .trace-viz .plot{fill:var(--surface);stroke:var(--rule)}
+.chart-frame .trace-viz .tick,.chart-frame .trace-viz .axis{font-family:var(--mono);fill:var(--ink-3)}
+.chart-frame .trace-viz .band-l{font-family:var(--mono);fill:var(--trace-deep)}
+.chart-frame .trace-viz .chart-k{font-family:var(--mono);letter-spacing:.06em}
+.chart-frame .trace-viz .grid{stroke:var(--rule-2)}
+.chart-frame .trace-viz .pt-l{font-family:var(--mono)}
+.series{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px}
+.series li{display:grid;gap:2px;padding:12px 14px;border-left:3px solid var(--out);background:var(--out-soft);border-radius:0 8px 8px 0}
+.series li:last-child{border-left-color:var(--rule);background:var(--bg-2)}
+.series .num{font:500 18px/1.4 var(--mono)}
+.series li span:last-child{font-size:14.5px;color:var(--ink-2)}
+.qa.answered{border-color:var(--trace);box-shadow:0 0 0 3px var(--trace-soft)}
+.qa .opt{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border:1px solid var(--rule);border-radius:999px;font:500 14px var(--ui);color:var(--ink-2)}
+.qa .opt.on{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.qa .note{font:12.5px var(--mono);color:var(--ink-3)}
+.also{font-size:14.5px;color:var(--ink-3);margin:14px 0 6px}
+.also-q{margin:0;padding-left:18px;color:var(--ink-2);font-size:15px}.also-q li{margin-bottom:4px}
+.ba{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:10px 18px;align-items:stretch;margin-top:8px;padding:22px;
+  border:1px solid var(--rule);border-radius:var(--r);background:var(--surface);box-shadow:var(--shadow)}
+.ba-k{grid-column:1/-1;font:500 12.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.ba-col{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:10px;background:var(--bg-2)}
+.ba-col.after{background:var(--trace-soft);box-shadow:inset 0 0 0 1px var(--trace)}
+.ba-l{font:500 12.5px/1.2 var(--mono);color:var(--ink-3)}
+.ba-v{font:400 21px/1.3 var(--display);color:var(--ink)}
+.ba-col.after .ba-v{color:var(--trace-deep)}
+.ba-arrow{display:grid;place-items:center;color:var(--trace)}.ba-arrow .arrow{width:22px;height:14px}
+.ba-why{grid-column:1/-1;margin:4px 0 0;font-size:15px;color:var(--ink-2)}
+.boundary{margin:18px 0 0;font-size:14.5px;color:var(--ink-3)}
+.evid{margin-top:10px;font-size:14px;color:var(--ink-3)}
+.evid summary{cursor:pointer;color:var(--trace);min-height:44px;display:flex;align-items:center}
+.evid p{margin:0 0 6px}
+@media (prefers-reduced-motion:no-preference){.js .panel.enter{animation:rise .45s var(--ease)}}
+
+@media (max-width:1080px){
+  .hero-head{grid-template-columns:1fr;gap:20px;align-items:start}
+  .path{grid-template-columns:1fr 1fr}
+  .instrument{padding:28px 24px 22px}
+}
+@media (max-width:820px){.panel-grid.two{grid-template-columns:1fr}}
+@media (max-width:600px){
+  .hero6{padding:44px 0 36px}
+  .instrument{padding:18px 12px 16px;border-radius:16px}
+  .path{grid-template-columns:1fr}
+  .ba{grid-template-columns:1fr;padding:16px}.ba-arrow{transform:rotate(90deg)}
+  .cap-frame.wide .page-svg{width:900px;max-width:none}
+}
+.claims{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.claims li{padding:20px 22px 20px 0;display:flex;flex-direction:column;gap:6px}
+.claims li+li{border-left:1px solid var(--rule);padding-left:22px}
+.claims b{font:400 21px/1.25 var(--display)}
+.claims span{font-size:15px;color:var(--ink-2)}
+.claims .tagline{margin-top:4px;display:flex;gap:8px;align-items:center;font:12.5px var(--mono);color:var(--ink-3)}
+@media (max-width:820px){.claims{grid-template-columns:1fr}.claims li+li{border-left:0;border-top:1px solid var(--rule);padding-left:0}}
+.journey>*,.panels,.panel,.panel-grid>*,.page-fig,.card-fig{min-width:0}
+@media (max-width:600px){.path{grid-template-columns:1fr 1fr;gap:8px}.path a{padding:12px;grid-template-columns:1fr}.path .n{grid-row:auto}.path a span:last-child{font-size:13.5px}}
+.chart-frame + .panel-grid.two{margin-top:20px}
+.series{margin-top:0}
+/* SVG label sizes are in viewBox units; v5.css fixes them at 11px, so each chart sets its own here */
+.instrument .viz-wide .axis,.instrument .viz-wide .strip-l{font-size:14px}
+.instrument .viz-wide .tick,.instrument .viz-wide .band-l,.instrument .viz-wide .chart-k{font-size:13px}
+.instrument .viz-wide .pt-l{font-size:17px}
+.instrument .viz-narrow .axis,.instrument .viz-narrow .tick,.instrument .viz-narrow .band-l,.instrument .viz-narrow .chart-k,.instrument .viz-narrow .strip-l{font-size:12.5px}
+.instrument .viz-narrow .pt-l{font-size:16px}
+.chart-frame .trace-viz .axis{font-size:17px}
+.chart-frame .trace-viz .tick,.chart-frame .trace-viz .band-l,.chart-frame .trace-viz .chart-k{font-size:16px}
+.chart-frame .trace-viz .pt-l{font-size:20px}
+
+/* dark bands (film, access): the instrument panel's palette, applied by redefining the tokens locally */
+.band.dark{--bg:#0c1316;--bg-2:#111a1e;--surface:#131d22;--ink:#e8eef0;--ink-2:#b6c3c8;--ink-3:#9aa8ae;--rule:#243238;--rule-2:#1b272c;
+  --trace:#8f9cff;--trace-ink:#0c1316;--trace-soft:#1c2350;--trace-deep:#b9c1ff;--ok:#6fd3a5;--open:#f0c35a;--focus:#8f9cff;
+  color:var(--ink);background:radial-gradient(90% 70% at 90% 0%,#1d2b6b 0%,rgba(29,43,107,0) 60%),linear-gradient(160deg,#101d24,#0b1418);border-top:0}
+.band.dark a{color:var(--trace-deep)}
+.band.dark .sec-head p,.band.dark .lede{color:var(--ink-2)}
+.film6 video{box-shadow:0 30px 60px -30px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.08)}
+.film6 .film-links a{color:var(--trace-deep)}
+.cards.two-up{grid-template-columns:minmax(0,1fr);margin-top:28px;gap:24px}
+.cards.two-up .tag{margin-bottom:8px}
+@media (max-width:1100px){.cards.two-up{grid-template-columns:minmax(0,1fr)}}
+
+/* testing */
+.metrics{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.metrics li{display:flex;flex-direction:column;gap:8px;padding:22px;border:1px solid var(--rule);border-radius:var(--r);background:var(--bg)}
+.metrics .v{font:500 clamp(26px,2.4vw,34px)/1.1 var(--mono);letter-spacing:-.02em}
+.metrics b{font-weight:600;font-size:15.5px;line-height:1.35}
+.metrics .s{font-size:14.5px;color:var(--ink-3)}
+.metrics .tag{align-self:flex-start;margin-top:auto}
+.eng{margin-top:18px;padding:20px 22px;border-radius:var(--r);border:1px dashed var(--rule);background:repeating-linear-gradient(135deg,transparent 0 10px,var(--bg-2) 10px 11px)}
+.eng h3{margin-bottom:6px}.eng p{margin:0;color:var(--ink-2);max-width:62em}
+
+/* roadmap */
+.roadmap{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px;position:relative}
+.roadmap>li{position:relative;padding:26px 24px 24px;border:1px solid var(--rule);border-radius:var(--r);background:var(--surface);display:flex;flex-direction:column;gap:10px}
+.roadmap>li::before{content:"";position:absolute;left:24px;right:24px;top:0;height:3px;border-radius:0 0 3px 3px;background:var(--ok)}
+.roadmap>li.next::before{background:var(--trace)}
+.roadmap>li.later::before{background:repeating-linear-gradient(90deg,var(--ink-3) 0 6px,transparent 6px 11px)}
+.roadmap>li.later,.roadmap>li.next{border-style:dashed}
+.rk{margin:0;font:500 12.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--trace-deep)}
+.roadmap h3{font:400 23px/1.2 var(--display);margin:0}
+.roadmap .tag{align-self:flex-start}
+.roadmap ul{margin:4px 0 0;padding-left:18px;color:var(--ink-2);font-size:15px}.roadmap ul li{margin-bottom:6px}
+.rn{margin:auto 0 0;font-size:14px;color:var(--ink-3)}
+
+/* access */
+.access6{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px;align-items:center}
+.access6 h2{margin-bottom:16px}
+.note6{margin:16px 0 0;font-size:15px;color:var(--ink-2)}
+.access6 .btn{min-height:48px}
+.session{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:10px}
+.session li{display:flex;gap:12px;align-items:baseline;padding:14px 16px;border:1px solid var(--rule);border-radius:10px;background:rgba(255,255,255,.03);font-size:15.5px}
+.session li::before{content:"";flex:none;width:18px;height:2px;background:var(--trace);transform:translateY(-4px)}
+
+/* without the script: every step is shown in order, and the tab row is not offered */
+html:not(.js) .steps{display:none}
+html:not(.js) .journey{grid-template-columns:minmax(0,1fr)}
+html:not(.js) .panel+.panel{border-top:1px solid var(--rule)}
+
+@media (max-width:1080px){.metrics{grid-template-columns:1fr 1fr}.roadmap{grid-template-columns:1fr}.access6{grid-template-columns:1fr;gap:28px}}
+@media (max-width:600px){.metrics{grid-template-columns:1fr}}
+.band.dark .btn.trace{color:#0c1316;background:#8f9cff;border-color:#8f9cff}.band.dark .btn.trace:hover{background:#b9c1ff;border-color:#b9c1ff}
