@@ -5,20 +5,20 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>LabSense AI: a patient's lab reports, read as one source-linked history</title>
-<meta name="description" content="Research prototype for clinicians: a patient's lab reports read into one dated, source-linked history, with what the evidence cannot support.">
+<title>LabSense AI: from fragmented lab reports to a clearer clinical picture</title>
+<meta name="description" content="Research prototype for clinicians: lab history connected across reports, findings surfaced, targeted questions asked, with traceable evidence.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabSense AI">
-<meta property="og:title" content="LabSense AI: a patient's lab reports, read as one source-linked history">
-<meta property="og:description" content="Research prototype for clinicians: a patient's lab reports read into one dated, source-linked history, with what the evidence cannot support.">
+<meta property="og:title" content="LabSense AI: from fragmented lab reports to a clearer clinical picture">
+<meta property="og:description" content="Research prototype for clinicians: lab history connected across reports, findings surfaced, targeted questions asked, with traceable evidence.">
 <meta property="og:url" content="https://lsa-health.github.io/">
 <meta property="og:image" content="https://lsa-health.github.io/assets/og/labsense_og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Three synthetic lab reports with the urine albumin to creatinine ratio row highlighted, joined to one history chart of 42, 88 and 156 mg/g.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="LabSense AI: a patient's lab reports, read as one source-linked history">
-<meta name="twitter:description" content="Research prototype for clinicians: a patient's lab reports read into one dated, source-linked history, with what the evidence cannot support.">
+<meta name="twitter:title" content="LabSense AI: from fragmented lab reports to a clearer clinical picture">
+<meta name="twitter:description" content="Research prototype for clinicians: lab history connected across reports, findings surfaced, targeted questions asked, with traceable evidence.">
 <meta name="twitter:image" content="https://lsa-health.github.io/assets/og/labsense_og.png">
 <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/v5.css">
@@ -27,119 +27,93 @@
 <link rel="stylesheet" href="assets/v6_moats.css">
 <link rel="stylesheet" href="assets/v6_2.css">
 <link rel="stylesheet" href="assets/v7.css">
+<link rel="stylesheet" href="assets/v8.css">
 <script src="assets/v6.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap"><a class="brand" href="index.html"><svg viewBox="0 0 30 16" aria-hidden="true"><circle cx="4" cy="8" r="3.2" fill="#2e3fd0"/><path d="M7 8 H22" stroke="#2e3fd0" stroke-width="1.6"/><path d="M24 2 H28 V14 H24" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>LabSense</a>
 <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="mb-bars" aria-hidden="true"></span>Menu</button>
-<nav class="nav" id="site-nav" aria-label="Main"><a href="#journey">Product</a><a href="#cards">Results cards</a><a href="#film">Film</a><a href="#moats">Differentiation</a><a href="#stage">Stage</a><a href="evidence.html">Evidence</a><a class="go" href="#access">Evaluation access</a></nav></div></header>
+<nav class="nav" id="site-nav" aria-label="Main"><a href="#adds">What it adds</a><a href="#history">Reports to history</a><a href="#receipt">Answer effects</a><a href="#cards">Results cards</a><a href="#film">Film</a><a href="#stage">Evidence and stage</a><a class="go" href="#access">Request an evaluation</a></nav></div></header>
 <main id="main">
-<section class="hero hero6">
+<section class="hero hero8">
 <div class="wrap">
 <div class="hero-head">
 <div>
-<p class="eyebrow">For clinicians reviewing complex lab histories</p>
-<h1>A patient's lab reports, read as <em>one history.</em></h1>
+<p class="eyebrow">Clinical investigation across reports and time</p>
+<h1>From fragmented lab reports to a clearer clinical picture.</h1>
 </div>
 <div>
-<p class="lede">Separate reports from different dates and laboratories become one dated history, each value traced to the page it came from. LabSense asks what could change the reading, holds back what it cannot verify, and leaves the decision with the clinician.</p>
-<div class="btns"><a class="btn primary" href="#journey">Follow one case <svg class="arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><a class="btn" href="#film">Watch the film (2:50)</a></div>
+<p class="lede">LabSense AI connects laboratory history, surfaces findings that need attention and asks targeted follow-up questions, helping clinicians investigate complex cases with traceable evidence.</p>
+<div class="btns"><a class="btn primary" href="#film">Watch the product demo <svg class="arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a><a class="btn" href="mailto:nafees.kundi@gmail.com?subject=Supervised%20evaluation%20of%20LabSense">Request a supervised evaluation</a></div>
 </div>
 </div>
-<figure class="instrument">
-<svg class="trace-viz viz-wide" viewBox="-4 0 1004 560" role="img" aria-labelledby="hv-t"><title id="hv-t">Three printed synthetic reports, urine albumin to creatinine ratio row highlighted on each, joined to one chart: 42, 88 and 156 mg/g on 22 Apr 2025, 5 Nov 2025 and 19 May 2026, all above the printed interval 0 to 30.</title><g class="strip"><text class="strip-l" x="0" y="32" font-size="14">Report 3, collected 19 May 2026</text><rect class="paper" x="0" y="44" width="560" height="95.7"/><image href="assets/l07u/hero_r3.png" x="0" y="44" width="560" height="95.7"/><rect class="hl-row" x="6.8" y="114.4" width="474.9" height="18.5" rx="2"/></g>
-<path class="trace d1" pathLength="1" d="M484.7 123.6 C574.7 123.6,805.0 101.3,907.0 101.3"/><circle class="anchor" cx="484.7" cy="123.6" r="3.5"/>
-<g class="strip"><text class="strip-l" x="0" y="202" font-size="14">Report 2, collected 5 Nov 2025</text><rect class="paper" x="0" y="214" width="560" height="95.7"/><image href="assets/l07u/hero_r2.png" x="0" y="214" width="560" height="95.7"/><rect class="hl-row" x="6.8" y="284.4" width="474.9" height="18.5" rx="2"/></g>
-<path class="trace d2" pathLength="1" d="M484.7 293.6 C574.7 293.6,695.0 275.1,797.0 275.1"/><circle class="anchor" cx="484.7" cy="293.6" r="3.5"/>
-<g class="strip"><text class="strip-l" x="0" y="372" font-size="14">Report 1, collected 22 Apr 2025</text><rect class="paper" x="0" y="384" width="560" height="95.7"/><image href="assets/l07u/hero_r1.png" x="0" y="384" width="560" height="95.7"/><rect class="hl-row" x="6.8" y="454.4" width="474.9" height="18.5" rx="2"/></g>
-<path class="trace d3" pathLength="1" d="M484.7 463.6 C574.7 463.6,580.0 392.7,682.0 392.7"/><circle class="anchor" cx="484.7" cy="463.6" r="3.5"/><g class="chart ">
-<rect class="plot" x="640" y="40" width="320" height="460" rx="6"/>
-<rect class="band" x="640" y="423.3" width="320" height="76.7"/>
-<line class="band-edge" x1="640" x2="960" y1="423.3" y2="423.3"/>
-<text class="tick" x="968" y="504.9" text-anchor="start" font-size="13">0</text>
-<text class="tick" x="968" y="428.2" text-anchor="start" font-size="13">30</text>
-<text class="tick" x="968" y="249.3" text-anchor="start" font-size="13">100</text>
-<line class="grid" x1="640" x2="960" y1="244.4" y2="244.4"/>
-<text class="tick" x="968" y="121.6" text-anchor="start" font-size="13">150</text>
-<line class="grid" x1="640" x2="960" y1="116.7" y2="116.7"/>
-<text class="band-l" x="650" y="490" font-size="13">printed interval 0 to 30 mg/g</text>
-<text class="chart-k" x="640" y="26" font-size="13">URINE ACR, mg/g, 3 REPORTS</text>
-<polyline class="trend" points="690,392.7 805,275.1 915,101.3"/>
-<circle class="pt out" cx="690" cy="392.7" r="7"/>
-<text class="pt-l" x="690" y="376.7" text-anchor="middle" font-size="17">42</text>
-<text class="axis" x="690" y="526" text-anchor="middle" font-size="14">22 Apr 2025</text>
-<circle class="pt out" cx="805" cy="275.1" r="7"/>
-<text class="pt-l" x="805" y="259.1" text-anchor="middle" font-size="17">88</text>
-<text class="axis" x="805" y="526" text-anchor="middle" font-size="14">5 Nov 2025</text>
-<circle class="pt out" cx="915" cy="101.3" r="7"/>
-<text class="pt-l" x="915" y="85.3" text-anchor="middle" font-size="17">156</text>
-<text class="axis" x="915" y="526" text-anchor="middle" font-size="14">19 May 2026</text>
+<figure class="scene" aria-labelledby="scene-cap">
+<ol class="scene-steps">
+<li class="sc sc-reports"><p class="sc-k"><span class="sc-n">1</span>Dated reports</p>
+<ul class="mini-reports">
+<li><span class="mr-d">22 Apr 2025</span><span class="mr-r">Urine albumin/creatinine ratio</span><span class="mr-v">42 <small>mg/g</small></span><span class="mr-i">0-30</span></li>
+<li><span class="mr-d">5 Nov 2025</span><span class="mr-r">Urine albumin/creatinine ratio</span><span class="mr-v">88 <small>mg/g</small></span><span class="mr-i">0-30</span></li>
+<li class="mr-src"><span class="mr-d">19 May 2026</span><span class="mr-r">Urine albumin/creatinine ratio</span><span class="mr-v">156 <small>mg/g</small></span><span class="mr-i">0-30</span><span class="mr-tag">source row</span></li>
+</ul>
+<p class="sc-note">Three printed reports, one row each, values and intervals as printed.</p></li>
+<li class="sc sc-finding"><p class="sc-k"><span class="sc-n">2</span>Longitudinal finding</p>
+<svg class="trace-viz scene-chart" viewBox="0 0 300 290" role="img" aria-labelledby="sc-t"><title id="sc-t">Urine albumin to creatinine ratio over three reports: 42, 88 and 156 mg/g on 22 Apr 2025, 5 Nov 2025 and 19 May 2026, all above the printed interval 0 to 30 mg/g.</title><g class="chart ">
+<rect class="plot" x="40" y="40" width="250" height="190" rx="6"/>
+<rect class="band" x="40" y="198.3" width="250" height="31.7"/>
+<line class="band-edge" x1="40" x2="290" y1="198.3" y2="198.3"/>
+<text class="tick" x="32" y="237.0" text-anchor="end" font-size="19">0</text>
+<text class="tick" x="32" y="205.3" text-anchor="end" font-size="19">30</text>
+<text class="tick" x="32" y="78.7" text-anchor="end" font-size="19">150</text>
+<line class="grid" x1="40" x2="290" y1="71.7" y2="71.7"/>
+<text class="band-l" x="50" y="220" font-size="19">printed 0 to 30</text>
+<polyline class="trend" points="78,185.7 165,137.1 252,65.3"/>
+<circle class="pt out" cx="78" cy="185.7" r="7"/>
+<text class="pt-l" x="78" y="169.7" text-anchor="middle" font-size="23">42</text>
+<text class="axis" x="40" y="262" text-anchor="start" font-size="20">Apr 2025</text>
+<circle class="pt out" cx="165" cy="137.1" r="7"/>
+<text class="pt-l" x="165" y="121.1" text-anchor="middle" font-size="23">88</text>
+<circle class="pt out src" cx="252" cy="65.3" r="8"/>
+<text class="pt-l" x="252" y="49.3" text-anchor="middle" font-size="23">156</text>
+<text class="axis" x="290" y="262" text-anchor="end" font-size="20">May 2026</text>
 </g></svg>
-<svg class="trace-viz viz-narrow" viewBox="0 0 360 670" role="img" aria-labelledby="hn-t"><title id="hn-t">Three printed synthetic reports and one chart of urine albumin to creatinine ratio: 42, 88 and 156 mg/g, all above the printed interval 0 to 30.</title><g class="strip"><text class="strip-l" x="10" y="18" font-size="12">Report 3, 19 May 2026: 156 mg/g</text><rect class="paper" x="10" y="26" width="340" height="58.1"/><image href="assets/l07u/hero_r3.png" x="10" y="26" width="340" height="58.1"/><rect class="hl-row" x="14.1" y="68.7" width="288.3" height="11.3" rx="2"/></g>
-<g class="strip"><text class="strip-l" x="10" y="110" font-size="12">Report 2, 5 Nov 2025: 88 mg/g</text><rect class="paper" x="10" y="118" width="340" height="58.1"/><image href="assets/l07u/hero_r2.png" x="10" y="118" width="340" height="58.1"/><rect class="hl-row" x="14.1" y="160.7" width="288.3" height="11.3" rx="2"/></g>
-<g class="strip"><text class="strip-l" x="10" y="202" font-size="12">Report 1, 22 Apr 2025: 42 mg/g</text><rect class="paper" x="10" y="210" width="340" height="58.1"/><image href="assets/l07u/hero_r1.png" x="10" y="210" width="340" height="58.1"/><rect class="hl-row" x="14.1" y="252.7" width="288.3" height="11.3" rx="2"/></g><g class="chart ">
-<rect class="plot" x="48" y="330" width="298" height="290" rx="6"/>
-<rect class="band" x="48" y="571.7" width="298" height="48.3"/>
-<line class="band-edge" x1="48" x2="346" y1="571.7" y2="571.7"/>
-<text class="tick" x="40" y="624.5" text-anchor="end" font-size="12">0</text>
-<text class="tick" x="40" y="576.2" text-anchor="end" font-size="12">30</text>
-<text class="tick" x="40" y="463.4" text-anchor="end" font-size="12">100</text>
-<line class="grid" x1="48" x2="346" y1="458.9" y2="458.9"/>
-<text class="tick" x="40" y="382.9" text-anchor="end" font-size="12">150</text>
-<line class="grid" x1="48" x2="346" y1="378.3" y2="378.3"/>
-<text class="band-l" x="58" y="610" font-size="12">printed interval 0 to 30 mg/g</text>
-<text class="chart-k" x="48" y="316" font-size="12">URINE ACR, mg/g, 3 REPORTS</text>
-<polyline class="trend" points="92,552.3 197,478.2 302,368.7"/>
-<circle class="pt out" cx="92" cy="552.3" r="7"/>
-<text class="pt-l" x="92" y="536.3" text-anchor="middle" font-size="16">42</text>
-<text class="axis" x="92" y="645" text-anchor="middle" font-size="13">22 Apr 2025</text>
-<circle class="pt out" cx="197" cy="478.2" r="7"/>
-<text class="pt-l" x="197" y="462.2" text-anchor="middle" font-size="16">88</text>
-<text class="axis" x="197" y="645" text-anchor="middle" font-size="13">5 Nov 2025</text>
-<circle class="pt out" cx="302" cy="368.7" r="7"/>
-<text class="pt-l" x="302" y="352.7" text-anchor="middle" font-size="16">156</text>
-<text class="axis" x="302" y="645" text-anchor="middle" font-size="13">19 May 2026</text>
-</g></svg>
-<ol class="walk" aria-label="How one value is traced, illustrated with recorded values">
-<li><span class="wk">1 Printed row</span><b>Urine albumin/creatinine ratio 156 mg/g</b><span>interval 0-30, as printed on report 3</span></li>
-<li><span class="wk">2 History point</span><b>156 mg/g on 19 May 2026</b><span>third point of one dated line: 42, 88, 156</span></li>
-<li><span class="wk">3 Source reference</span><b>Report 3 of 3, collected 19 May 2026</b><span>the point opens the report it came from</span></li>
+<p class="sc-big">Above the printed interval on all three reports</p>
+<p class="sc-note">42, then 88, then 156 mg/g; the lab printed 0 to 30.</p></li>
+<li class="sc sc-question"><p class="sc-k"><span class="sc-n">3</span>Targeted question</p>
+<p class="sc-q">The patient&rsquo;s Urine Albumin/Creatinine Ratio is above the printed interval (156). Any leg/facial swelling, or frothy urine?</p>
+<p class="sc-opts" aria-label="Answer recorded: Yes"><span class="opt on">Yes</span><span class="opt">No</span><span class="opt">Not sure</span></p>
+<p class="sc-note">One question about swelling or frothy urine; the answer does not say which.</p></li>
+<li class="sc sc-effect"><p class="sc-k"><span class="sc-n">4</span>Recorded answer effect</p>
+<p class="sc-l">Kidney disease severity</p>
+<p class="sc-before"><span class="sc-bl">Before</span>albuminuria without a clinical correlate</p>
+<p class="sc-after"><span class="sc-bl">After &ldquo;Yes&rdquo;</span>albuminuria with oedema / frothy urine</p>
+<p class="sc-note">Used. Overall confidence and urgency stayed as they were.</p></li>
 </ol>
-<figcaption class="viz-cap"><span class="tag recorded">Recorded</span> values from a test run of synthetic case L07U, three reports from a fictional laboratory. <span class="tag illus">Illustration</span> the drawn lines and the three steps; in the app each value links to its report.</figcaption>
+<div class="scene-src"><span class="src-k">Source</span><span>Report 3 of 3, collected 19 May 2026, row &ldquo;Urine albumin/creatinine ratio&rdquo;, 156 mg/g, interval 0-30, as printed.</span><span class="src-note">Linked to the report file; no page region is linked.</span></div>
+<figcaption id="scene-cap" class="viz-cap"><span class="tag recorded">Recorded</span> output of a test run on synthetic case L07U (a fictional patient and laboratory), redrawn for legibility; not a screen capture. <a href="evidence.html#records">Run record</a></figcaption>
 </figure>
-<p class="statusline"><span>Research prototype</span><span>Synthetic cases only</span><span>Not clinically validated</span><span>No regulatory clearance</span><a href="evidence.html#status">Status and evidence</a></p>
+<p class="statusline8">Working prototype. Every case shown is synthetic. Not independently clinically validated. <a href="evidence.html#status">Status and evidence</a></p>
 </div>
 </section>
-<section class="band" id="does" aria-labelledby="does-h">
+<section class="band" id="adds" aria-labelledby="adds-h">
 <div class="wrap">
-<div class="sec-head"><div><p class="eyebrow">For complex cases</p><h2 id="does-h">A careful second read, and the places it stops.</h2></div>
-<p>Built for the case a clinician wants to look at twice: several reports, several panels, results that pull in different directions. Each behaviour below was shown on synthetic cases in the local prototype.</p></div>
-<div class="holds three cases">
-<article class="hold"><h3>Many reports, one history</h3><p>Reports from different dates, laboratories and panels become one dated line per test, each value with its unit, the lab&rsquo;s printed interval and its report. Values printed in different units are kept apart, and the history says so.</p><div class="tagline"><span class="tag recorded">Recorded</span></div></article>
-<article class="hold"><h3>Another patient&rsquo;s report is refused</h3><p>LabSense checks whose report it is before storing anything. A report printed for someone else is refused; the same identifier with a different name or birth date is held for review.</p><div class="tagline"><span class="tag recorded">Recorded</span></div></article>
-<article class="hold"><h3>What it cannot grade, it holds back</h3><p>A result outside the signed rules is kept and shown as printed, with the lab&rsquo;s interval, and not graded. A dipstick result stays as printed and is never turned into a number.</p><div class="tagline"><span class="tag recorded">Recorded</span></div></article>
-<article class="hold"><h3>Conflicting readings stay visible</h3><p>Two readings of one test on the same date are both shown at equal weight, and which is right is not resolved; the stored record keeps one as its row value and the card says which. If the readings would grade differently, the grade is withheld.</p><div class="tagline"><span class="tag recorded">Recorded</span><span class="tag open">Open item</span></div></article>
-<article class="hold"><h3>Questions with receipts</h3><p>Each question names the value it is about. After an answer, a receipt says what it changed, or that it changed nothing. An uncertain answer is recorded and nothing is concluded from it.</p><div class="tagline"><span class="tag recorded">Recorded</span></div></article>
-<article class="hold"><h3>What supports it, and what limits it</h3><p>The assessment lists the evidence for the leading reading, what limits certainty and the one input that would change the path most, as an ordinal level with reasons rather than a probability.</p><div class="tagline"><span class="tag live">Live in the local prototype</span></div></article>
-</div>
-<p class="viz-cap mt12"><span class="tag planned">Planned</span> Second-opinion use alongside clinicians is the goal of the next stage. It is not a current service, and the outputs have not been independently clinically validated. Cases behind each tile: <a href="evidence.html#records">run records</a>.</p>
+<p class="eyebrow">What LabSense adds</p><h2 id="adds-h" class="adds-h">Built for the case a clinician wants to look at twice.</h2>
+<ol class="adds">
+<li><span class="ad-n">01</span><h3>It connects evidence across reports and time.</h3><p>Reports from different dates, laboratories and panels become one dated history per test, each value with its unit, the lab&rsquo;s printed interval and the report it came from.</p></li>
+<li><span class="ad-n">02</span><h3>It keeps uncertainty visible instead of guessing.</h3><p>A result it cannot grade is kept as printed and says why. Two readings that disagree are both shown. A report printed for another patient is refused before anything is stored.</p></li>
+<li><span class="ad-n">03</span><h3>It records what each answer changed.</h3><p>Every question names the value it is about. After an answer, a receipt says what it changed, or that it changed nothing; an uncertain answer concludes nothing.</p></li>
+</ol>
+<p class="adds-role"><span class="tag planned">Planned</span> Its intended role is complex-case investigation and a second read alongside clinicians. What is shown on this page was demonstrated on synthetic cases in a local prototype; clinical use has not started.</p>
 </div>
 </section>
-<section class="band alt" id="journey" aria-labelledby="jr-h">
+<section class="band alt" id="history" aria-labelledby="hist-h">
 <div class="wrap">
-<div class="sec-head"><div><p class="eyebrow">The product, on one synthetic case</p><h2 id="jr-h">From reports to assessment.</h2></div>
-<p>Three renal and urine reports for one fictional patient. Values are as printed on the synthetic reports; the question, the answer and its receipt are quoted from a recorded test run. Select a step, or use the arrow keys.</p></div>
-<div class="journey" data-journey><ol class="steps" role="tablist" aria-label="From reports to assessment"><li role="presentation"><button role="tab" id="jt0" aria-controls="jp0" aria-selected="true" tabindex="0"><span class="n">01</span><span class="t"><b>Reports</b><span>read as printed</span></span></button></li><li role="presentation"><button role="tab" id="jt1" aria-controls="jp1" aria-selected="false" tabindex="-1"><span class="n">02</span><span class="t"><b>History</b><span>one dated line</span></span></button></li><li role="presentation"><button role="tab" id="jt2" aria-controls="jp2" aria-selected="false" tabindex="-1"><span class="n">03</span><span class="t"><b>Questions</b><span>what could change it</span></span></button></li><li role="presentation"><button role="tab" id="jt3" aria-controls="jp3" aria-selected="false" tabindex="-1"><span class="n">04</span><span class="t"><b>Assessment</b><span>what the answer changed</span></span></button></li></ol>
-<div class="panels"><div class="panel" role="tabpanel" id="jp0" aria-labelledby="jt0" tabindex="0">
-<p class="step-k">01 Reports</p><h3>It starts with the page, as printed.</h3>
-<figure class="page-fig"><div class="page-frame"><svg class="page-svg" viewBox="0 0 1569 729" role="img" aria-labelledby="pg-t"><title id="pg-t">Synthetic report 3, collected 2026-05-19, for SYN-L07-001: urine albumin/creatinine ratio 156 mg/g, reference interval 0-30; urine protein 2+; urine glucose trace; urine creatinine 124 mg/dL; serum creatinine 1.3 mg/dL.</title><image href="assets/l07u/report_3.png" x="0" y="0" width="1569" height="729"/><rect class="hl-row" x="28" y="318" width="1255" height="49" rx="4"/></svg></div>
+<div class="sec-head"><div><p class="eyebrow">Reports to history</p><h2 id="hist-h">The printed page on one side, the dated history on the other.</h2></div>
+<p>LabSense first confirms whose reports these are, then reads each row as printed: the test, the value, the unit, the lab&rsquo;s own interval and the collection date. Like is compared with like: the same test, the same unit, the same patient.</p></div>
+<div class="split">
+<figure class="split-page"><div class="page-frame"><svg class="page-svg" viewBox="0 0 1569 729" role="img" aria-labelledby="pg-t"><title id="pg-t">Synthetic report 3, collected 2026-05-19, for SYN-L07-001: urine albumin/creatinine ratio 156 mg/g, reference interval 0-30; urine protein 2+; urine glucose trace; urine creatinine 124 mg/dL; serum creatinine 1.3 mg/dL.</title><image href="assets/l07u/report_3.png" x="0" y="0" width="1569" height="729"/><rect class="hl-row" x="28" y="318" width="1255" height="49" rx="4"/></svg></div>
 <figcaption><span class="tag static">Synthetic report</span> report 3 of 3, as printed; the highlight marks the row. <a href="assets/l07u/report_3.png">Open the page full size</a></figcaption></figure>
-<div class="panel-grid two">
-<p class="why">LabSense first confirms whose reports these are, and refuses a report printed for someone else before anything is stored. It then reads each row as printed: the test, the value, the unit, the lab&rsquo;s own interval and the collection date.</p>
-<dl class="facts-dl"><dt>Patient</dt><dd>SYN-L07-001 (synthetic)</dd><dt>Reports</dt><dd>3, collected 22 Apr 2025, 5 Nov 2025, 19 May 2026</dd><dt>This row</dt><dd>Urine albumin/creatinine ratio 156 mg/g, printed interval 0-30</dd></dl>
-</div><div class="src-line"><span class="tag recorded">Recorded</span> synthetic case L07U, local prototype test run, 1 November 2026. <a href="evidence.html#records">Evidence record</a></div></div><div class="panel" role="tabpanel" id="jp1" aria-labelledby="jt1" tabindex="0">
-<p class="step-k">02 History</p><h3>Three reports become one dated line.</h3>
+<div class="split-hist">
 <div class="chart-frame"><svg class="trace-viz" viewBox="0 0 940 350" role="img" aria-labelledby="hc-t"><title id="hc-t">Urine albumin to creatinine ratio over three reports: 42, 88 and 156 mg/g, all above the printed interval 0 to 30 mg/g.</title><g class="chart ">
 <rect class="plot" x="50" y="36" width="850" height="264" rx="6"/>
 <rect class="band" x="50" y="256.0" width="850" height="44.0"/>
@@ -159,63 +133,55 @@
 <circle class="pt out" cx="475" cy="170.9" r="7"/>
 <text class="pt-l" x="475" y="154.9" text-anchor="middle" font-size="20">88</text>
 <text class="axis" x="475" y="329" text-anchor="middle" font-size="17">5 Nov 2025</text>
-<circle class="pt out" cx="800" cy="71.2" r="7"/>
+<circle class="pt out src" cx="800" cy="71.2" r="8"/>
 <text class="pt-l" x="800" y="55.2" text-anchor="middle" font-size="20">156</text>
 <text class="axis" x="800" y="329" text-anchor="middle" font-size="17">19 May 2026</text>
 </g></svg></div>
-<div class="panel-grid two">
-<div><p class="why">Each point is a printed row from a dated report, compared like with like: the same test, the same unit, the same patient. Every point is above the interval the lab printed, so each is drawn in the out-of-interval colour with its value beside it.</p></div>
-<div><ul class="series">
-<li><b>Urine ACR</b><span class="num">42 &rarr; 88 &rarr; 156 mg/g</span><span>Above the printed interval 0-30 on all three reports; +114 mg/g since 22 Apr 2025.</span></li>
-<li><b>Urine protein (dipstick)</b><span class="num">1+, 2+, 2+</span><span>Listed as printed on each report. Never turned into a number.</span></li>
-</ul></div>
+<ul class="series">
+<li><b>Urine ACR</b><span class="num">42, 88, 156 mg/g</span><span>Above the printed interval 0-30 on all three reports; 114 mg/g higher than on 22 Apr 2025.</span></li>
+<li><b>Urine protein (dipstick)</b><span class="num">1+, 2+, 2+</span><span>Listed as printed on each report, never turned into a number.</span></li>
+</ul>
+<p class="src-line"><span class="tag recorded">Recorded</span> values from synthetic case L07U, three reports from a fictional laboratory. <a href="evidence.html#records">Run record</a></p>
 </div>
-<figure class="card-fig"><span class="tag capture">Screen capture</span><picture><source media="(max-width: 1000px)" srcset="assets/cards/analyte-card-urine_albumin_creatinine_ratio_phone.png" width="780" height="646"><img src="assets/cards/analyte-card-urine_albumin_creatinine_ratio.png" width="1225" height="302" alt="Urine ACR card from the local prototype: 156 mg/g, above printed interval 0 to 30, marker beyond the interval band, traced to the report of 19 May 2026" loading="lazy" decoding="async"></picture>
-<figcaption>The Results card for the same value. Trend wording on screens is under clinical review. <a href="assets/cards/analyte-card-urine_albumin_creatinine_ratio.png">Open full size</a></figcaption></figure>
-<div class="src-line"><span class="tag recorded">Recorded</span> synthetic case L07U, local prototype test run, 1 November 2026. <a href="evidence.html#records">Evidence record</a></div></div><div class="panel" role="tabpanel" id="jp2" aria-labelledby="jt2" tabindex="0">
-<p class="step-k">03 Questions</p><h3>It asks what could change the reading.</h3>
-<div class="panel-grid">
-<div>
-<div class="qa answered"><p class="q">Your Urine Albumin/Creatinine Ratio is above the reference range (156). Any leg/facial swelling, or frothy urine?</p>
-<div class="a"><span class="opt on">Yes</span><span class="opt">No</span><span class="opt">Not sure</span><span class="note">answered Yes</span></div></div>
-<p class="also">The question as the prototype words it today. Its patient-facing wording (&ldquo;your&rdquo;, &ldquo;reference range&rdquo;) is recorded for revision to clinician wording and &ldquo;printed interval&rdquo;.</p>
 </div>
-<div><p class="why">Questions are issued for the report in front of the clinician, name the value they are about, and are optional. Each offers Yes, No and Not sure. An uncertain answer is recorded and nothing is concluded from it.</p></div>
-</div><div class="src-line"><span class="tag recorded">Recorded</span> synthetic case L07U, local prototype test run, 1 November 2026. <a href="evidence.html#records">Evidence record</a></div></div><div class="panel" role="tabpanel" id="jp3" aria-labelledby="jt3" tabindex="0">
-<p class="step-k">04 Assessment</p><h3>The answer changed one named part of the assessment.</h3>
-<div class="ba" role="group" aria-label="Kidney disease severity, before and after the answer">
-<div class="ba-k">Kidney disease severity</div>
-<div class="ba-col"><span class="ba-l">Before the answer</span><span class="ba-v">albuminuria without a clinical correlate</span></div>
-<div class="ba-arrow" aria-hidden="true"><svg class="arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div>
-<div class="ba-col after"><span class="ba-l">After &ldquo;Yes&rdquo;</span><span class="ba-v">albuminuria with oedema / frothy urine</span></div>
-<p class="ba-why">Recorded reason: &ldquo;Reported swelling/frothy urine with a raised ACR strengthened the kidney concern.&rdquo;</p>
-</div>
-<div class="panel-grid two">
-<div><h4>What did not change</h4><p class="why">The main finding stayed &ldquo;urinary abnormality, further review&rdquo;, and the screen states that overall confidence and urgency are unchanged. No change in ranking is claimed.</p></div>
-<div><h4>What is still missing</h4><p class="why">Symptom history beyond this answer, and a urine routine examination, which the screen lists as the most useful next input.</p></div>
-</div>
-<figure class="card-fig"><span class="tag capture">Screen capture</span><img src="assets/l07u/app_receipt_capture.png" width="1212" height="205" loading="lazy" decoding="async" alt="The local prototype's receipt: your answer Yes; used, it changed the kidney disease severity from albuminuria without a clinical correlate to albuminuria with oedema or frothy urine">
-<figcaption>The receipt as the prototype shows it; the before and after above is redrawn from it. <a href="assets/l07u/app_stage2_full.png">Open the full screen capture</a></figcaption></figure>
-<p class="boundary">LabSense supports clinicians&rsquo; assessment; it does not provide an autonomous clinical diagnosis. The clinician keeps the decision.</p>
-<div class="src-line"><span class="tag recorded">Recorded</span> synthetic case L07U, local prototype test run, 1 November 2026. <a href="evidence.html#records">Evidence record</a></div></div></div></div>
 </div>
 </section>
-<section class="band" id="cards" aria-labelledby="if-h">
+<section class="band" id="receipt" aria-labelledby="rc-h">
 <div class="wrap">
-<div class="sec-head"><div><p class="eyebrow">The testing interface</p><h2 id="if-h">Every result keeps its state on screen.</h2></div>
-<p>Results cards from the local prototype. Each shows the value, the lab&rsquo;s printed interval as a band with the value marked, a status word, the trend and the report it came from. A result that cannot be graded stays on screen and says why; colour is never the only signal.</p></div>
-<div class="cards two-up"><figure class="rc-fig"><div class="shot always"><span class="tag capture">Screen capture, cropped</span><picture><source media="(max-width: 1000px)" srcset="assets/cards/analyte-card-ldl_v7_phone.png" width="780" height="850"><img src="assets/cards/analyte-card-ldl_v7.png" width="1225" height="332" alt="LDL card from the local prototype. Drives the leading finding. Lipid panel. Two readings, not resolved. Both readings above printed interval. 3.4 and 4.6 mmol/L, printed 0-3. Interval 0-3 mmol/L, printed on this report. Trend: single timepoint, high. Reports from 2026-02-03 give different values: 3.4 and 4.6 mmol/L. Which is right is not resolved. The record keeps 4.6 as its row value. Both readings are above the interval, so the grade is the same whichever is right. Traced to the report, 2026-02-03." loading="lazy" decoding="async"></picture></div>
-<figcaption>Two readings on one date, shown at equal weight. Which is right is not resolved; the record keeps 4.6 as its row value, and both readings are above the interval, so the grade is the same whichever is right. <a href="assets/cards/analyte-card-ldl_v7.png">Open full size</a></figcaption></figure><figure class="rc-fig"><div class="shot"><span class="tag capture">Screen capture</span><img src="assets/cards/analyte-card-urine_creatinine.png" width="1225" height="291" alt="Urine creatinine card: 124 mg/dL, held for review, not graded; printed interval 20 to 300 shown as printed and not used for grading" loading="lazy" decoding="async"></div>
-<span class="tag recorded rc-tag">Recorded, redrawn for a small screen</span><div class="rcard rc-held" aria-hidden="true"><div class="rbody"><p class="rname">Urine Creatinine</p><p class="rbadges"><span class="rcat">Urinalysis</span><span class="rpill">Held for review, not graded</span></p><p class="rval">124 <span class="ru">mg/dL</span></p><p class="rl">Printed interval 20-300, on the same row as the result 124 mg/dL.</p><p class="rl">The interval is shown as printed. It is not used for grading under the current signed policy.</p><p class="rl">Trend: changed (+27% over 3 reports); not graded.</p><p class="rl">Traced to the report, 2026-05-19</p></div></div>
-<figcaption>Held for review: the printed interval is shown, and not used for grading. <a href="assets/cards/analyte-card-urine_creatinine.png">Open full size</a></figcaption></figure><figure class="rc-fig"><div class="shot"><span class="tag capture">Screen capture</span><img src="assets/cards/analyte-card-urine_protein.png" width="1225" height="242" alt="Urine protein card: 2+, qualitative result, not graded; printed reference Negative; printed results 1+, 2+, 2+ across three reports" loading="lazy" decoding="async"></div>
+<div class="sec-head"><div><p class="eyebrow">Answer effects</p><h2 id="rc-h">One answer, and exactly what it changed.</h2></div>
+<p>Questions are optional and offer Yes, No and Not sure. The receipt below is the product&rsquo;s own record of what one answer changed in the assessment, and of what it did not.</p></div>
+<div class="receipt8" role="group" aria-labelledby="rq-k">
+<div class="r-q"><p class="r-k" id="rq-k">Question issued</p><p class="r-qt">The patient&rsquo;s Urine Albumin/Creatinine Ratio is above the printed interval (156). Any leg/facial swelling, or frothy urine?</p><p class="r-a">Recorded answer <span class="opt on">Yes</span></p></div>
+<div class="r-ba">
+<p class="r-l">Kidney disease severity</p>
+<div class="r-col"><span class="r-cl">Before the answer</span><span class="r-v">albuminuria without a clinical correlate</span></div>
+<div class="r-arrow" aria-hidden="true"><svg class="arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div>
+<div class="r-col after"><span class="r-cl">After &ldquo;Yes&rdquo;</span><span class="r-v">albuminuria with oedema / frothy urine</span></div>
+</div>
+<p class="r-why">Recorded reason: &ldquo;Reported swelling/frothy urine with a raised ACR strengthened the kidney concern.&rdquo;</p>
+<div class="r-also"><div><h3>What did not change</h3><p>The main finding stayed &ldquo;urinary abnormality, further review&rdquo;, and overall confidence and urgency are unchanged. No change in ranking is claimed.</p></div>
+<div><h3>What is still missing</h3><p>Symptom history beyond this answer, and a urine routine examination, listed as the most useful next input.</p></div></div>
+</div>
+<p class="viz-cap mt12"><span class="tag recorded">Recorded</span> receipt from test runs of synthetic case L07U, redrawn for legibility. The answer covers swelling or frothy urine together; it is not read as confirming both. LabSense supports the clinician&rsquo;s assessment; the clinician keeps the decision. <a href="evidence.html#records">Run record</a></p>
+</div>
+</section>
+<section class="band alt" id="cards" aria-labelledby="if-h">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow">Results cards</p><h2 id="if-h">Every result keeps its state on screen.</h2></div>
+<p>Results cards from the local prototype, in the restored card design: the value, the lab&rsquo;s printed interval as a band with the value marked, a status word, the change over time and the report it came from.</p></div>
+<div class="cards8"><figure class="rc-fig rc-lead"><div class="shot always"><span class="tag capture">Screen capture</span><picture><source media="(max-width: 1000px)" srcset="assets/cards/analyte-card-urine_albumin_creatinine_ratio_phone_v8.png" width="780" height="646"><img src="assets/cards/analyte-card-urine_albumin_creatinine_ratio_v8.png" width="1225" height="302" alt="Urine ACR card from the local prototype: 156 mg/g, above printed interval 0 to 30, marker beyond the interval band, trend changed by 271 percent over 3 reports, 42 to 88 to 156 mg/g, traced to the report of 19 May 2026" loading="lazy" decoding="async"></picture></div>
+<figcaption>Outside the printed interval: the value, the marker beyond the band and the status words together; colour is never the only signal.</figcaption></figure><div class="cards8-side"><figure class="rc-fig"><div class="shot always"><span class="tag capture">Screen capture</span><picture><source media="(max-width: 1000px)" srcset="assets/cards/analyte-card-ldl_phone_v8.png" width="780" height="1440"><img src="assets/cards/analyte-card-ldl_v8.png" width="1225" height="495" alt="LDL card from the local prototype. Lipid panel. Two readings, not resolved. Both readings above printed interval. 3.4 and 4.6 mmol/L, printed 0-3. Reports from 2026-02-03 give different values: 3.4 and 4.6 mmol/L. Which is right is not resolved. The record keeps 4.6 as its row value. Both readings are above the interval, so the grade is the same whichever is right. The record keeps this test in the current assessment. Whether an unresolved reading may drive a finding has not been decided clinically." loading="lazy" decoding="async"></picture></div>
+<figcaption>Two readings on one date, shown at equal weight; which is right is not resolved. The record keeps one as its row value and says so; whether an unresolved reading may drive a finding is an open clinical question.</figcaption></figure><figure class="rc-fig"><div class="shot"><span class="tag capture">Screen capture</span><img src="assets/cards/analyte-card-urine_creatinine_v8.png" width="1225" height="291" alt="Urine creatinine card: 124 mg/dL, held for review, not graded; printed interval 20 to 300 shown as printed and not used for grading" loading="lazy" decoding="async"></div>
+<span class="tag recorded rc-tag">Recorded, redrawn for a small screen</span><div class="rcard rc-held" aria-hidden="true"><div class="rbody"><p class="rname">Urine Creatinine</p><p class="rbadges"><span class="rcat">Urinalysis</span><span class="rpill">Held for review, not graded</span></p><p class="rval">124 <span class="ru">mg/dL</span></p><p class="rl">Printed interval 20-300, on the same row as the result 124 mg/dL.</p><p class="rl">The interval is shown as printed. It is not used for grading under the current signed policy.</p><p class="rl">Trend: Changed (+27% over 3 reports); not graded.</p><p class="rl">Traced to the report, 2026-05-19</p></div></div>
+<figcaption>Held for review: shown as printed, calmly, and not graded. <a href="assets/cards/analyte-card-urine_creatinine_v8.png">Open full size</a></figcaption></figure><figure class="rc-fig"><div class="shot"><span class="tag capture">Screen capture</span><img src="assets/cards/analyte-card-urine_protein_v8.png" width="1225" height="242" alt="Urine protein card: 2+, qualitative result, not graded; printed reference Negative; printed results 1+, 2+, 2+ across three reports" loading="lazy" decoding="async"></div>
 <span class="tag recorded rc-tag">Recorded, redrawn for a small screen</span><div class="rcard rc-neutral" aria-hidden="true"><div class="rbody"><p class="rname">Urine Protein</p><p class="rbadges"><span class="rcat">Urinalysis</span><span class="rpill">Qualitative result, not graded</span></p><p class="rval">2+</p><p class="rl">Printed reference: Negative.</p><p class="rl">Printed results: 1+ (2025-04-22), 2+ (2025-11-05), 2+ (2026-05-19). Not trended or graded.</p><p class="rl">Traced to the report, 2026-05-19</p></div></div>
-<figcaption>A dipstick result, listed as printed on each report. <a href="assets/cards/analyte-card-urine_protein.png">Open full size</a></figcaption></figure></div>
-<p class="viz-cap mt12"><span class="tag capture">Screen capture</span> synthetic cases L07U and L02, local prototype, 2 November 2026. On a small screen each card is also redrawn from its recorded text, so nothing needs sideways scrolling.</p>
+<figcaption>A dipstick result, listed as printed on each report. <a href="assets/cards/analyte-card-urine_protein_v8.png">Open full size</a></figcaption></figure></div></div>
+<p class="viz-cap mt12"><span class="tag capture">Screen capture</span> synthetic cases L07U and L02, local prototype, 2 November 2026. On a small screen the held and dipstick cards are redrawn from their recorded text, so nothing needs sideways scrolling.</p>
 </div>
 </section>
 <section class="band dark" id="film" aria-labelledby="film-h">
 <div class="wrap">
-<div class="sec-head"><div><p class="eyebrow">Product film</p><h2 id="film-h">One synthetic case, from reports to assessment.</h2></div>
+<div class="sec-head"><div><p class="eyebrow">Product demo</p><h2 id="film-h">One synthetic case, from reports to assessment.</h2></div>
 <p>The film follows synthetic case C13 through identity checks, reading, the leading assessment, one question and what the answer did and did not change: the answer was used and the leading assessment stayed the same. Screens are recorded test output redrawn for legibility; two scenes are labelled as illustrations. It is a recording, not a live demonstration.</p></div>
 <figure class="film film6">
 <video controls preload="metadata" playsinline poster="assets/media/labsense_film_poster.jpg"><source src="assets/media/labsense_film_v6_clean.mp4" type="video/mp4"><track kind="captions" src="assets/media/labsense_film_v6_captions.vtt" srclang="en" label="English" default>Your browser cannot play this video. <a href="assets/media/labsense_film_v6_captioned.mp4">Download the captioned film</a>.</video>
@@ -224,56 +190,54 @@
 </figure>
 </div>
 </section>
-<section class="band alt" id="moats" aria-labelledby="moat-h">
+<section class="band" id="moats" aria-labelledby="moat-h">
 <div class="wrap">
-<div class="sec-head"><div><p class="eyebrow">Differentiation</p><h2 id="moat-h">What is shown today, and what could become hard to copy.</h2></div>
-<p>Reading a report is no longer rare. What LabSense adds is verification: one history across laboratories, each value traced, and refusal where the evidence does not hold. The left column is shown on synthetic cases; the right column is not built.</p></div>
+<div class="sec-head"><div><p class="eyebrow">Differentiation</p><h2 id="moat-h">Reading a report is common. Connecting and checking a whole history is the work.</h2></div>
+<p>The left column was shown on synthetic cases. The right column is not built; it would become defensible only with use, data and clinical review LabSense does not have yet.</p></div>
 <div class="moat-grid two">
 <div class="moat-col"><h3>Shown today, on synthetic cases</h3><ul>
-<li>Each value links to the report it came from <span class="tag recorded">Recorded</span></li>
-<li>A report printed for another patient is refused before storage <span class="tag recorded">Recorded</span></li>
-<li>A value that cannot be graded or compared is held back, with the reason <span class="tag recorded">Recorded</span></li>
-<li>Each answer&rsquo;s receipt says what it changed, or that it changed nothing <span class="tag recorded">Recorded</span></li>
+<li>One dated history across reports, laboratories and panels, each value linked to its report <span class="tag recorded">Recorded</span></li>
+<li>Targeted questions, each with a receipt of what the answer changed <span class="tag recorded">Recorded</span></li>
+<li>Uncertainty kept visible: held results, conflicting readings, units kept apart <span class="tag recorded">Recorded</span></li>
+<li>A report printed for another patient refused before storage <span class="tag recorded">Recorded</span></li>
 <li>One record carried from the report to history, questions, reassessment and export <span class="tag recorded">Recorded</span></li>
 </ul></div>
 <div class="moat-col later"><h3>Future defensibility, not built yet</h3><ul>
-<li>A library of laboratory report formats, each verified row by row against its printed values <span class="tag planned">Planned</span></li>
-<li>A disagreement corpus: every case where two readers, or a reader and a clinician, disagreed, with its resolution <span class="tag planned">Planned</span></li>
-<li>A quality report for a partner laboratory: refusals, unit conflicts, missing intervals, duplicate reports <span class="tag planned">Planned</span></li>
-<li>Clinician-signed rules extended beyond the limited set signed so far <span class="tag planned">Planned</span></li>
-</ul><p class="rn">These become defensible only with use, data and clinical review that LabSense does not have yet.</p></div>
+<li>A library of laboratory report formats, each checked row by row against its printed values <span class="tag planned">Planned</span></li>
+<li>A disagreement dataset: cases where two readers, or a reader and a clinician, disagreed, with the resolution <span class="tag planned">Planned</span></li>
+<li>A quality report for a partner laboratory: refusals, unit conflicts, missing intervals, duplicates <span class="tag planned">Planned</span></li>
+<li>Clinician-signed rules beyond the limited set signed so far <span class="tag planned">Planned</span></li>
+</ul></div>
 </div>
-<p class="viz-cap mt12">Compared with the public pages of seven products reviewed on 29 October 2026, a reading of their material, not a tested comparison; including where they are ahead: <a href="evidence.html#compare">comparison</a>.</p>
+<p class="viz-cap mt12">Compared with the public pages of seven products reviewed on 29 October 2026: a reading of their material, not a tested comparison; others are ahead on laboratory networks, distribution, clinicians in the loop and integrations. <a href="evidence.html#compare">Comparison</a></p>
 </div>
 </section>
-<section class="band" id="stage" aria-labelledby="st-h">
+<section class="band alt" id="stage" aria-labelledby="st-h">
 <div class="wrap">
-<div class="sec-head"><div><p class="eyebrow">Stage and next milestone</p><h2 id="st-h">A working prototype, tested on synthetic cases.</h2></div>
-<p>LabSense supports clinicians&rsquo; assessment and does not provide an autonomous clinical diagnosis. It has no users or customers yet, no regulatory clearance, and it has not been clinically validated.</p></div>
-<ul class="metrics three">
-<li><span class="v">243 / 243</span><b>printed values read exactly</b><span class="s">46 synthetic PDFs across 15 cases</span><span class="tag evaluated">Evaluated</span></li>
-<li><span class="v">Refused</span><b>reports printed for another patient, before storage</b><span class="s">browser test runs on synthetic cases</span><span class="tag recorded">Recorded</span></li>
-<li><span class="v">Limited</span><b>clinical rules signed by a licensed clinician</b><span class="s">a set of specific rules, 29 September 2026; not clinical validation</span><span class="tag recorded">Recorded</span></li>
-</ul>
-<ol class="roadmap">
-<li class="now"><p class="rk">Now</p><h3>In the local prototype</h3><span class="tag live">Live in the local prototype</span>
-<ul><li>Confirm whose reports these are; refuse another patient&rsquo;s report</li><li>Read each row as printed, then review and confirm</li><li>One dated history per test, with questions and receipts</li><li>Assessment, what limits it and what is missing</li><li>Each value linked to its report; export of a review snapshot</li></ul>
-<p class="rn">On our own machine behind a sign-in; not online. Restoring a whole encounter in a fresh session is not working yet: <a href="evidence.html#status">engineering status</a>.</p></li>
-<li class="next"><p class="rk">Next</p><h3>Clinician review and supervised evaluation</h3><span class="tag planned">Planned</span>
-<ul><li>Restore a whole recorded encounter in a new session</li><li>Independent clinical review of outputs, and more rules signed</li><li>Clinician-supervised evaluation on synthetic and then real cases: our target is December 2026; no site, partner or trial has been agreed</li></ul></li>
-<li class="later"><p class="rk">Later</p><h3>More sources of evidence</h3><span class="tag planned">Planned</span>
-<ul><li>Connection to hospital records</li><li>ECG and wearable data</li></ul>
-<p class="rn">Not built. No integration exists today.</p></li>
+<div class="sec-head"><div><p class="eyebrow">Evidence and current stage</p><h2 id="st-h">A working prototype, tested on synthetic cases.</h2></div>
+<p>LabSense supports clinicians&rsquo; assessment and does not provide an autonomous clinical diagnosis. It has no users or customers yet and no regulatory clearance. Software testing on synthetic cases is not clinical validation.</p></div>
+<div class="proof8">
+<div class="pf-main"><span class="pf-v">243 / 243</span><span class="pf-l">printed values read exactly</span><span class="pf-s">by the conventional reader, on 46 synthetic PDFs across 15 cases (C01 to C15), 29 October 2026 test set</span><span class="tag evaluated">Evaluated</span> <a href="evidence.html#testing">Test details</a></div>
+<div class="pf-side">
+<p><b>Clinical rules.</b> A licensed clinician co-signed a limited set of specific rules on 29 September 2026, for example how unreadable reports and unverified results must be shown. <span class="tag recorded">Recorded</span></p>
+<p><b>Independent review of outputs.</b> Not done yet. <span class="tag planned">Not yet</span></p>
+</div>
+</div>
+<ol class="stage8">
+<li class="now"><p class="rk">Now</p><p>A working prototype on our own machine, behind a sign-in; not online. Supervised sessions on synthetic cases. <span class="tag live">Live in the local prototype</span></p></li>
+<li class="next"><p class="rk">Next</p><p>Independent clinical review of outputs, then clinician-supervised evaluation: our target is December 2026; no site, partner or trial has been agreed. <span class="tag planned">Planned</span></p></li>
+<li class="later"><p class="rk">Later</p><p>More sources of evidence, such as hospital records (FHIR), ECG and wearable data. No integration exists today. <span class="tag planned">Planned</span></p></li>
 </ol>
+
 </div>
 </section>
 <section class="band dark" id="access" aria-labelledby="acc-h">
 <div class="wrap access6">
-<div><p class="eyebrow">Evaluation access</p><h2 id="acc-h">See it working on synthetic cases.</h2>
-<p class="lede">This website is a static page and is not connected to the prototype. There is no public sandbox and no online upload. An evaluation is a supervised session on synthetic cases, or you can watch the recorded film above.</p>
-<div class="btns"><a class="btn trace" href="mailto:nafees.kundi@gmail.com">Email nafees.kundi@gmail.com</a></div>
+<div><p class="eyebrow">Evaluation access</p><h2 id="acc-h">Request a supervised evaluation.</h2>
+<p class="lede">This website is a static page and is not connected to the prototype. There is no public sandbox and no online upload. An evaluation is a supervised session on synthetic cases, or you can watch the product demo above.</p>
+<div class="btns"><a class="btn trace" href="mailto:nafees.kundi@gmail.com?subject=Supervised%20evaluation%20of%20LabSense">Email nafees.kundi@gmail.com</a></div>
 <p class="note6">Include your name, organisation and a suggested time. Sessions use synthetic reports only; please do not send real patient documents.</p></div>
-<div><p class="rk">A session shows</p><ul class="session"><li>Reports being read, row by row</li><li>A report for another patient refused</li><li>The questions, and what an answer changed or did not</li><li>Each value traced to its report</li><li>The review snapshot export</li></ul></div>
+<div><p class="rk">A session shows</p><ul class="session"><li>Reports being read, row by row, into one history</li><li>Findings across reports and time</li><li>The questions, and what an answer changed or did not</li><li>Each value traced to its report</li><li>The review snapshot export</li></ul></div>
 </div>
 </section>
 </main>
