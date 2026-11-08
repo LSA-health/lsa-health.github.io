@@ -197,3 +197,5 @@
 /* provenance captions carry the evidence labels: 14 px, in the reading face */
 .viz-cap{font:14px/1.6 var(--ui)}
 .ad-n{font-size:14px}
+/* Lane W preview: on narrow screens a band is padded 56px, less than the 68px sticky header, so an in-page jump hid the section heading. */
+@media (max-width:600px){section.band[id]{scroll-margin-top:28px}}
