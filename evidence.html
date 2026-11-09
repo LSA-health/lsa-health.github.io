@@ -6,105 +6,328 @@
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Evidence and status · LabSense AI</title>
-<meta name="description" content="Research prototype for clinicians: lab history connected across reports, findings surfaced, targeted questions asked, with traceable evidence.">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="LabSense AI">
-<meta property="og:title" content="LabSense AI: from fragmented lab reports to a clearer clinical picture">
-<meta property="og:description" content="Research prototype for clinicians: lab history connected across reports, findings surfaced, targeted questions asked, with traceable evidence.">
-<meta property="og:url" content="https://lsa-health.github.io/evidence.html">
-<meta property="og:image" content="https://lsa-health.github.io/assets/og/labsense_og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Three synthetic lab reports with the urine albumin to creatinine ratio row highlighted, joined to one history chart of 42, 88 and 156 mg/g.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="LabSense AI: from fragmented lab reports to a clearer clinical picture">
-<meta name="twitter:description" content="Research prototype for clinicians: lab history connected across reports, findings surfaced, targeted questions asked, with traceable evidence.">
-<meta name="twitter:image" content="https://lsa-health.github.io/assets/og/labsense_og.png">
+<meta name="description" content="How LabSense was tested, what the recorded run shows and what is still in development. Synthetic cases only; not clinical validation.">
 <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/v5.css">
-<link rel="stylesheet" href="assets/submission.css">
-<link rel="stylesheet" href="assets/v6.css">
-<link rel="stylesheet" href="assets/v6_moats.css">
-<link rel="stylesheet" href="assets/v6_2.css">
-<link rel="stylesheet" href="assets/v7.css">
-<link rel="stylesheet" href="assets/v8.css">
-<script src="assets/v6.js" defer></script>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="top"><div class="wrap"><a class="brand" href="index.html"><svg viewBox="0 0 30 16" aria-hidden="true"><circle cx="4" cy="8" r="3.2" fill="#2e3fd0"/><path d="M7 8 H22" stroke="#2e3fd0" stroke-width="1.6"/><path d="M24 2 H28 V14 H24" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>LabSense</a>
-<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="mb-bars" aria-hidden="true"></span>Menu</button>
-<nav class="nav" id="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="#labels">Labels</a><a href="#testing">Testing</a><a href="#status">Status</a><a href="#records">Run records</a><a href="#compare">Comparison</a><a class="go" href="index.html#access">Request an evaluation</a></nav></div></header>
-<main id="main">
-<section class="band evid-page" aria-labelledby="ev-top">
+<header class="top">
 <div class="wrap">
-<p class="eyebrow">Evidence and status</p><h1 id="ev-top" class="evid-h1">What has been tested, on what, and what is not done.</h1>
-<p class="lede">Every figure here holds only for the test set named beside it: synthetic cases written for testing. None of it is clinical validation. This page carries the detail the home page leaves out.</p>
-</div></section>
-
-<section class="band alt" id="labels" aria-labelledby="lab-h"><div class="wrap">
-<h2 id="lab-h">Labels used on these pages</h2>
-<div class="legend"><ul>
-<li><span class="tag capture">Screen capture</span> the local prototype&rsquo;s own screen</li>
-<li><span class="tag recorded">Recorded</span> output of a test run, redrawn for legibility</li>
-<li><span class="tag illus">Illustration</span> how it works, not a screen</li>
-<li><span class="tag live">Live in the local prototype</span> on our machine, not online</li>
-<li><span class="tag evaluated">Evaluated</span> in a measured test</li>
-<li><span class="tag planned">Planned</span> not built</li>
-<li><span class="tag open">Open item</span> known gap, recorded for repair</li>
-</ul></div>
-</div></section>
-
-<section class="band" id="testing" aria-labelledby="ts-h"><div class="wrap">
-<h2 id="ts-h">Testing so far</h2>
-<ul class="metrics">
-<li><span class="v">243 / 243</span><b>printed values read exactly by the conventional reader</b><span class="s">46 synthetic PDFs across 15 cases (C01 to C15)</span><span class="tag evaluated">Evaluated</span></li>
-<li><span class="v">87 / 87 and 75 / 75</span><b>printed rows read exactly by an AI extraction path</b><span class="s">two measured five-case evaluations; the prototype shown on the home page uses the conventional reader</span><span class="tag evaluated">Evaluated</span></li>
-<li><span class="v">65.0 to 77.5 of 80</span><b>scorable rubric points, per case</b><span class="s">13 synthetic cases scored with the rubric; in those cases no missed critical value, no false all-clear, no wrong-patient data, no invented value</span><span class="tag evaluated">Evaluated</span></li>
-<li><span class="v">Refused</span><b>reports printed for another patient, before storage</b><span class="s">browser test runs, synthetic cases C13 and C24</span><span class="tag recorded">Recorded</span></li>
-</ul>
-<div class="eng"><h3>Historical records: engineering tests only</h3><p>Report reading has also been run locally on a small set of historical laboratory records, including a 30-page multi-panel history. These are engineering tests of reading, kept separate from everything above. They are not clinical validation, they were not used in anyone&rsquo;s care, and nothing from them is shown on these pages.</p></div>
-</div></section>
-
-<section class="band alt" id="status" aria-labelledby="sts-h"><div class="wrap">
-<div class="status6"><h3 id="sts-h">Engineering and clinical status, 2 November 2026</h3><ul class="status-list">
-<li><b>History in a new browser</b><span>A browser with nothing saved rebuilds a patient&rsquo;s History from the stored record, including held and qualitative results and an empty or failed load: 15 of 15 checks in a local test.</span><span class="tag evaluated">Evaluated</span></li>
-<li><b>A recorded encounter, restored</b><span>In an earlier local run, both stages, with the questions, the answer and its receipt, were shown read-only in a new browser exactly as recorded, behind a switch that is off by default.</span><span class="tag evaluated">Evaluated</span></li>
-<li><b>Fresh-session recovery</b><span>In the latest full local run (2 November), a new browser restored the recorded encounter, read-only: both stages with the questions, the answer and its receipt, and a restored view of the Results cards, trends and Source Trace rows (the full screens are not rebuilt), and both exports downloaded identical to the recorded ones; exporting again after a reload or an in-app return to Results saved no second copy. The one link still failing is source documents, which are not kept, so the original report cannot be reopened from a new session. This is behind a switch that is off by default.</span><span class="tag open">Open item</span></li>
-<li><b>Conflicting readings</b><span>Two same-date readings of one test are both shown at equal weight and which is right is not resolved; the stored record keeps one as its row value, and the card names it. A grade the readings disagree on is withheld. Whether a conflicted test may drive the leading finding is a clinical policy question recorded for the clinical owner. Keeping such a conflict in the stored patient record was tested with a controlled response only.</span><span class="tag open">Open item</span></li>
-<li><b>Clinical rules</b><span>A licensed clinician who heads the LabSense clinical governance panel co-signed a limited set of rules on 29 September 2026, for example how unreadable reports and unverified results must be shown. That is approval of specific rules.</span><span class="tag recorded">Recorded</span></li>
-<li><b>Clinical validation</b><span>Not done. The outputs have not been independently clinically validated; several reading rules and the trend wording await clinical review. Some screens can still label the same result or urgency inconsistently; known cases are recorded for repair.</span><span class="tag planned">Not yet</span></li>
-</ul></div>
-<div class="not-yet"><span class="tag planned">Clinical validation: not yet</span><span class="tag planned">Real-patient use: none</span><span class="tag planned">Regulatory clearance: none</span><span class="tag planned">Pilot: none agreed</span><span class="tag planned">Users or customers: none yet</span><span class="tag planned">Head-to-head comparison: not run</span></div>
-</div></section>
-
-<section class="band" id="records" aria-labelledby="rec-h"><div class="wrap">
-<h2 id="rec-h">Run records behind the home page</h2>
-<ul class="rec-list">
-<li><b>Product scene and answer receipt</b><span>Synthetic case L07U (three PDFs, fictional laboratory), local prototype test runs since RUN-132 carry the same receipt (accepted run RUN-145, 1 November 2026). The question is quoted as the current build issues it, in clinician wording (2 November). Layouts are redrawn for legibility. The receipt establishes that the answer changed the named kidney disease severity; it does not establish that every other part of the case is correct, and the bundled answer (swelling or frothy urine) is not read as confirming both. In run K4 (2 November) both stages carry the same leading finding, urgency review and confidence Low (25); the answer revised the kidney severity only.</span></li>
-<li><b>Results cards</b><span>Synthetic cases L07U and L02, local prototype with the original card design restored, the L07U cards captured in run K4 of 2 November (frontend 06357e3, backend 02c94749): clinician wording in the test descriptions and the change over time stated as a number. The LDL card (case L02) is from run K6 of 2 November (frontend 70f8be4, backend 42b11f51), after the backend text fix, with no driver badge on the unresolved conflict.</span></li>
-<li><b>Behaviours on the home page</b><span>One history across reports: L07U, C16, C24. Across panels: C13, L07U. Identity refusal and hold for review: C13, C17, C24. Held and qualitative results: L07U. Units kept apart: C24. Conflicting readings: L02. Receipts and uncertain answers: L07U, C13.</span></li>
-<li><b>Film</b><span>Synthetic case C13, 2 min 50 s, corrected render of 1 November 2026: the answer was used and no possibility moved; no change in ranking is shown.</span></li>
-</ul>
-</div></section>
-
-<section class="band alt" id="compare" aria-labelledby="cmp-h"><div class="wrap">
-<h2 id="cmp-h">Comparison with seven products</h2>
-<p class="cmp-p">A reading of the public material of seven products reviewed on 29 October 2026: Function Health, InsideTracker and Superpower (consumer testing), Docus and BloodGPT (report explainers), OpenEvidence (a clinical literature assistant) and Health Gorilla (record exchange). It is not a tested comparison. Their accuracy figures are their own claims and were not checked. We did not find LabSense&rsquo;s shown behaviours in the material we reviewed; that is an absence of evidence, not proof that the products lack them.</p>
-<div class="moat-grid two">
-<div class="moat-col ahead"><h3>Where others are ahead</h3><ul>
-<li>Their own blood draws and laboratory networks</li>
-<li>Distribution, brand and funding</li>
-<li>Clinicians in the loop today</li>
-<li>AI chat over a member&rsquo;s lab history, already on the market</li>
-<li>Connections to laboratory and hospital systems</li>
-</ul></div>
-<div class="moat-col later"><h3>Also prospective</h3><ul>
-<li>Record-exchange networks used as a source of reports, rather than competed with <span class="tag planned">Planned</span></li>
-</ul></div>
+<a class="brand" href="index.html" aria-label="LabSense AI, home"><svg viewBox="0 0 30 16" aria-hidden="true"><circle cx="4" cy="8" r="3" fill="#2e3fd0"/><path d="M7 8h14" stroke="#2e3fd0" stroke-width="2"/><path d="M24 3v10M24 3h3M24 13h3" stroke="currentColor" stroke-width="2" fill="none"/></svg>LabSense</a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M2 4h14M2 9h14M2 14h14" stroke="currentColor" stroke-width="2"/></svg>Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main">
+<a href="index.html#overview">Overview</a>
+<a href="index.html#case">The case</a>
+<a href="index.html#held">Safety restraints</a>
+<a href="index.html#film">Demonstration</a>
+<a href="index.html#cards">Results</a>
+<a href="index.html#shown">Evidence</a>
+<a href="index.html#roadmap">Roadmap</a>
+<a class="go" href="index.html#access">Evaluation</a>
+</nav>
 </div>
-</div></section>
+</header>
+
+<main id="main">
+<section class="doc" aria-labelledby="ev-h">
+<div class="wrap">
+<p class="eyebrow">Evidence and status, <span class="nw">9 November 2026</span></p>
+<h1 id="ev-h">What has been tested, on what, and what is still in development.</h1>
+<p class="lede">LabSense is a Clinical Investigational System (CIS) for clinical decision support (CDS), in active development. This site shows a recorded run of the features tested so far; further features are being validated. It works under physician oversight and does not diagnose. The full chain is tested on synthetic cases written for testing, and value extraction has also been compared on one de-identified real case, where the full chain is being prepared; none of it is clinical validation.</p>
+<ul class="legend" aria-label="Labels used on these pages">
+<li><span class="tag recorded">Recorded</span> output of a test run on a synthetic case</li>
+<li><span class="tag evaluated">Evaluated</span> in a measured test</li>
+<li><span class="tag live">Live in the workspace</span> on the local system, not online</li>
+<li><span class="tag validating">Being validated</span> built in part, checks under way</li>
+<li><span class="tag indev">In development</span> not shown, work under way</li>
+<li><span class="tag planned">Planned</span> scheduled; work has not started</li>
+</ul>
+<nav class="toc-nav" aria-label="Sections on this page"><ul class="toc">
+<li><a href="#status">Feature status</a></li>
+<li><a href="#syn30">SYN30 run record</a></li>
+<li><a href="#earlier">Earlier tests</a></li>
+<li><a href="#why">Why LabSense</a></li>
+<li><a href="#film">Product film</a></li>
+<li><a href="#limits">AI, security and clinical status</a></li>
+<li><a href="#files">Files and checksums</a></li>
+</ul></nav>
+</div>
+</section>
+
+<section class="ev-sec" id="status" aria-labelledby="st-h">
+<div class="wrap">
+<h2 id="st-h">Feature status</h2>
+<div class="tw" tabindex="0" role="region" aria-label="Feature status table">
+<table class="ev ev-status">
+<thead><tr><th scope="col">Capability</th><th scope="col">Status</th><th scope="col">Basis</th></tr></thead>
+<tbody>
+<tr><td data-l="Capability">Reading printed rows with their unit, printed interval and collection date</td><td data-l="Status"><span class="tag recorded">Recorded</span></td><td data-l="Basis">SYN30MP1; an earlier reading test on 46 synthetic PDFs</td></tr>
+<tr><td data-l="Capability">Identity check on the first report; later reports for another patient ID refused before storage</td><td data-l="Status"><span class="tag recorded">Recorded</span></td><td data-l="Basis">SYN30MP1 (confirmation); synthetic cases C13 and C24 (refusal)</td></tr>
+<tr><td data-l="Capability">Stored record with every printed row stored or named with a reason</td><td data-l="Status"><span class="tag recorded">Recorded</span></td><td data-l="Basis">SYN30MP1: 109 printed rows, 107 stored, 2 named</td></tr>
+<tr><td data-l="Capability">Reading every panel of the current report (multi-panel reading), the evaluator default</td><td data-l="Status"><span class="tag recorded">Recorded</span></td><td data-l="Basis">SYN30MP1 and its repeat on the integrated build, <span class="nw">9 Nov 2026</span></td></tr>
+<tr><td data-l="Capability">A critical value on the current report driving the finding and urgency</td><td data-l="Status"><span class="tag recorded">Recorded</span></td><td data-l="Basis">SYN30MP1: &ldquo;Critical Potassium (<span class="nw">6.4 mmol/L</span>)&rdquo;, Emergency, in both stages, after reload and in both exports</td></tr>
+<tr><td data-l="Capability">History per test, against the printed interval, units kept apart</td><td data-l="Status"><span class="tag recorded">Recorded</span></td><td data-l="Basis">SYN30MP1</td></tr>
+<tr><td data-l="Capability">Targeted questions, scripted answers, receipts of what changed and what did not, each answer attributed to the signed-in account</td><td data-l="Status"><span class="tag recorded">Recorded</span></td><td data-l="Basis">SYN30MP1</td></tr>
+<tr><td data-l="Capability">Reopening the original report from a new browser</td><td data-l="Status"><span class="tag recorded">Recorded</span></td><td data-l="Basis">SYN30MP1: all nine opened as whole PDFs; byte-for-byte match shown in an earlier run</td></tr>
+<tr><td data-l="Capability">Source verification of each stored value against its printed row, with checksums</td><td data-l="Status"><span class="tag validating">Being validated</span></td><td data-l="Basis">Not shown on this site; every stored value is tied to its printed row and report</td></tr>
+<tr><td data-l="Capability">Clicking a value to highlight its row on the printed page</td><td data-l="Status"><span class="tag indev">In development</span></td><td data-l="Basis">Not shown; a report opens as the whole document</td></tr>
+<tr><td data-l="Capability">Review snapshot export of the first reading and the reassessment</td><td data-l="Status"><span class="tag recorded">Recorded</span></td><td data-l="Basis">SYN30MP1: 30 files each, primary concern equal to the screen</td></tr>
+<tr><td data-l="Capability">AI model reading first, deterministic reader as a dissent-only check</td><td data-l="Status"><span class="tag planned">Planned</span></td><td data-l="Basis">Built and switched off; no live model run on SYN30</td></tr>
+<tr><td data-l="Capability">AI wording of questions; AI reassessment or final analysis</td><td data-l="Status"><span class="tag planned">Planned</span></td><td data-l="Basis">Wording hook off; reassessment and analysis are deterministic and have no AI component</td></tr>
+<tr><td data-l="Capability">Supervised sessions on synthetic cases, on one local machine</td><td data-l="Status"><span class="tag live">Live in the workspace</span></td><td data-l="Basis">Behind a sign-in; not online</td></tr>
+<tr><td data-l="Capability">Remote use</td><td data-l="Status"><span class="tag planned">Planned</span></td><td data-l="Basis">Not permitted until a lifetime for backend credentials is built</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section class="ev-sec" id="syn30" aria-labelledby="syn-h">
+<div class="wrap">
+<div class="sec-head">
+<div><h2 id="syn-h">SYN30 run record</h2><p class="sub-h">Recorded run SYN30MP1 and its repeat, <span class="nw">9 November 2026</span></p></div>
+<p>SYN30 is one synthetic patient at a fictional laboratory. The case was written before the files were generated. The run went from sign-in and upload to export and a rebuild in a new browser, on one local machine, with the deterministic reader only and no AI model call. A repeat run, SYN30MP2, gave identical results.</p>
+</div>
+<div class="figs" aria-label="Key figures">
+<div><b>9</b><span>reports</span></div><div><b>30</b><span>printed pages</span></div><div><b>109</b><span>printed result rows</span></div><div><b>107</b><span>stored</span></div><div><b>2</b><span>named with a reason</span></div><div><b>7</b><span>dates, <span class="nw">March 2024</span> to <span class="nw">September 2026</span></span></div>
+</div>
+<ol class="rstrip" aria-label="The nine synthetic reports by date">
+<li class=""><span class="rs-d"><span class="nw">2024-03-05</span></span><span class="rs-n">1 report, <span class="nw">4 pages</span></span><span class="rs-t">First report; whose report it is confirmed here</span></li>
+<li class=""><span class="rs-d"><span class="nw">2024-09-17</span></span><span class="rs-n">1 report, <span class="nw">3 pages</span></span><span class="rs-t">Routine follow-up</span></li>
+<li class="two"><span class="rs-d"><span class="nw">2025-03-11</span></span><span class="rs-n">2 reports, <span class="nw">8 pages</span></span><span class="rs-t">Original, and a reprint (<span class="nw">4 pages</span>) counted once</span></li>
+<li class="two"><span class="rs-d"><span class="nw">2025-08-26</span></span><span class="rs-n">2 reports, <span class="nw">6 pages</span></span><span class="rs-t">Original, and an amended copy (<span class="nw">3 pages</span>) with a changed creatinine range</span></li>
+<li class=""><span class="rs-d"><span class="nw">2026-01-20</span></span><span class="rs-n">1 report, <span class="nw">3 pages</span></span><span class="rs-t">Creatinine in µmol/L; some results printed as limits</span></li>
+<li class="rd"><span class="rs-d"><span class="nw">2026-05-14</span></span><span class="rs-n">1 report, <span class="nw">2 pages</span></span><span class="rs-t">Report date only, no collection date</span></li>
+<li class="latest"><span class="rs-d"><span class="nw">2026-09-08</span></span><span class="rs-n">1 report, <span class="nw">4 pages</span></span><span class="rs-t">Latest: potassium <span class="nw">6.4 mmol/L</span>, creatinine printed twice</span></li>
+</ol>
+<div class="ev2">
+<div>
+<h3>Where the 109 printed rows went</h3>
+<div class="tw" tabindex="0" role="region" aria-label="Reconciliation table">
+<table class="ev ev-recon">
+<thead><tr><th scope="col">Rows</th><th scope="col">What happened to them</th></tr></thead>
+<tbody>
+<tr><td class="n" data-l="Rows">107</td><td data-l="What happened to them">Stored. Four of them are limits kept exactly as printed (for example TSH &lt;0.01), not turned into numbers.</td></tr>
+<tr><td class="n" data-l="Rows">2</td><td data-l="What happened to them">Not stored, each named with its reason: a second creatinine on the latest report (<span class="nw">1.62 mg/dL</span>; neither value chosen) and a white cell count hidden by a covered cell.</td></tr>
+<tr><td class="n" data-l="Rows">8</td><td data-l="What happened to them">Stored but kept out of every trend: total cholesterol on six report copies, creatinine <span class="nw">80 µmol/L</span> (a different unit) and creatinine <span class="nw">1.04 mg/dL</span> (held for review).</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<h3>What the run did, step by step</h3>
+<div class="tw" tabindex="0" role="region" aria-label="Chain table">
+<table class="ev ev-chain">
+<thead><tr><th scope="col">Step</th><th scope="col">What happened</th></tr></thead>
+<tbody>
+<tr><td data-l="Step">Upload and reading</td><td data-l="What happened">All nine reports read and confirmed, uploaded out of date order.</td></tr>
+<tr><td data-l="Step">Identity</td><td data-l="What happened">A person confirmed the first report; the other eight matched it.</td></tr>
+<tr><td data-l="Step">Stored record</td><td data-l="What happened">Rebuilt in a new browser: 107 stored rows and 2 named rows, for 17 tests.</td></tr>
+<tr><td data-l="Step">First reading</td><td data-l="What happened">Led by &ldquo;Critical Potassium (<span class="nw">6.4 mmol/L</span>)&rdquo;, urgency Emergency, evidence support Moderate.</td></tr>
+<tr><td data-l="Step">Questions and answers</td><td data-l="What happened">Three questions; scripted answers No, No, Yes from a signed-in synthetic account.</td></tr>
+<tr><td data-l="Step">Reassessment</td><td data-l="What happened">The Yes changed familial dyslipidaemia to &ldquo;inherited/atherogenic risk raised&rdquo;; the finding and urgency did not change, and the screen said so.</td></tr>
+<tr><td data-l="Step">Reload and originals</td><td data-l="What happened">Results unchanged after a reload; all nine originals reopened as whole PDFs in a new browser.</td></tr>
+<tr><td data-l="Step">Exports</td><td data-l="What happened">A snapshot of each reading, 30 files each, with the same primary concern as the screen.</td></tr>
+<tr><td data-l="Step">Access</td><td data-l="What happened">Reads that skipped the sign-in gateway were refused; reads by another role were refused or returned nothing.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<details class="tech">
+<summary>Technical details</summary>
+<div class="tech-b">
+<p>Counting: the record screen&rsquo;s heading reads &ldquo;103 stored values&rdquo; because it counts numbers only; the 4 printed limits (eGFR &gt;90, TSH &lt;0.01, urine albumin/creatinine ratio &lt;3, ferritin &lt;5, all on the report of <span class="nw">2026-01-20</span>) are stored as text and listed under it, and the run&rsquo;s retrieval check counts 107 stored rows. 107 stored plus 2 named equals the 109 result rows printed on the nine PDFs, with the reprint and the amended report counted as printed. The first reading read 13 of the 19 value-bearing lines of the latest report, as the app counts lines; that report prints 15 result rows.</p>
+<p>Configuration: every panel of each report read (multi-panel reading), the configuration used for evaluator sessions.</p>
+<p>Timings on the server: reading <span class="nw">6 to 15 s</span> per report; record read at most <span class="nw">264 ms</span>; consult median <span class="nw">375 ms</span>, slowest <span class="nw">766 ms</span>; reopening <span class="nw">47 to 125 ms</span> per document; <span class="nw">2.8 s</span> per export. Driver step times include fixed waits and other work ran on the same machine, so these are upper bounds.</p>
+<p>Builds: backend integ/sb22-security c0c5e123 (later commits to 954e7a32 change AI cost handling only), frontend aa06e68 (configuration 884766d makes multi-panel reading the default in the controlled evaluator build), gateway bd866d28.</p>
+<p>Repeatability (SYN30MP2 against SYN30MP1): screens, stored record, questions and answers identical, and exports identical once times and IDs are removed.</p>
+</div>
+</details>
+</div>
+</section>
+
+<section class="ev-sec" id="earlier" aria-labelledby="ear-h">
+<div class="wrap">
+<h2 id="ear-h">Earlier tests</h2>
+<ul class="ear">
+<li>In an earlier reading test on 46 synthetic PDFs across 15 cases (late <span class="nw">October 2026</span>), the conventional reader read every printed value line into a stored row, 243 lines in all; the one file with no rows was a report printed for another patient, refused by design. <span class="tag evaluated">Evaluated</span></li>
+<li>Reports printed for another patient were refused before storage in browser test runs of synthetic cases C13 and C24. <span class="tag recorded">Recorded</span></li>
+<li>Beyond the synthetic cases, value extraction has also been compared on one de-identified real multi-year case: the AI reader against the conventional reader, <span class="num">251</span> observations, checked against a frozen reference set (<span class="nw">August 2026</span>). This covers extraction only; the full question-and-export chain on real reports is being prepared. <span class="tag evaluated">Evaluated</span></li>
+<li>In an earlier recorded run (<span class="nw">8 November 2026</span>), a new browser reopened all nine originals and each matched the printed PDF byte for byte (SHA-256 compared). <span class="tag recorded">Recorded</span></li>
+</ul>
+</div>
+</section>
+
+<section class="ev-sec" id="why" aria-labelledby="why-h">
+<div class="wrap">
+<div class="sec-head">
+<div><h2 id="why-h">Why LabSense</h2><p class="sub-h">Reading a report is common. Keeping a whole history honest is the work.</p></div>
+<p>The mechanisms below are shown today on synthetic cases, each with how it works. The advantages listed after them do not exist yet: they would need use, data and clinical review.</p>
+</div>
+<div class="why-grid">
+<ul class="mech">
+<li><h3>One history per test</h3><p>Reports from different dates and panels become one dated series per test.</p><p class="how">Mechanism: printed name, unit, the laboratory&rsquo;s own interval, collection date and file kept per value; series join only the same test in the same unit.</p><span class="tag recorded">Recorded</span></li>
+<li><h3>Holds back instead of guessing</h3><p>A value it cannot trust is kept out, with the reason on screen.</p><p class="how">Mechanism: unit mismatch refused; printed limits kept as limits; two values on one report, neither chosen; a blank cell named.</p><span class="tag recorded">Recorded</span></li>
+<li><h3>Checks whose report it is</h3><p>A person confirms identity once; reports printed for another patient ID are refused before storage.</p><p class="how">Mechanism: the confirmed printed ID becomes the record&rsquo;s anchor (shown in earlier synthetic cases).</p><span class="tag recorded">Recorded</span></li>
+<li><h3>Says what it did not assess</h3><p>The assessment lists the results it did not read, so a gap is visible instead of silent.</p><p class="how">Mechanism: coverage computed against the stored record for the report&rsquo;s date.</p><span class="tag recorded">Recorded</span></li>
+<li><h3>A receipt for every answer</h3><p>After an answer, the screen states what changed and what did not.</p><p class="how">Mechanism: answers applied to named elements only; unchanged fields are stated, not implied.</p><span class="tag recorded">Recorded</span></li>
+<li><h3>The original stays the original</h3><p>Every report reopens exactly as printed, and each stage of an encounter exports as a snapshot that names the build it came from.</p><p class="how">Mechanism: retained source files compared by SHA-256; a replay manifest names the build.</p><span class="tag recorded">Recorded</span></li>
+</ul>
+<div class="future">
+<h3>In development and planned</h3>
+<ul>
+<li>Source verification of each stored value against its printed row <span class="tag validating">Being validated</span></li>
+<li>Clicking a value to highlight its row on the printed page <span class="tag indev">In development</span></li>
+<li>A multi-centre library of laboratory report formats, each checked row by row <span class="tag indev">In development</span></li>
+<li>A disagreement calibration database: reader disagreements and how clinicians resolved them <span class="tag indev">In development</span></li>
+<li>Laboratory quality reports on missing intervals and duplicates <span class="tag indev">In development</span></li>
+<li>Hospital record integration (FHIR) and other evidence sources <span class="tag planned">Planned</span></li>
+</ul>
+<h3 class="built-off">Built, switched off, not yet run live</h3>
+<p class="small">An AI model reading first, with the deterministic reader as an independent check that can only raise a disagreement. The path exists in the code and is off by default; a first live run on synthetic cases is planned within its cost limits.</p>
+</div>
+</div>
+<h3 class="contrast-h">Reading one report at a time, and LabSense across a patient&rsquo;s reports</h3>
+<div class="tw" tabindex="0" role="region" aria-label="Contrast of mechanisms">
+<table class="ev contrast-t">
+<caption>Mechanisms only. This is not a comparison with any product.</caption>
+<thead><tr><th scope="col">What is checked</th><th scope="col">Reading one report at a time</th><th scope="col">LabSense across a patient&rsquo;s reports</th></tr></thead>
+<tbody>
+<tr><th scope="row">Printed rows</th><td data-l="Reading one report at a time">The reviewer reads each report on its own and keeps track of which rows were read.</td><td data-l="LabSense across a patient&rsquo;s reports">Every printed row is counted, and either stored or named with the reason it was not stored (SYN30MP1: 109 rows, 107 stored, 2 named).</td></tr>
+<tr><th scope="row">Doubtful values</th><td data-l="Reading one report at a time">When a report prints two values for one test, or an unexpected unit, the reviewer decides which to use.</td><td data-l="LabSense across a patient&rsquo;s reports">A value it cannot trust is held back with the reason, instead of one being chosen.</td></tr>
+<tr><th scope="row">Whose report it is</th><td data-l="Reading one report at a time">The reviewer checks the name and ID printed on each report.</td><td data-l="LabSense across a patient&rsquo;s reports">The patient identity is checked before anything is stored; a later report printed for another ID is refused.</td></tr>
+<tr><th scope="row">Answers</th><td data-l="Reading one report at a time">What a patient&rsquo;s answer changed lives in the reviewer&rsquo;s own notes.</td><td data-l="LabSense across a patient&rsquo;s reports">A receipt states what each answer changed and what it did not.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="small muted">The designed reading path has an AI model read first, with a deterministic validator that can only raise a disagreement; the recorded SYN30 run used the deterministic reader alone.</p>
+<p class="small muted ahead">Where others are ahead: laboratory networks, distribution, regulatory status, clinicians in the loop and integrations (see <a href="#limits">Comparison with other products</a>).</p>
+
+</div>
+</section>
+
+<section class="ev-sec deep" id="film" aria-labelledby="film-h">
+<div class="wrap">
+<div class="sec-head">
+<div><h2 id="film-h">Product film</h2><p class="sub-h">The recorded run SYN30MP1, narrated, in <span class="nw">2 min 55 s</span>.</p></div>
+<p>A narrated recording of the multi-panel run SYN30MP1 on synthetic case SYN30: the printed potassium row and its history, the identity check, the stored record, the first reading led by &ldquo;Critical Potassium (<span class="nw">6.4 mmol/L</span>)&rdquo;, the three questions with their scripted answers, the originals reopened and the exports. Scenes are redrawn from the recorded run, with short zoomed inserts of the recorded screens; offline synthetic voice, captions on by default. It closes: &ldquo;This was a recorded run of LabSense, a Clinical Investigational System in active development, on a synthetic case.&rdquo;</p>
+</div>
+<div class="film">
+<figure class="page">
+<img class="print-only" src="assets/media/labsense_film_syn30mp1_v3_poster.jpg" width="1280" height="720" alt="Poster frame of the LabSense film: the printed potassium row of the synthetic report collected 2026-09-08.">
+<video controls preload="none" playsinline poster="assets/media/labsense_film_syn30mp1_v3_poster.jpg" width="1280" height="720"><source src="assets/media/labsense_film_syn30mp1_v3_720p.mp4" type="video/mp4"><track kind="captions" src="assets/media/labsense_film_syn30mp1_v3_captions.vtt" srclang="en" label="English" default>Your browser cannot play this video. <a href="assets/media/labsense_film_syn30mp1_v3_1080p_captioned.mp4">Download the captioned film</a>.</video>
+<figcaption><span class="tag recorded">Recorded</span> <span class="nw">2 min 55 s</span>, 720p. Synthetic case, synthetic voice, captions on by default. A recording, not a live demonstration.</figcaption>
+</figure>
+<div>
+<div class="film-links">
+<a href="assets/media/labsense_film_syn30mp1_v3_1080p.mp4" download>Download 1080p (MP4, <span class="nw">39 MB</span>)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3_1080p_captioned.mp4" download>Download 1080p with captions burned in (MP4, <span class="nw">40 MB</span>)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3_captions.vtt" download>Captions (WebVTT)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3_transcript.md" download>Transcript with on-screen sources (text)</a>
+</div>
+<div class="tx" data-tx>
+<p class="tx-h">Transcript <span>follows the film; select a line to jump to it</span></p>
+<ol class="tx-list"><li data-start="1.40" data-end="7.00"><span class="tx-t">0:01</span> <span class="tx-x">A recorded run on a synthetic case: the patient, the laboratory and all nine reports are fictional.</span></li>
+<li data-start="8.60" data-end="15.46"><span class="tx-t">0:08</span> <span class="tx-x">On the latest report, collected <span class="nw">8 September 2026</span>, potassium is printed as <span class="nw">6.4 mmol/L</span>.</span></li>
+<li data-start="15.61" data-end="18.49"><span class="tx-t">0:15</span> <span class="tx-x">Printed interval: <span class="nw">3.5 to 5.1</span>.</span></li>
+<li data-start="19.50" data-end="26.16"><span class="tx-t">0:19</span> <span class="tx-x">On the five earlier collection dates, from <span class="nw">March 2024</span>, it was <span class="nw">4.4 to 4.8</span>, inside the interval.</span></li>
+<li data-start="26.31" data-end="27.86"><span class="tx-t">0:26</span> <span class="tx-x">Then 6.4, above it.</span></li>
+<li data-start="28.87" data-end="33.54"><span class="tx-t">0:28</span> <span class="tx-x">A test driver uploaded nine synthetic reports, <span class="nw">30 pages</span>, out of date order.</span></li>
+<li data-start="33.69" data-end="37.79"><span class="tx-t">0:33</span> <span class="tx-x">Each value is placed by the date printed on its report, not by upload order.</span></li>
+<li data-start="38.80" data-end="41.01"><span class="tx-t">0:38</span> <span class="tx-x">The first report asks whose report it is.</span></li>
+<li data-start="41.16" data-end="45.25"><span class="tx-t">0:41</span> <span class="tx-x">The run confirmed the printed patient ID, and the other eight reports matched it.</span></li>
+<li data-start="46.27" data-end="52.13"><span class="tx-t">0:46</span> <span class="tx-x">Rebuilt in a new browser from the server, the record lists 103 stored values from 9 reports,</span></li>
+<li data-start="52.28" data-end="54.97"><span class="tx-t">0:52</span> <span class="tx-x">each with its date, printed interval and file.</span></li>
+<li data-start="55.12" data-end="60.04"><span class="tx-t">0:55</span> <span class="tx-x">Creatinine printed as <span class="nw">80 µmol/L</span> was refused and kept out of the mg/dL series.</span></li>
+<li data-start="61.07" data-end="69.45"><span class="tx-t">1:01</span> <span class="tx-x">History draws one potassium series across six collection dates, from 4.4 in March <span class="nw">2024 to 6.4</span> in <span class="nw">September 2026</span>.</span></li>
+<li data-start="70.47" data-end="75.27"><span class="tx-t">1:10</span> <span class="tx-x">The first reading leads with Critical Potassium (<span class="nw">6.4 mmol/L</span>), at urgency Emergency.</span></li>
+<li data-start="75.42" data-end="77.05"><span class="tx-t">1:15</span> <span class="tx-x">Evidence support: Moderate.</span></li>
+<li data-start="78.07" data-end="81.84"><span class="tx-t">1:18</span> <span class="tx-x">It states its coverage: 13 of 19 value-bearing lines read.</span></li>
+<li data-start="81.99" data-end="83.93"><span class="tx-t">1:21</span> <span class="tx-x">"Not evaluated does not mean normal."</span></li>
+<li data-start="84.08" data-end="90.91"><span class="tx-t">1:24</span> <span class="tx-x">Two rows were not stored, and are named: a second creatinine, 1.62, and an unreadable white cell count.</span></li>
+<li data-start="91.93" data-end="97.59"><span class="tx-t">1:31</span> <span class="tx-x">Creatinine is printed twice, so 1.04 is held for review and neither value is chosen.</span></li>
+<li data-start="98.60" data-end="105.77"><span class="tx-t">1:38</span> <span class="tx-x">It issued three questions: on potassium 6.4, on HbA1c 6.8, and on family history.</span></li>
+<li data-start="106.80" data-end="112.72"><span class="tx-t">1:46</span> <span class="tx-x">The answers are scripted: No, No and Yes, set before the run and clicked by a synthetic evaluator account.</span></li>
+<li data-start="113.73" data-end="118.32"><span class="tx-t">1:53</span> <span class="tx-x">The two No answers were recorded and changed nothing; no rule in this version uses them.</span></li>
+<li data-start="118.47" data-end="124.46"><span class="tx-t">1:58</span> <span class="tx-x">The Yes changed familial dyslipidaemia from "sporadic assumed" to "inherited/atherogenic risk raised".</span></li>
+<li data-start="124.61" data-end="127.41"><span class="tx-t">2:04</span> <span class="tx-x">Confidence and urgency are stated as unchanged.</span></li>
+<li data-start="128.43" data-end="132.57"><span class="tx-t">2:08</span> <span class="tx-x">After the answers, the finding is still Critical Potassium, at Emergency.</span></li>
+<li data-start="133.60" data-end="137.76"><span class="tx-t">2:13</span> <span class="tx-x">In the new browser, all nine original reports reopened as whole PDFs.</span></li>
+<li data-start="137.91" data-end="140.93"><span class="tx-t">2:17</span> <span class="tx-x">Linking each value to its place on the page is being validated.</span></li>
+<li data-start="141.93" data-end="147.60"><span class="tx-t">2:21</span> <span class="tx-x">Both readings were exported as review snapshots, primary concern Critical Potassium, as on screen.</span></li>
+<li data-start="147.75" data-end="152.93"><span class="tx-t">2:27</span> <span class="tx-x">Because the creatinine conflict is unresolved, each export is marked not for clinical use.</span></li>
+<li data-start="153.08" data-end="156.73"><span class="tx-t">2:33</span> <span class="tx-x">A new browser downloaded the recorded snapshots again, unchanged.</span></li>
+<li data-start="157.73" data-end="163.57"><span class="tx-t">2:37</span> <span class="tx-x">This was a recorded run of LabSense, a Clinical Investigational System in active development, on a synthetic case.</span></li>
+<li data-start="163.72" data-end="166.57"><span class="tx-t">2:43</span> <span class="tx-x">Further features are being validated and are not shown here.</span></li>
+<li data-start="166.72" data-end="168.70"><span class="tx-t">2:46</span> <span class="tx-x">No AI model was called in this run.</span></li>
+<li data-start="168.85" data-end="171.01"><span class="tx-t">2:48</span> <span class="tx-x">LabSense has not been clinically validated.</span></li></ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="ev-sec" id="limits" aria-labelledby="lim-h">
+<div class="wrap">
+<h2 id="lim-h">AI, security and clinical status</h2>
+<div class="lim">
+<div class="lim-b"><h3>AI</h3>
+<p>The SYN30 runs used the deterministic reader only, with no model call. The intended design for reading is an AI model first, with the deterministic reader as an independent check that can only raise a disagreement; that path is built, switched off by default and not yet run with a live model on SYN30. Question choice, answer handling and the final analysis are deterministic in this build; the optional AI wording of questions is switched off.</p></div>
+<div class="lim-b"><h3>Security and access</h3>
+<p>LabSense runs on one machine, bound to the local network interface only, behind a sign-in gateway. Requests that bypass the gateway are refused, cross-case and cross-role reads are refused, and signed-out uploads are refused; these were checked in the SYN30 run and in the gateway test suites. Remote use, even with synthetic reports, is not permitted until a lifetime for backend credentials is built. Real reports are not accepted.</p></div>
+<div class="lim-b"><h3>Clinical</h3>
+<p>A licensed clinician who heads the LabSense clinical governance panel co-signed a limited set of rules on <span class="nw">29 September 2026</span>, for example that where a laboratory panel lacks a ratified definition, individual rows may be shown but no overall panel normality may be asserted. That is approval of specific rules. No clinician has reviewed the outputs shown on this website, nor the general test descriptions on the results cards.</p>
+</div>
+<div class="lim-b"><h3>Comparison with other products</h3>
+<p>A reading of the public material of seven products on <span class="nw">29 October 2026</span> (consumer testing services, report explainers, a clinical literature assistant and a record-exchange network). It is not a tested comparison; their figures are their own claims and were not checked. We did not find the behaviours shown here described in that material; that is an absence of evidence, not proof that the products lack them.</p></div>
+</div>
+<ul class="notyet" aria-label="Status of later steps"><li>Clinical validation: scheduled for this quarter (by <span class="nw">December 2026</span>)</li><li>Real-patient use: none; one de-identified real case used for an extraction comparison</li><li>Regulatory clearance: none</li><li>Pilot: none agreed</li><li>Users or customers: none yet</li><li>Head-to-head comparison: not run</li></ul>
+</div>
+</section>
+
+<section class="ev-sec" id="files" aria-labelledby="files-h">
+<div class="wrap">
+<h2 id="files-h">Files and checksums</h2>
+<p class="prose">The nine synthetic reports of SYN30, byte-identical to the files the run uploaded. Anyone can compare a reopened report with these checksums.</p>
+<div class="tw" tabindex="0" role="region" aria-label="Report files">
+<table class="ev ev-files">
+<thead><tr><th scope="col">Report</th><th scope="col">SHA-256</th></tr></thead>
+<tbody>
+<tr><td data-l="Report"><a href="assets/syn30/reports/SYN30_R1_coll_2024-03-05.pdf"><span class="nw">2024-03-05</span></a></td><td class="sha" data-l="SHA-256">40694b26a7a51df95d39ade1abdf701ef10bb7472f7739ab2d065cbfe7eacf41</td></tr>
+<tr><td data-l="Report"><a href="assets/syn30/reports/SYN30_R2_coll_2024-09-17.pdf"><span class="nw">2024-09-17</span></a></td><td class="sha" data-l="SHA-256">da7b120a1f944f551f323016ff296f89ec4880086ca0895aa3ccf064c5e72ee0</td></tr>
+<tr><td data-l="Report"><a href="assets/syn30/reports/SYN30_R3_coll_2025-03-11.pdf"><span class="nw">2025-03-11</span></a></td><td class="sha" data-l="SHA-256">bdaea3465b2a0baab9d412a6c1a5f43bf45c4060cbe6cc36516a434af3ad4fe2</td></tr>
+<tr><td data-l="Report"><a href="assets/syn30/reports/SYN30_R3_coll_2025-03-11_DUPLICATE_reprint.pdf"><span class="nw">2025-03-11</span> reprint</a></td><td class="sha" data-l="SHA-256">0c54d62e4e66b04e68ec1d486a3cd1df22321f89a5737d9e8f80d58dc3f6ea59</td></tr>
+<tr><td data-l="Report"><a href="assets/syn30/reports/SYN30_R4_coll_2025-08-26.pdf"><span class="nw">2025-08-26</span></a></td><td class="sha" data-l="SHA-256">db99e7e53313a9d9f29d92093f5c812408d5c37fc684f05d74018cc3b731dd2c</td></tr>
+<tr><td data-l="Report"><a href="assets/syn30/reports/SYN30_R4_coll_2025-08-26_AMENDED.pdf"><span class="nw">2025-08-26</span> amended</a></td><td class="sha" data-l="SHA-256">da5e333b25e0bc456840e68f614b23ed64bd2aab11446652a2bc200c8569ac01</td></tr>
+<tr><td data-l="Report"><a href="assets/syn30/reports/SYN30_R5_coll_2026-01-20_units.pdf"><span class="nw">2026-01-20</span></a></td><td class="sha" data-l="SHA-256">3d4ccf3a228fc24b21a46e6ce11e048aac058f7f6680f4df1fd52aa38bcb68ff</td></tr>
+<tr><td data-l="Report"><a href="assets/syn30/reports/SYN30_R6_reported_only_2026-05-14.pdf"><span class="nw">2026-05-14</span></a></td><td class="sha" data-l="SHA-256">507e0207d77c7dbb946ba2fbefd34fb991015153be6e3e144480b4707b35c2f4</td></tr>
+<tr><td data-l="Report"><a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf"><span class="nw">2026-09-08</span></a></td><td class="sha" data-l="SHA-256">d93d0b409303bee94a572e4926059ce51843ec02d09e85ce841621d4af16cec6</td></tr>
+</tbody>
+</table>
+</div>
+<h3>Full screen captures from SYN30MP1 (1440 px)</h3>
+<ul class="pdfs" aria-label="Screen captures">
+<li><a href="assets/syn30/captures/CP_SYN30MP1_06_upload_3.png">Review screen</a></li>
+<li><a href="assets/syn30/captures/CP_SYN30MP1_13_stage1_results.png">First reading</a></li>
+<li><a href="assets/syn30/captures/CP_SYN30MP1_17_stage2_results.png">Reassessment</a></li>
+<li><a href="assets/syn30/captures/CP_SYN30MP1_19_screen_history.png">History</a></li>
+<li><a href="assets/syn30/captures/CP_SYN30MP1_21_screen_missing.png">Results not assessed</a></li>
+<li><a href="assets/syn30/captures/CP_SYN30MP1_25_fresh_browser_record_history.png">Record in a new browser</a></li>
+<li><a href="assets/syn30/captures/CP_SYN30MP1_27_fresh_browser_original_opened.png">Originals reopened</a></li>
+</ul>
+<p class="small muted">The exports themselves are not published: they contain local machine paths from the test computer.</p>
+</div>
+</section>
 </main>
-<footer class="foot"><div class="wrap"><div>LabSense AI, research prototype. Supports clinicians&rsquo; assessment; does not provide an autonomous clinical diagnosis. Not clinically validated; no regulatory clearance. Every case shown is synthetic.</div><div class="foot-links"><a href="evidence.html">Evidence and status</a><a href="mailto:nafees.kundi@gmail.com">Contact</a></div></div></footer>
+
+<footer class="foot">
+<div class="wrap">
+<p>LabSense AI supports a clinician&rsquo;s assessment and does not make a diagnosis. Not clinically validated; no regulatory clearance. Every case shown is synthetic: fictional patients and a fictional laboratory. Not for routine clinical care until clinical evaluation is complete. This website stores nothing, sets no cookies and loads nothing from other sites.</p>
+<nav aria-label="Footer"><a href="evidence.html">Evidence and status</a><a href="index.html#access">Request a supervised evaluation</a></nav>
+</div>
+</footer>
 </body>
 </html>

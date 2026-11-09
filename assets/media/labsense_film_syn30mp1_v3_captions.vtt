@@ -1,0 +1,138 @@
+WEBVTT
+
+1
+00:00:01.400 --> 00:00:06.999
+A recorded run on a synthetic case: the patient, the laboratory and all nine reports are fictional.
+
+2
+00:00:08.600 --> 00:00:15.456
+On the latest report, collected 8 September 2026, potassium is printed as 6.4 mmol/L.
+
+3
+00:00:15.606 --> 00:00:18.489
+Printed interval: 3.5 to 5.1.
+
+4
+00:00:19.500 --> 00:00:26.159
+On the five earlier collection dates, from March 2024, it was 4.4 to 4.8, inside the interval.
+
+5
+00:00:26.309 --> 00:00:27.861
+Then 6.4, above it.
+
+6
+00:00:28.867 --> 00:00:33.540
+A test driver uploaded nine synthetic reports, 30 pages, out of date order.
+
+7
+00:00:33.690 --> 00:00:37.792
+Each value is placed by the date printed on its report, not by upload order.
+
+8
+00:00:38.800 --> 00:00:41.005
+The first report asks whose report it is.
+
+9
+00:00:41.155 --> 00:00:45.248
+The run confirmed the printed patient ID, and the other eight reports matched it.
+
+10
+00:00:46.267 --> 00:00:52.128
+Rebuilt in a new browser from the server, the record lists 103 stored values from 9 reports,
+
+11
+00:00:52.278 --> 00:00:54.970
+each with its date, printed interval and file.
+
+12
+00:00:55.120 --> 00:01:00.042
+Creatinine printed as 80 µmol/L was refused and kept out of the mg/dL series.
+
+13
+00:01:01.067 --> 00:01:09.453
+History draws one potassium series across six collection dates, from 4.4 in March 2024 to 6.4 in September 2026.
+
+14
+00:01:10.467 --> 00:01:15.266
+The first reading leads with Critical Potassium (6.4 mmol/L), at urgency Emergency.
+
+15
+00:01:15.416 --> 00:01:17.052
+Evidence support: Moderate.
+
+16
+00:01:18.067 --> 00:01:21.844
+It states its coverage: 13 of 19 value-bearing lines read.
+
+17
+00:01:21.994 --> 00:01:23.932
+"Not evaluated does not mean normal."
+
+18
+00:01:24.082 --> 00:01:30.914
+Two rows were not stored, and are named: a second creatinine, 1.62, and an unreadable white cell count.
+
+19
+00:01:31.933 --> 00:01:37.592
+Creatinine is printed twice, so 1.04 is held for review and neither value is chosen.
+
+20
+00:01:38.600 --> 00:01:45.774
+It issued three questions: on potassium 6.4, on HbA1c 6.8, and on family history.
+
+21
+00:01:46.800 --> 00:01:52.721
+The answers are scripted: No, No and Yes, set before the run and clicked by a synthetic evaluator account.
+
+22
+00:01:53.733 --> 00:01:58.321
+The two No answers were recorded and changed nothing; no rule in this version uses them.
+
+23
+00:01:58.471 --> 00:02:04.459
+The Yes changed familial dyslipidaemia from "sporadic assumed" to "inherited/atherogenic risk raised".
+
+24
+00:02:04.609 --> 00:02:07.409
+Confidence and urgency are stated as unchanged.
+
+25
+00:02:08.433 --> 00:02:12.574
+After the answers, the finding is still Critical Potassium, at Emergency.
+
+26
+00:02:13.600 --> 00:02:17.764
+In the new browser, all nine original reports reopened as whole PDFs.
+
+27
+00:02:17.914 --> 00:02:20.926
+Linking each value to its place on the page is being validated.
+
+28
+00:02:21.933 --> 00:02:27.602
+Both readings were exported as review snapshots, primary concern Critical Potassium, as on screen.
+
+29
+00:02:27.752 --> 00:02:32.931
+Because the creatinine conflict is unresolved, each export is marked not for clinical use.
+
+30
+00:02:33.081 --> 00:02:36.730
+A new browser downloaded the recorded snapshots again, unchanged.
+
+31
+00:02:37.733 --> 00:02:43.574
+This was a recorded run of LabSense, a Clinical Investigational System in active development, on a synthetic case.
+
+32
+00:02:43.724 --> 00:02:46.572
+Further features are being validated and are not shown here.
+
+33
+00:02:46.722 --> 00:02:48.700
+No AI model was called in this run.
+
+34
+00:02:48.850 --> 00:02:51.008
+LabSense has not been clinically validated.
+
