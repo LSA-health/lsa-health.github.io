@@ -46,15 +46,22 @@
 <div>
 <p class="eyebrow">Clinical investigation across reports and time</p>
 <h1 id="hero-h">Years of scattered lab reports, unified into one traceable history <em>you can check</em>.</h1>
-</div>
-<div>
-<p class="users">Intended for settings such as internal medicine, nephrology and primary care.</p>
-<p class="lede">LabSense reads years of fragmented laboratory records into one dated history per test, keeping every result with its collection date, unit and the laboratory&rsquo;s printed interval. It names what its first reading did not cover, asks targeted questions, records what each answer changed and holds conflicting values for clinician review. The clinician decides.</p>
+<div class="aud"><span class="aud-k">Intended for</span><ul class="aud-pills" aria-label="Intended for"><li>Internal medicine</li><li>Nephrology</li><li>Primary care</li></ul></div>
 <div class="btns">
 <a class="btn primary" href="#case">Explore the worked clinical case <svg viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></a>
-<a class="btn" href="#access">Request an institutional evaluation</a>
+<a class="btn" href="#access">Request a supervised evaluation</a>
 </div>
-<p class="status-line">LabSense is an investigational clinical decision support platform, a Clinical Investigational System (CIS) for clinical decision support (CDS), that turns fragmented, multi-year laboratory PDFs into one traceable clinical history. It surfaces changes over time and holds conflicting data for physician review, with each stored value tied to its printed row. Clinical validation is in the pipeline, scheduled for this quarter (by <span class="nw">December 2026</span>). It works under physician oversight and does not diagnose. Dual validation: the full chain on synthetic cases, and value extraction on one de-identified real case. <a href="evidence.html">How it was tested</a></p>
+</div>
+<div>
+<p class="lede">LabSense reads years of scattered laboratory reports into one dated history per test, keeping each result with its collection date, unit and the laboratory&rsquo;s printed interval. It shows what its first reading did not cover, asks targeted questions, records what each answer changed and holds conflicting values for review. The clinician decides.</p>
+<div class="hero-status">
+<p class="hs-stmt">LabSense is a Clinical Investigational System (CIS) for clinical decision support (CDS). It works under physician oversight and does not diagnose.</p>
+<ul class="hs-list">
+<li><span class="hs-k">Tested:</span> the full chain on synthetic cases, and value extraction on one de-identified real case.</li>
+<li><span class="hs-k">Clinical validation:</span> scheduled for this quarter (by <span class="nw">December 2026</span>).</li>
+</ul>
+<a class="hs-a" href="evidence.html">How it was tested</a>
+</div>
 
 </div>
 </div>
@@ -69,17 +76,17 @@
 </aside>
 </figure>
 <ol class="steps4" aria-label="The recorded case in four steps">
-<li><a href="#stop-1"><span class="s4-n">1</span><span class="s4-k">Reports</span><span class="s4-t">Nine synthetic reports, <span class="nw">30 pages</span>, from a fictional laboratory, collected from <span class="nw">March 2024</span> to <span class="nw">September 2026</span>.</span><span class="s4-go"><span class="nw">Stop 1</span></span></a></li>
+<li><a href="#stop-1"><span class="s4-n">1</span><span class="s4-k">Reports</span><span class="s4-t">Nine synthetic reports, <span class="nw">30 pages</span>, from one fictional laboratory, collected from <span class="nw">March 2024</span> to <span class="nw">September 2026</span> and uploaded out of date order.</span><span class="s4-go"><span class="nw">Stop 1</span></span></a></li>
 <li><a href="#stop-3"><span class="s4-n">2</span><span class="s4-k">Dated history</span><span class="s4-t">One series per test in one unit: potassium <span class="num">4.4</span> to <span class="num">4.8</span> on five dates, then <span class="nw"><span class="num">6.4</span> mmol/L</span> on <span class="nw">8 September 2026</span>, above its printed interval.</span><span class="s4-go"><span class="nw">Stop 3</span></span></a></li>
 <li><a href="#stop-5"><span class="s4-n">3</span><span class="s4-k">Targeted questions</span><span class="s4-t">Three, each tied to a result; the first: &ldquo;The patient&rsquo;s Potassium is above the printed interval (6.4). Any palpitations, weakness, or feeling faint?&rdquo;</span><span class="s4-go"><span class="nw">Stop 5</span></span></a></li>
-<li><a href="#stop-5"><span class="s4-n">4</span><span class="s4-k">The answer receipt</span><span class="s4-t">Scripted No, No, Yes. Each No changed nothing. The Yes to family history raised familial dyslipidaemia to &ldquo;inherited/atherogenic risk raised&rdquo;; finding and urgency unchanged.</span><span class="s4-go"><span class="nw">Stop 5</span></span></a></li>
+<li><a href="#stop-5"><span class="s4-n">4</span><span class="s4-k">The answer receipt</span><span class="s4-t">Scripted No, No, Yes. Each No changed nothing; the family-history Yes raised familial dyslipidaemia to &ldquo;inherited/atherogenic risk raised&rdquo;. Finding and urgency unchanged.</span><span class="s4-go"><span class="nw">Stop 5</span></span></a></li>
 </ol>
 </div>
 </section>
 
 <section class="band context" id="overview" aria-labelledby="ctx-h">
 <div class="wrap">
-<div class="pe-head"><h2 id="ctx-h" class="plain-h">In plain English</h2><p>Three ideas, each with a real example from the case on this page.</p></div>
+<div class="pe-head"><h2 id="ctx-h" class="plain-h">In plain English</h2><p>Three ideas, each shown with a real example from the case on this page.</p></div>
 <div class="pe">
 <figure class="pe-vis" aria-labelledby="pe-cap">
 <div class="pe-before">
@@ -100,9 +107,9 @@
 <figcaption id="pe-cap">Drawn for this page from the synthetic case: three of the nine reports, and what LabSense makes of them.</figcaption>
 </figure>
 <ol class="plain" aria-label="LabSense in plain English">
-<li><h3>What LabSense is</h3><p>LabSense is software that reads a patient&rsquo;s lab reports and puts each test on one dated line. You can check every value against the printed page it came from.</p><p class="pe-ex"><span class="pe-lab">In this case</span> Potassium from six reports becomes one line: <span class="nw">4.4 mmol/L</span> in <span class="nw">March 2024</span>, then <span class="nw">6.4 mmol/L</span> in <span class="nw">September 2026</span>.</p></li>
-<li><h3>The problem it solves</h3><p>Reports arrive one at a time, from different labs, with different units and normal ranges. Following one test means paging through report after report, and a change is easy to miss.</p><p class="pe-ex"><span class="pe-lab">In this case</span> One report printed creatinine as <span class="nw">80 µmol/L</span>; the others used mg/dL.</p></li>
-<li><h3>How it stays dependable</h3><p>When it is not sure, it says so instead of guessing. It keeps conflicting values side by side instead of choosing one, holds back a value it cannot trust and says why, checks whose report it is before storing anything, and shows what each answer changed.</p><p class="pe-ex"><span class="pe-lab">In this case</span> The latest report printed creatinine twice, 1.04 and <span class="nw">1.62 mg/dL</span>. Both are kept; neither is chosen.</p></li>
+<li><h3>What LabSense is</h3><p>LabSense is a Clinical Investigational System for clinicians. It reads a patient&rsquo;s laboratory reports, from any date or laboratory, and lines up each test on a single dated history. Every value can be checked against the printed report it came from.</p><p class="pe-ex"><span class="pe-lab">In this case</span> Potassium from six collection dates becomes one line, from <span class="nw">4.4 mmol/L</span> in March <span class="nw">2024 to 6.4 mmol/L</span> in <span class="nw">September 2026</span>.</p></li>
+<li><h3>The problem it solves</h3><p>Lab reports arrive one at a time, often from different laboratories that use different units and normal ranges. Following a single test means paging through report after report, and an important change is easy to miss.</p><p class="pe-ex"><span class="pe-lab">In this case</span> One report gave creatinine as <span class="nw">80 µmol/L</span>; the others used mg/dL. LabSense keeps that value apart rather than mixing units.</p></li>
+<li><h3>How it stays dependable</h3><p>When LabSense is not sure, it says so rather than guess. It keeps conflicting values side by side, holds back any value it cannot trust and explains why, confirms whose report it is before storing anything, and shows exactly what each answer changed.</p><p class="pe-ex"><span class="pe-lab">In this case</span> The latest report printed creatinine twice, as 1.04 and <span class="nw">1.62 mg/dL</span>. Both are kept, and neither is chosen.</p></li>
 </ol>
 </div>
 </div>
@@ -111,8 +118,8 @@
 <section class="band deep" id="metrics" aria-labelledby="met-h">
 <div class="wrap">
 <div class="sec-head">
-<div><p class="eyebrow">Evidence at a glance</p><h2 id="met-h">Validated against real-world complexity</h2></div>
-<p>Laboratory software cannot rely on tidy sample data. Clinical validation is scheduled for this quarter (by <span class="nw">December 2026</span>). LabSense has been run end to end in a recorded run on a synthetic case, a multi-year record built to be hard, and its value extraction has been compared on one de-identified real case. None of this is clinical validation.</p>
+<div><p class="eyebrow">Evidence at a glance</p><h2 id="met-h">Tested against real-world complexity</h2></div>
+<p>Real laboratory records are rarely tidy. Clinical validation is scheduled for this quarter (by <span class="nw">December 2026</span>). In a recorded run, LabSense went end to end through a synthetic case, a multi-year record built to be hard; its value extraction has also been compared on one de-identified real case. None of this is clinical validation.</p>
 </div>
 <div class="tiles met">
 <div class="tile"><span class="v">30</span><p>printed pages in <span class="num">9</span> synthetic reports, on <span class="num">7</span> dates (6 collection dates and 1 report date) from <span class="nw">March 2024</span> to <span class="nw">September 2026</span>, uploaded out of order.</p><a class="tile-a" href="#stop-1"><span class="nw">Stop 1</span></a></div>
@@ -135,10 +142,10 @@
 <div class="note"><h3>A recording, played back</h3><p>This website does not read, upload or analyse anything. Every value comes from the run&rsquo;s stored record and the synthetic PDFs, which you can open. Screens marked as captures are LabSense&rsquo;s own; the rest is redrawn from recorded output for legibility.</p></div>
 <div class="note"><h3>One run, start to finish</h3><p>The stops follow a single recorded run on the synthetic case, with every panel of each report read. Details of how it was run are on the evidence page.</p></div>
 </div>
-<p class="legend-line">Marked <span class="tag recorded">Recorded</span>: output of a test run on a synthetic case. The evidence page uses three more labels, explained where they first appear.</p>
+<p class="legend-line"><span class="tag recorded">Recorded</span> marks output of a test run on a synthetic case. The evidence page explains its other status labels where they first appear.</p>
 
 <div class="case" id="case-frame">
-<div class="case-bar"><span class="rec">Recorded playback, a recorded run on synthetic case <span class="num">SYN30</span>, <span class="num"><span class="nw">9 Nov 2026</span></span></span><span><span class="tag recorded">Recorded</span></span></div>
+<div class="case-bar"><span class="rec">Playback of a recorded run on synthetic case <span class="num">SYN30</span>, <span class="num"><span class="nw">9 November 2026</span></span></span><span><span class="tag recorded">Recorded</span></span></div>
 <div class="case-body">
 <ol class="stops" role="tablist" aria-label="Stops in the worked case" aria-orientation="vertical">
 <li role="presentation"><button role="tab" id="t1" aria-controls="stop-1" aria-selected="true"><span class="n">1</span><span>The reports<span class="chain">reports</span></span></button></li>
@@ -433,7 +440,8 @@
 <a class="more-link" href="evidence.html#film">Film section on the evidence page</a>
 </div>
 <div class="tx" data-tx>
-<p class="tx-h">Transcript <span>follows the film; select a line to jump to it</span></p>
+<p class="tx-h">Transcript</p>
+<p class="tx-hint">It follows the film. Select a line to jump to that moment.</p>
 <ol class="tx-list"><li data-start="1.40" data-end="7.00"><span class="tx-t">0:01</span> <span class="tx-x">A recorded run on a synthetic case: the patient, the laboratory and all nine reports are fictional.</span></li>
 <li data-start="8.60" data-end="15.46"><span class="tx-t">0:08</span> <span class="tx-x">On the latest report, collected <span class="nw">8 September 2026</span>, potassium is printed as <span class="nw">6.4 mmol/L</span>.</span></li>
 <li data-start="15.61" data-end="18.49"><span class="tx-t">0:15</span> <span class="tx-x">Printed interval: <span class="nw">3.5 to 5.1</span>.</span></li>
@@ -492,7 +500,7 @@
 <button class="ac-more" type="button" aria-expanded="true" aria-controls="c2-d"><span class="lbl">Less detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
 <div class="ac-detail" id="c2-d">
 <section><h4>About this test</h4><p class="gen">General information, the same for every report: potassium is an electrolyte reported on electrolyte and renal panels.</p></section>
-<section><h4>This case</h4><p>Above the printed interval on the latest report, above a threshold LabSense treats as critical. It drove the main finding and the urgency in the first reading and the reassessment, after a reload, and in both exports.</p><p>The app&rsquo;s output shown here gives no follow-up guidance.</p></section>
+<section><h4>This case</h4><p>Above the printed interval on the latest report, above a threshold LabSense treats as critical. It drove the main finding and the urgency in the first reading and the reassessment, after a reload, and in both exports.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
 <section><h4>History and source</h4><p><span class="nw"><span class="num">4.4, 4.6, 4.5, 4.8, 4.7</span> mmol/L</span> from <span class="nw">March 2024</span> to <span class="nw">January 2026</span>, then <span class="num">6.4</span> on <span class="nw">8 September 2026</span>.</p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open the PDF</a></p></section>
 </div>
 </article>
@@ -504,11 +512,11 @@
 <div class="oc-bar" aria-hidden="true"><div class="oc-track"><span class="oc-zone"></span><span class="oc-mk out p93"></span></div><div class="oc-labs"><span>0</span><span class="oc-nl">Normal</span><span>3.0</span></div></div>
 <p class="oc-int">Elevated LDL drives atherosclerotic plaque formation, increasing cardiovascular event risk proportionally to the degree and duration of elevation.</p>
 <p class="ac-line"><span class="nw"><span class="num">+0.2</span> mmol/L</span> since <span class="nw">14 May 2026</span>, across 5 dates.</p>
-<div class="ac-prio"><h4>Action priority</h4><p>Review it with the Metabolic concern it drove, which the critical potassium overrode; it is 0.1 above the printed upper limit.</p></div>
+<div class="ac-prio"><h4>Action priority</h4><p>Review it as part of the Metabolic concern it drove, which ranks below the critical potassium; it is <span class="nw">0.1 mmol/L</span> above the printed upper limit.</p></div>
 <button class="ac-more" type="button" aria-expanded="true" aria-controls="c1-d"><span class="lbl">Less detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
 <div class="ac-detail" id="c1-d">
 <section><h4>About this test</h4><p class="gen">General information, the same for every report: LDL cholesterol is one of the lipids reported on a standard lipid panel.</p></section>
-<section class="review-sec"><h4>This case</h4><p>The record lists LDL as a driver of the Metabolic concern, ranked below and overridden by the critical potassium; it is not a driver of the main finding. The stored record also marks these LDL rows &ldquo;transcription uncertain&rdquo;, although they match the printed reports; whether such a row may drive a finding is a question for clinical review.</p><p>The app&rsquo;s output shown here gives no follow-up guidance.</p></section>
+<section class="review-sec"><h4>This case</h4><p>The record lists LDL as a driver of the Metabolic concern, ranked below and overridden by the critical potassium; it is not a driver of the main finding. The stored record also marks these LDL rows &ldquo;transcription uncertain&rdquo;, although they match the printed reports; whether such a row may drive a finding is a question for clinical review.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
 <section><h4>History and source</h4><p><span class="nw"><span class="num">3.4, 3.2, 3.0, 2.9, 3.1</span> mmol/L</span> from <span class="nw">March 2024</span> to <span class="nw">September 2026</span>; above the printed interval on 3 of 5 dates, and on its upper edge on <span class="nw">11 March 2025</span>.</p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open the PDF</a></p></section>
 </div>
 </article>
@@ -524,7 +532,7 @@
 <button class="ac-more" type="button" aria-expanded="true" aria-controls="c3-d"><span class="lbl">Less detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
 <div class="ac-detail" id="c3-d">
 <section><h4>About this test</h4><p class="gen">General information, the same for every report: creatinine is reported on renal panels and is printed in mg/dL or µmol/L depending on the laboratory.</p></section>
-<section class="held-sec"><h4>This case</h4><p><span class="num">1.04</span> (<span class="nw">page 1</span>) is stored as &ldquo;held for review, not a current value&rdquo; and kept out of the trend; <span class="num">1.62</span> (<span class="nw">page 2</span>) is named as not stored. Which value is right is for the laboratory and the clinician.</p><p>The app&rsquo;s output shown here gives no follow-up guidance.</p></section>
+<section class="held-sec"><h4>This case</h4><p><span class="num">1.04</span> (<span class="nw">page 1</span>) is stored as &ldquo;held for review, not a current value&rdquo; and kept out of the trend; <span class="num">1.62</span> (<span class="nw">page 2</span>) is named as not stored. Which value is right is for the laboratory and the clinician.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
 <section><h4>History and source</h4><p><span class="nw"><span class="num">0.98, 1.02, 1.06, 1.25</span> mg/dL</span> from <span class="nw">March 2024</span> to <span class="nw">August 2025</span>. On <span class="nw">2025-08-26</span> the amended report printed a different interval (<span class="nw">0.6-1.1</span>) from the original (<span class="nw">0.7-1.3</span>); both are shown for that date. On <span class="nw">2026-01-20</span> the report printed <span class="nw"><span class="num">80</span> µmol/L</span>, which was refused and never joined to the mg/dL series.</p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open the PDF</a></p></section>
 </div>
 </article>
@@ -540,13 +548,13 @@
 <button class="ac-more" type="button" aria-expanded="true" aria-controls="c4-d"><span class="lbl">Less detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
 <div class="ac-detail" id="c4-d">
 <section><h4>About this test</h4><p class="gen">General information, the same for every report: TSH is a thyroid function test, usually read together with free T4.</p></section>
-<section class="neutral-sec"><h4>This case</h4><p><span class="num">&lt;0.01</span> is kept in the stored record as printed: a limit, not a measured number, so it is neither trended nor graded. LabSense does not interpret the change from it to 1.8.</p><p>The app&rsquo;s output shown here gives no follow-up guidance.</p></section>
+<section class="neutral-sec"><h4>This case</h4><p><span class="num">&lt;0.01</span> is kept in the stored record as printed: a limit, not a measured number, so it is neither trended nor graded. LabSense does not interpret the change from it to 1.8.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
 <section><h4>History and source</h4><p><span class="num">2.1</span> (<span class="nw">2024-03-05</span>), <span class="num">2.6</span> (<span class="nw">2025-03-11</span>), <span class="num">&lt;0.01</span> (<span class="nw">2026-01-20</span>), <span class="nw"><span class="num">1.8</span> mIU/L</span> (<span class="nw">2026-09-08</span>). Free T4 on the <span class="nw">2026-01-20</span> report: <span class="nw"><span class="num">2.4</span> ng/dL</span> against a printed <span class="nw">0.8-1.8</span>; on the latest report <span class="num">1.2</span>.</p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open the PDF</a></p></section>
 </div>
 </article>
 
 </div>
-<p class="card-note">Live cards drawn by this website in LabSense&rsquo;s original card design, with values, roles and statuses from the SYN30 stored record; they are not screen captures. The one-line explanations are the app&rsquo;s general test texts. Colour is never the only signal: each status is written out, values outside the interval have a larger marker, and held values are drawn hollow with a broken line and a cross. The general test descriptions await clinical review.</p>
+<p class="card-note">Live cards drawn by this website in LabSense&rsquo;s original card design, with values, roles and statuses from the SYN30 stored record; they are not screen captures. The one-line explanations are LabSense&rsquo;s general test texts. Colour is never the only signal: each status is written out, values outside the interval have a larger marker, and held values are drawn hollow with a broken line and a cross. The general test descriptions await clinical review.</p>
 </div>
 </section>
 
@@ -554,7 +562,7 @@
 <div class="wrap">
 <div class="sec-head">
 <div><p class="eyebrow">Why LabSense</p><h2 id="shown-h">Shown today, and what is still being built</h2></div>
-<p>The left column is what the recorded runs show. Nothing in the right column is shown today; each item carries its label. The <a href="evidence.html#why">evidence page</a> gives how each mechanism works.</p>
+<p>The left column is what the recorded runs show. Nothing in the right column is shown today; each item carries its label. The <a href="evidence.html#why">evidence page</a> explains how each mechanism works.</p>
 </div>
 <ul class="rm-key" aria-label="Labels used on this page"><li><span class="rm-l shown"><i aria-hidden="true"></i>Shown on synthetic cases</span></li><li><span class="rm-l val"><i aria-hidden="true"></i>Being validated</span></li><li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span></li><li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span></li></ul>
 <div class="diff2">
@@ -575,8 +583,8 @@
 <ul class="dev-list">
 <li><span class="rm-l val"><i aria-hidden="true"></i>Being validated</span><p>Source verification of each stored value against its printed row, with checksums</p></li>
 <li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>Clicking a value to highlight its row on the printed page</p></li>
-<li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>A multi-centre laboratory format engine for regional networks</p></li>
-<li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>A disagreement calibration database: clinician resolutions tracked against the reader&rsquo;s flags</p></li>
+<li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>A multi-centre library of laboratory report formats, each checked row by row</p></li>
+<li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>A disagreement calibration database: reader disagreements and how clinicians resolved them</p></li>
 <li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>Laboratory quality reports on missing intervals and duplicates</p></li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned: this quarter</span><p>Clinician-supervised evaluation sessions and multi-centre clinical validation under ethical protocols, scheduled for this quarter (by <span class="nw">December 2026</span>)</p></li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span><p>Hospital record integration (FHIR) and other evidence sources</p></li>
@@ -586,7 +594,7 @@
 </div>
 <div class="evgrid" id="stage">
 <h3 class="evgrid-h">Where LabSense stands</h3>
-<p class="evgrid-p">It supports a clinician&rsquo;s assessment and does not make a diagnosis. Clinical sign-off covers a limited set of rules, co-signed on <span class="nw">29 Sep 2026</span> by the clinical lead; outputs have not been independently reviewed. How it was tested is on the <a href="evidence.html">evidence page</a>.</p>
+<p class="evgrid-p">It supports a clinician&rsquo;s assessment and does not make a diagnosis. Clinical sign-off covers a limited set of rules, co-signed on <span class="nw">29 September 2026</span> by the clinical lead; outputs have not been independently reviewed. How it was tested is on the <a href="evidence.html">evidence page</a>.</p>
 <div class="canshow">
 <h3>What you can check yourself</h3>
 <ul>
@@ -607,7 +615,7 @@
 <div class="wrap">
 <div class="sec-head">
 <div><p class="eyebrow">Context</p><h2 id="fits-h">Where LabSense fits</h2></div>
-<p>LabSense works alongside other clinical tools and does not replace any of them. Each kind of tool below does a different job well.</p>
+<p>LabSense works alongside the clinical systems already in use and does not replace any of them. Each kind of tool below does a different job well.</p>
 </div>
 <div class="fit-colh" aria-hidden="true"><span>Kind of tool</span><span>What it does well</span><span>LabSense&rsquo;s different focus</span></div>
 <ol class="fit-list">
@@ -643,7 +651,7 @@
 </li>
 <li class="rm-h next"><div class="rm-top"><span class="rm-n">Next</span><h3>Test with clinicians and real reports</h3><p class="rm-intro">Each step needs the one before it and the approvals it names.</p></div>
 <ul class="rm-items">
-<li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>Supervised sessions in which clinicians review LabSense output on synthetic cases, under a written protocol.</li>
+<li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A written protocol for the supervised sessions in which clinicians review LabSense output on synthetic cases.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned: this quarter</span>Clinician-supervised evaluation sessions and multi-centre clinical validation are in the pipeline, scheduled to begin this quarter (by <span class="nw">December 2026</span>).</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A published set of synthetic test cases, their expected answers and a scoring script, so anyone can rerun the checks.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A first review of de-identified real reports, only after ethics approval, stored locally, with no outside AI model.</li>
@@ -655,7 +663,7 @@
 <li class="rm-h later"><div class="rm-top"><span class="rm-n">Later</span><h3>Build the record that improves with use</h3><p class="rm-intro">Longer-term aims. None is shown today; the first two are in development, and the rest depend on real, consented data and outside review.</p></div>
 <ul class="rm-items">
 <li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span>Clicking a value to highlight its row on the printed page.</li>
-<li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span>A multi-centre laboratory format engine, a disagreement calibration database and laboratory quality reports.</li>
+<li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span>A multi-centre library of laboratory report formats, a disagreement calibration database and laboratory quality reports.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A register of laboratory methods and units, so results are compared only when they are comparable, and marked &ldquo;not comparable&rdquo; when they are not.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A record of reviewed corrections, so a fix to one error updates every conclusion that depended on it while the original stays unchanged.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>Laboratory partnerships, including results signed at the source.</li>
@@ -672,7 +680,7 @@
 <div class="wrap access">
 <div>
 <p class="eyebrow">Evaluation access</p>
-<h2 id="acc-h">Request an institutional walkthrough</h2>
+<h2 id="acc-h">Request a supervised evaluation</h2>
 <p class="lede">LabSense is available for private demonstrations and structured evaluations with hospital departments, clinical investigators and health-system technology evaluators. This website is a static page with no upload; an evaluation is a supervised session with LabSense on synthetic reports.</p>
 <p class="who-for">For clinicians reviewing long lab histories, and for laboratories that want to discuss an evaluation. Not for patients reading their own results.</p>
 <div class="btns"><a class="btn primary" href="mailto:nafees.kundi@gmail.com?subject=LabSense%20supervised%20evaluation%20request&amp;body=Name%3A%0D%0AOrganisation%3A%0D%0ARole%3A%0D%0AWhat%20you%20would%20like%20to%20evaluate%3A%0D%0ASuggested%20times%3A%0D%0A">Request a supervised evaluation</a><button type="button" class="btn primary eval-open" hidden>Request a supervised evaluation</button></div>
@@ -713,7 +721,7 @@
 
 <footer class="foot">
 <div class="wrap">
-<p>LabSense AI supports a clinician&rsquo;s assessment and does not make a diagnosis. Not clinically validated; no regulatory clearance. Every case shown is synthetic: fictional patients and a fictional laboratory. Not for routine clinical care until clinical evaluation is complete. This website stores nothing, sets no cookies and loads nothing from other sites.</p>
+<p>LabSense supports a clinician&rsquo;s assessment and does not make a diagnosis. Not clinically validated; no regulatory clearance. Every case shown is synthetic: fictional patients and a fictional laboratory. Not for routine clinical care until clinical evaluation is complete. This website stores nothing, sets no cookies and loads nothing from other sites.</p>
 <nav aria-label="Footer"><a href="evidence.html">Evidence and status</a><a href="index.html#access">Request a supervised evaluation</a></nav>
 </div>
 </footer>
