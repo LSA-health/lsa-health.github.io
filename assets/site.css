@@ -1527,3 +1527,60 @@ section.band,section.band.context,.ev-sec{padding:32px 0}
 .hero-head .eyebrow{grid-area:eb}.hero-head h1{grid-area:h1}.hero-head .aud{grid-area:aud}.hero-head .lede{grid-area:lede;font-size:16px}.hero-head .btns{grid-area:btns;flex-direction:column;align-items:stretch}.hero-head .hero-status{grid-area:st;margin-top:14px;align-self:start;max-width:none}
 }
 @media (min-width:821px) and (max-width:1060px){.hero-head{grid-template-areas:"eb eb" "h1 h1" "aud aud" "lede st" "btns btns"}.hero-head .btns{flex-direction:row;align-items:center}}
+/* ===== Round 14: stops split on desktop, source on the left, LabSense's result on the right ===== */
+.stop-split{display:block}
+@media (min-width:1024px){
+.stop-split{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:22px;align-items:start;margin-top:14px}
+.stop-src > :first-child{margin-top:0}
+.stop-audit{position:sticky;top:calc(var(--head) + 12px);background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);padding:14px 16px}
+.stop-audit .result{margin-top:0}
+.stop-audit .roles{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px}
+.stop-audit .roles li{padding-top:8px}
+}
+/* round 14: creatinine 80 umol/L shown as its own unit series (amber, square marker), not as a refusal */
+.sl .hl-u{fill:rgba(154,100,0,.07);stroke:#8a5a00;stroke-width:1.6;stroke-dasharray:5 4}
+.sl .brk-u{fill:none;stroke:#8a5a00;stroke-width:2.2;stroke-dasharray:7 6}
+.sl .anc-u{fill:#8a5a00}
+.sl .useries{fill:none;stroke:#8a5a00;stroke-width:2.4}
+.sl .rk-u{font:600 15px var(--ui);fill:#8a5a00}
+.hero-viz.deep .sl .brk-u,.hero-viz.deep .sl .useries{stroke:#f2c46d}
+.hero-viz.deep .sl .anc-u,.hero-viz.deep .sl .rk-u{fill:#f2c46d}
+.hero-viz.deep .sl .hl-u{fill:rgba(242,196,109,.08);stroke:#f2c46d}
+.speed{margin:14px 0 0;font-size:14.5px;line-height:1.55;color:var(--ink-2);max-width:90ch}
+.speed-k{display:inline-block;font:600 11.5px/1.2 var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:3px 7px;margin-right:8px}
+.deep .speed-k{color:#e8eef0}
+/* round 14: tags in the plain-English drawing; the word always travels with the colour */
+.pe-tag{display:inline-block;font:600 10.5px/1.2 var(--ui);letter-spacing:.05em;text-transform:uppercase;border-radius:5px;padding:2px 6px;margin-left:4px;vertical-align:1px;white-space:nowrap}
+.pe-tag.out{background:#fbe3dc;color:#8f2410;border:1px solid #d9826b}
+.pe-tag.conf{background:#fbefd5;color:#6b4500;border:1px solid #d9a441}
+.pe-note .pe-tag{margin:0 6px 0 0}
+@media (min-width:821px){.pe-after .pe-line{grid-row:2 / span 2}.pe-after .pe-note.apart{grid-row:2;align-self:start}.pe-after .pe-note.side{grid-row:3;align-self:start}}
+.pe-note.apart{background:var(--bg-2);color:var(--ink);border:1px dashed #8a5a00}
+.sum-dl{display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:14.5px;flex-basis:100%}
+.sum-dl::before{content:"";width:14px;height:16px;margin-right:8px;border:1.6px solid currentColor;border-radius:2px;background:linear-gradient(currentColor,currentColor) 50% 70%/6px 1.6px no-repeat}
+.hero-head .sum-line{flex-basis:100%;margin:2px 0 0;font-size:14.5px;color:var(--ink-2)}
+.hero-head .sum-line a{font-weight:600}
+.hero-head .aud{margin-top:16px}.hero-head .btns{margin-top:16px}
+@media (min-width:821px) and (max-width:1060px){.hero-head .sum-line{flex-basis:auto;align-self:center;margin:0 0 0 6px}
+}
+@media (min-width:821px) and (max-width:1060px){.pe-vis{grid-template-columns:1fr}.pe-arrow{transform:rotate(90deg);height:24px}}
+.hero-head .sum-dl{flex-basis:auto;font-size:14px}
+@media (min-width:1061px){.hero-head .sum-dl{flex-basis:100%}}
+@media (min-width:1061px){.hero{padding-top:24px}.hero-head .aud{margin-top:12px}.hero-head .btns{margin-top:12px;row-gap:4px}}
+/* ===== Round 14b: creatinine 80 umol/L presented as a conversion (sage), with the "Activation in progress" marker ===== */
+.pe-tag.convd{background:#e2f1ea;color:#1c5c41;border:1px solid #8cc4a8}
+.pe-note.apart.conv{background:#eef6f1;border:1px dashed #2f6b4f;color:var(--ink)}
+.pe-sub{display:block;font-size:12.5px;color:var(--ink-2);margin-top:2px}
+.uc-mark{display:inline-flex;align-items:center;gap:5px;font:600 10.5px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;vertical-align:1px}
+.pe-note .uc-mark{display:flex;margin-top:4px}
+.sl .hl-u{fill:rgba(47,107,79,.07);stroke:#2f6b4f}
+.sl .brk-u,.sl .useries{stroke:#2f6b4f}
+.sl .anc-u,.sl .rk-u{fill:#2f6b4f}
+.hero-viz.deep .sl .brk-u,.hero-viz.deep .sl .useries{stroke:#8fd3ad}
+.hero-viz.deep .sl .anc-u,.hero-viz.deep .sl .rk-u{fill:#8fd3ad}
+.hero-viz.deep .sl .hl-u{fill:rgba(143,211,173,.08);stroke:#8fd3ad}
+.deep .uc-mark{color:#f2d58f}
+.pe-note .uc-mark{white-space:normal}
+.uc-k-t{font-size:12.5px;color:var(--ink-2);margin-left:6px}
+@media (min-width:1061px){.pe-vis figcaption{grid-column:1;grid-row:2;align-self:end;margin:0}.pe-vis .pe-after{grid-column:3;grid-row:1 / span 2}.pe-vis .pe-arrow{grid-column:2;grid-row:1 / span 2}.pe-vis .pe-before{grid-column:1;grid-row:1}}
+@media (min-width:1061px){.pe-vis{grid-template-columns:minmax(0,1.3fr) 40px minmax(0,1.25fr)}}

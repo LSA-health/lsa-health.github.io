@@ -33,7 +33,7 @@
 <main id="main">
 <section class="doc" aria-labelledby="ev-h">
 <div class="wrap">
-<p class="eyebrow">Evidence and status, <span class="nw">9 November 2026</span></p>
+<p class="eyebrow">Evidence and status, <span class="nw">10 November 2026</span></p>
 <h1 id="ev-h">What has been tested, on what, and what is still in development.</h1>
 <p class="lede">LabSense is a Clinical Investigational System (CIS) for clinical decision support (CDS), in active development. This site shows a recorded run of the features tested so far; further features are being validated. It works under physician oversight and does not diagnose. The full chain is tested on synthetic cases written for testing, and value extraction has also been compared on one de-identified real case, where the full chain is being prepared; none of it is clinical validation, which is scheduled for this quarter (by <span class="nw">December 2026</span>).</p>
 <ul class="legend" aria-label="Labels used on these pages">
@@ -111,7 +111,7 @@
 <tbody>
 <tr><td class="n" data-l="Rows">107</td><td data-l="What happened to them">Stored. Four of them are limits kept exactly as printed (for example TSH &lt;0.01), not turned into numbers.</td></tr>
 <tr><td class="n" data-l="Rows">2</td><td data-l="What happened to them">Not stored, each named with its reason: a second creatinine on the latest report (<span class="nw">1.62 mg/dL</span>; neither value chosen) and a white cell count hidden by a covered cell.</td></tr>
-<tr><td class="n" data-l="Rows">8</td><td data-l="What happened to them">Stored but kept out of every trend: total cholesterol on six report copies, creatinine <span class="nw">80 µmol/L</span> (a different unit) and creatinine <span class="nw">1.04 mg/dL</span> (held for review).</td></tr>
+<tr><td class="n" data-l="Rows">8</td><td data-l="What happened to them">Stored but kept out of every trend: total cholesterol on six report copies, creatinine <span class="nw">80 µmol/L</span> (in this run, kept as printed in its own unit series; conversion under the ratified table is being activated) and creatinine <span class="nw">1.04 mg/dL</span> (held for review).</td></tr>
 </tbody>
 </table>
 </div>
@@ -170,7 +170,7 @@
 <div class="why-grid">
 <ul class="mech">
 <li><h3>One history per test</h3><p>Reports from different dates and panels become one dated series per test.</p><p class="how">Mechanism: printed name, unit, the laboratory&rsquo;s own interval, collection date and file kept per value; series join only the same test in the same unit.</p><span class="tag recorded">Recorded</span></li>
-<li><h3>Holds back instead of guessing</h3><p>A value it cannot trust is kept out, with the reason on screen.</p><p class="how">Mechanism: unit mismatch refused; printed limits kept as limits; two values on one report, neither chosen; a blank cell named.</p><span class="tag recorded">Recorded</span></li>
+<li><h3>Holds back instead of guessing</h3><p>A value it cannot trust is kept out, with the reason on screen.</p><p class="how">Mechanism: printed limits kept as limits; two values on one report, neither chosen; a blank cell named.</p><span class="tag recorded">Recorded</span></li>
 <li><h3>Checks whose report it is</h3><p>A person confirms identity once; reports printed for another patient ID are refused before storage.</p><p class="how">Mechanism: the confirmed printed ID becomes the record&rsquo;s anchor (shown in earlier synthetic cases).</p><span class="tag recorded">Recorded</span></li>
 <li><h3>Says what it did not assess</h3><p>The assessment lists the results it did not read, so a gap is visible instead of silent.</p><p class="how">Mechanism: coverage computed against the stored record for the report&rsquo;s date.</p><span class="tag recorded">Recorded</span></li>
 <li><h3>A receipt for every answer</h3><p>After an answer, the screen states what changed and what did not.</p><p class="how">Mechanism: answers applied to named elements only; unchanged fields are stated, not implied.</p><span class="tag recorded">Recorded</span></li>
@@ -184,6 +184,7 @@
 <li>A multi-centre library of laboratory report formats, each checked row by row <span class="tag indev">In development</span></li>
 <li>A disagreement calibration database: reader disagreements and how clinicians resolved them <span class="tag indev">In development</span></li>
 <li>Laboratory quality reports on missing intervals and duplicates <span class="tag indev">In development</span></li>
+<li>Unit conversion: creatinine <span class="nw">80 µmol/L</span> converted to <span class="nw">0.90 mg/dL</span> under the unit table ratified by the Lead Clinician on <span class="nw">10 November 2026</span>, with the printed value kept; activation in progress <span class="tag indev">In development</span></li>
 <li>Hospital record integration (FHIR) and other evidence sources <span class="tag planned">Planned</span></li>
 </ul>
 <h3 class="built-off">Built, switched off, not yet run live</h3>
@@ -212,21 +213,21 @@
 <section class="ev-sec deep" id="film" aria-labelledby="film-h">
 <div class="wrap">
 <div class="sec-head">
-<div><h2 id="film-h">Product film</h2><p class="sub-h">The recorded run SYN30MP1, narrated, in <span class="nw">2 min 55 s</span>.</p></div>
+<div><h2 id="film-h">Product film</h2><p class="sub-h">The recorded run SYN30MP1, narrated, in <span class="nw">2 min 59 s</span>.</p></div>
 <p>A narrated recording of the multi-panel run SYN30MP1 on synthetic case SYN30: the printed potassium row and its history, the identity check, the stored record, the first reading led by &ldquo;Critical Potassium (<span class="nw">6.4 mmol/L</span>)&rdquo;, the three questions with their scripted answers, the originals reopened and the exports. Scenes are redrawn from the recorded run, with short zoomed inserts of the recorded screens; offline synthetic voice, captions on by default. It closes: &ldquo;This was a recorded run of LabSense, a Clinical Investigational System in active development, on a synthetic case.&rdquo;</p>
 </div>
 <div class="film">
 <figure class="page">
-<img class="print-only" src="assets/media/labsense_film_syn30mp1_v3_poster.jpg" width="1280" height="720" alt="Poster frame of the LabSense film: the printed potassium row of the synthetic report collected 2026-09-08.">
-<video controls preload="none" playsinline poster="assets/media/labsense_film_syn30mp1_v3_poster.jpg" width="1280" height="720"><source src="assets/media/labsense_film_syn30mp1_v3_720p.mp4" type="video/mp4"><track kind="captions" src="assets/media/labsense_film_syn30mp1_v3_captions.vtt" srclang="en" label="English" default>Your browser cannot play this video. <a href="assets/media/labsense_film_syn30mp1_v3_1080p_captioned.mp4">Download the captioned film</a>.</video>
-<figcaption><span class="tag recorded">Recorded</span> <span class="nw">2 min 55 s</span>, 720p. Synthetic case, synthetic voice, captions on by default. A recording, not a live demonstration.</figcaption>
+<img class="print-only" src="assets/media/labsense_film_syn30mp1_v3b_poster.jpg" width="1280" height="720" alt="Poster frame of the LabSense film: the printed potassium row of the synthetic report collected 2026-09-08.">
+<video controls preload="none" playsinline poster="assets/media/labsense_film_syn30mp1_v3b_poster.jpg" width="1280" height="720"><source src="assets/media/labsense_film_syn30mp1_v3b_720p.mp4" type="video/mp4"><track kind="captions" src="assets/media/labsense_film_syn30mp1_v3b_captions.vtt" srclang="en" label="English" default>Your browser cannot play this video. <a href="assets/media/labsense_film_syn30mp1_v3b_1080p_captioned.mp4">Download the captioned film</a>.</video>
+<figcaption><span class="tag recorded">Recorded</span> <span class="nw">2 min 59 s</span>, 720p. Synthetic case, synthetic voice, captions on by default. A recording, not a live demonstration.</figcaption>
 </figure>
 <div>
 <div class="film-links">
-<a href="assets/media/labsense_film_syn30mp1_v3_1080p.mp4" download>Download 1080p (MP4, <span class="nw">39 MB</span>)</a>
-<a href="assets/media/labsense_film_syn30mp1_v3_1080p_captioned.mp4" download>Download 1080p with captions burned in (MP4, <span class="nw">40 MB</span>)</a>
-<a href="assets/media/labsense_film_syn30mp1_v3_captions.vtt" download>Captions (WebVTT)</a>
-<a href="assets/media/labsense_film_syn30mp1_v3_transcript.md" download>Transcript with on-screen sources (text)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3b_1080p.mp4" download>Download 1080p (MP4, <span class="nw">39.5 MB</span>)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3b_1080p_captioned.mp4" download>Download 1080p with captions burned in (MP4, <span class="nw">40.8 MB</span>)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3b_captions.vtt" download>Captions (WebVTT)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3b_transcript.md" download>Transcript with on-screen sources (text)</a>
 </div>
 <div class="tx" data-tx>
 <p class="tx-h">Transcript</p>
@@ -242,29 +243,29 @@
 <li data-start="41.16" data-end="45.25"><span class="tx-t">0:41</span> <span class="tx-x">The run confirmed the printed patient ID, and the other eight reports matched it.</span></li>
 <li data-start="46.27" data-end="52.13"><span class="tx-t">0:46</span> <span class="tx-x">Rebuilt in a new browser from the server, the record lists 103 stored values from 9 reports,</span></li>
 <li data-start="52.28" data-end="54.97"><span class="tx-t">0:52</span> <span class="tx-x">each with its date, printed interval and file.</span></li>
-<li data-start="55.12" data-end="60.04"><span class="tx-t">0:55</span> <span class="tx-x">Creatinine printed as <span class="nw">80 µmol/L</span> was refused and kept out of the mg/dL series.</span></li>
-<li data-start="61.07" data-end="69.45"><span class="tx-t">1:01</span> <span class="tx-x">History draws one potassium series across six collection dates, from 4.4 in March <span class="nw">2024 to 6.4</span> in <span class="nw">September 2026</span>.</span></li>
-<li data-start="70.47" data-end="75.27"><span class="tx-t">1:10</span> <span class="tx-x">The first reading leads with Critical Potassium (<span class="nw">6.4 mmol/L</span>), at urgency Emergency.</span></li>
-<li data-start="75.42" data-end="77.05"><span class="tx-t">1:15</span> <span class="tx-x">Evidence support: Moderate.</span></li>
-<li data-start="78.07" data-end="81.84"><span class="tx-t">1:18</span> <span class="tx-x">It states its coverage: 13 of 19 value-bearing lines read.</span></li>
-<li data-start="81.99" data-end="83.93"><span class="tx-t">1:21</span> <span class="tx-x">"Not evaluated does not mean normal."</span></li>
-<li data-start="84.08" data-end="90.91"><span class="tx-t">1:24</span> <span class="tx-x">Two rows were not stored, and are named: a second creatinine, 1.62, and an unreadable white cell count.</span></li>
-<li data-start="91.93" data-end="97.59"><span class="tx-t">1:31</span> <span class="tx-x">Creatinine is printed twice, so 1.04 is held for review and neither value is chosen.</span></li>
-<li data-start="98.60" data-end="105.77"><span class="tx-t">1:38</span> <span class="tx-x">It issued three questions: on potassium 6.4, on HbA1c 6.8, and on family history.</span></li>
-<li data-start="106.80" data-end="112.72"><span class="tx-t">1:46</span> <span class="tx-x">The answers are scripted: No, No and Yes, set before the run and clicked by a synthetic evaluator account.</span></li>
-<li data-start="113.73" data-end="118.32"><span class="tx-t">1:53</span> <span class="tx-x">The two No answers were recorded and changed nothing; no rule in this version uses them.</span></li>
-<li data-start="118.47" data-end="124.46"><span class="tx-t">1:58</span> <span class="tx-x">The Yes changed familial dyslipidaemia from "sporadic assumed" to "inherited/atherogenic risk raised".</span></li>
-<li data-start="124.61" data-end="127.41"><span class="tx-t">2:04</span> <span class="tx-x">Confidence and urgency are stated as unchanged.</span></li>
-<li data-start="128.43" data-end="132.57"><span class="tx-t">2:08</span> <span class="tx-x">After the answers, the finding is still Critical Potassium, at Emergency.</span></li>
-<li data-start="133.60" data-end="137.76"><span class="tx-t">2:13</span> <span class="tx-x">In the new browser, all nine original reports reopened as whole PDFs.</span></li>
-<li data-start="137.91" data-end="140.93"><span class="tx-t">2:17</span> <span class="tx-x">Linking each value to its place on the page is being validated.</span></li>
-<li data-start="141.93" data-end="147.60"><span class="tx-t">2:21</span> <span class="tx-x">Both readings were exported as review snapshots, primary concern Critical Potassium, as on screen.</span></li>
-<li data-start="147.75" data-end="152.93"><span class="tx-t">2:27</span> <span class="tx-x">Because the creatinine conflict is unresolved, each export is marked not for clinical use.</span></li>
-<li data-start="153.08" data-end="156.73"><span class="tx-t">2:33</span> <span class="tx-x">A new browser downloaded the recorded snapshots again, unchanged.</span></li>
-<li data-start="157.73" data-end="163.57"><span class="tx-t">2:37</span> <span class="tx-x">This was a recorded run of LabSense, a Clinical Investigational System in active development, on a synthetic case.</span></li>
-<li data-start="163.72" data-end="166.57"><span class="tx-t">2:43</span> <span class="tx-x">Further features are being validated and are not shown here.</span></li>
-<li data-start="166.72" data-end="168.70"><span class="tx-t">2:46</span> <span class="tx-x">No AI model was called in this run.</span></li>
-<li data-start="168.85" data-end="171.01"><span class="tx-t">2:48</span> <span class="tx-x">LabSense has not been clinically validated.</span></li></ol>
+<li data-start="55.12" data-end="63.84"><span class="tx-t">0:55</span> <span class="tx-x">Creatinine printed as <span class="nw">80 µmol/L</span>, a different unit, was kept as printed and out of the mg/dL series, with the reason shown.</span></li>
+<li data-start="64.87" data-end="73.25"><span class="tx-t">1:04</span> <span class="tx-x">History draws one potassium series across six collection dates, from 4.4 in March <span class="nw">2024 to 6.4</span> in <span class="nw">September 2026</span>.</span></li>
+<li data-start="74.27" data-end="79.07"><span class="tx-t">1:14</span> <span class="tx-x">The first reading leads with Critical Potassium (<span class="nw">6.4 mmol/L</span>), at urgency Emergency.</span></li>
+<li data-start="79.22" data-end="80.85"><span class="tx-t">1:19</span> <span class="tx-x">Evidence support: Moderate.</span></li>
+<li data-start="81.87" data-end="85.64"><span class="tx-t">1:21</span> <span class="tx-x">It states its coverage: 13 of 19 value-bearing lines read.</span></li>
+<li data-start="85.79" data-end="87.73"><span class="tx-t">1:25</span> <span class="tx-x">"Not evaluated does not mean normal."</span></li>
+<li data-start="87.88" data-end="94.71"><span class="tx-t">1:27</span> <span class="tx-x">Two rows were not stored, and are named: a second creatinine, 1.62, and an unreadable white cell count.</span></li>
+<li data-start="95.73" data-end="101.39"><span class="tx-t">1:35</span> <span class="tx-x">Creatinine is printed twice, so 1.04 is held for review and neither value is chosen.</span></li>
+<li data-start="102.40" data-end="109.57"><span class="tx-t">1:42</span> <span class="tx-x">It issued three questions: on potassium 6.4, on HbA1c 6.8, and on family history.</span></li>
+<li data-start="110.60" data-end="116.52"><span class="tx-t">1:50</span> <span class="tx-x">The answers are scripted: No, No and Yes, set before the run and clicked by a synthetic evaluator account.</span></li>
+<li data-start="117.53" data-end="122.12"><span class="tx-t">1:57</span> <span class="tx-x">The two No answers were recorded and changed nothing; no rule in this version uses them.</span></li>
+<li data-start="122.27" data-end="128.26"><span class="tx-t">2:02</span> <span class="tx-x">The Yes changed familial dyslipidaemia from "sporadic assumed" to "inherited/atherogenic risk raised".</span></li>
+<li data-start="128.41" data-end="131.21"><span class="tx-t">2:08</span> <span class="tx-x">Confidence and urgency are stated as unchanged.</span></li>
+<li data-start="132.23" data-end="136.37"><span class="tx-t">2:12</span> <span class="tx-x">After the answers, the finding is still Critical Potassium, at Emergency.</span></li>
+<li data-start="137.40" data-end="141.56"><span class="tx-t">2:17</span> <span class="tx-x">In the new browser, all nine original reports reopened as whole PDFs.</span></li>
+<li data-start="141.71" data-end="144.73"><span class="tx-t">2:21</span> <span class="tx-x">Linking each value to its place on the page is being validated.</span></li>
+<li data-start="145.73" data-end="151.40"><span class="tx-t">2:25</span> <span class="tx-x">Both readings were exported as review snapshots, primary concern Critical Potassium, as on screen.</span></li>
+<li data-start="151.55" data-end="156.73"><span class="tx-t">2:31</span> <span class="tx-x">Because the creatinine conflict is unresolved, each export is marked not for clinical use.</span></li>
+<li data-start="156.88" data-end="160.53"><span class="tx-t">2:36</span> <span class="tx-x">A new browser downloaded the recorded snapshots again, unchanged.</span></li>
+<li data-start="161.53" data-end="167.37"><span class="tx-t">2:41</span> <span class="tx-x">This was a recorded run of LabSense, a Clinical Investigational System in active development, on a synthetic case.</span></li>
+<li data-start="167.52" data-end="170.37"><span class="tx-t">2:47</span> <span class="tx-x">Further features are being validated and are not shown here.</span></li>
+<li data-start="170.52" data-end="172.50"><span class="tx-t">2:50</span> <span class="tx-x">No AI model was called in this run.</span></li>
+<li data-start="172.65" data-end="174.81"><span class="tx-t">2:52</span> <span class="tx-x">LabSense has not been clinically validated.</span></li></ol>
 </div>
 </div>
 </div>
