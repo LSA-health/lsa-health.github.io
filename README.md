@@ -1,6 +1,6 @@
 # lsa-health.github.io
 
-Public website of LabSense AI, a research prototype for clinicians reviewing complex laboratory histories. Static HTML, no build step on the server, no third-party request, no cookies.
+Public website of LabSense AI, a Clinical Investigation System (CIS) designed to support clinicians reviewing complex laboratory histories. LabSense has been tested on de-identified patient reports (value extraction only) and on a purpose-built synthetic case (the full chain). Static HTML, no build step on the server, no third-party request, no cookies.
 
 - `index.html`: the home page, with the recorded SYN30 worked case, results cards, film, evidence summary, roadmap and evaluator access.
 - `evidence.html`: feature status, the SYN30 run record with all 30 outcomes, earlier tests, AI, security and clinical status, and file checksums.

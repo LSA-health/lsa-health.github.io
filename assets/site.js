@@ -139,6 +139,7 @@
     var label = b.querySelector(".lbl");
     var set = function (open) {
       d.hidden = !open;
+      var card = b.closest(".acard"); if (card) card.classList.toggle("is-open", open);
       b.setAttribute("aria-expanded", open ? "true" : "false");
       if (label) label.textContent = open ? "Less detail" : "More detail";
     };

@@ -6,11 +6,11 @@
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>LabSense AI: years of lab reports, read into one history you can check</title>
-<meta name="description" content="A Clinical Investigational System for clinical decision support, for clinicians reviewing complex lab histories: reports from different dates and laboratories read into one dated history per test, values held back with a reason, targeted questions and a record of what each answer changed. Synthetic cases only.">
+<meta name="description" content="LabSense AI is a Clinical Investigation System (CIS) designed to support physician review across complex laboratory histories. Evaluated on de-identified patient records and synthetic clinical fixtures; not yet clinically validated.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabSense AI">
 <meta property="og:title" content="LabSense AI: years of lab reports, read into one history you can check">
-<meta property="og:description" content="A Clinical Investigational System for clinical decision support, for clinicians reviewing complex lab histories. Every case shown is synthetic.">
+<meta property="og:description" content="LabSense AI is a Clinical Investigation System (CIS) designed to support physician review across complex laboratory histories. Evaluated on de-identified patient records and synthetic clinical fixtures; not yet clinically validated.">
 <meta property="og:url" content="https://lsa-health.github.io/">
 <meta property="og:image" content="https://lsa-health.github.io/assets/og/labsense_og.png">
 <meta property="og:image:width" content="1200">
@@ -44,22 +44,22 @@
 <div class="wrap">
 <div class="hero-head">
 <div>
-<p class="eyebrow">Clinical investigation across reports and time</p>
-<h1 id="hero-h">Years of scattered lab reports, unified into one traceable history <em>you can check</em>.</h1>
+<p class="eyebrow">Clinical Investigation System (CIS)</p>
+<h1 id="hero-h">Investigate complex cases across years of lab results</h1>
 <div class="aud"><span class="aud-k">Intended for</span><ul class="aud-pills" aria-label="Intended for"><li>Internal medicine</li><li>Nephrology</li><li>Primary care</li></ul></div>
 <div class="btns">
-<a class="btn primary" href="#case">Explore the worked clinical case <svg viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></a>
-<a class="btn" href="#access">Request a supervised evaluation</a>
-<a class="sum-dl" href="assets/labsense_evidence_summary_2026-11-10.pdf" download title="LabSense evidence summary, 10 November 2026"><span>Evidence summary (PDF, <span class="nw">362 KB</span>)</span></a>
+<a class="btn primary" href="#case">Explore the worked case <svg viewBox="0 0 16 12" aria-hidden="true"><path d="M1 6h13M9 1l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></a>
+<a class="btn" href="#stop-5">See the reassessment loop</a>
+<a class="sum-dl evidence-pdf-link" href="assets/labsense_evidence_summary_2026-11-10.pdf" download title="SHA-256: c41824fc62e61140ac85c7152d583663570c2e48be7ca7d56cde4abd92478226"><span>Evidence Summary PDF (<span class="nw">388 KB</span>, SHA-256: c41824fc62e6&hellip;)</span></a>
 </div>
 </div>
 <div>
-<p class="lede">LabSense reads years of scattered laboratory reports into one dated history per test, keeping each result with its collection date, unit and the laboratory&rsquo;s printed interval. It shows what its first reading did not cover, asks targeted questions, records what each answer changed and holds conflicting values for review. The clinician decides.</p>
+<p class="lede">LabSense AI helps clinicians take a structured second look at complex cases. It brings scattered lab results from different dates and laboratories into one traceable history, highlights findings and gaps in the record, and shows how relevant clinical context changes the assessment.</p>
 <div class="hero-status">
-<p class="hs-stmt">LabSense is a Clinical Investigational System (CIS) for clinical decision support (CDS). It works under physician oversight and does not diagnose.</p>
+<p class="hs-stmt">LabSense is a Clinical Investigation System (CIS) designed to support physician review. It operates under clinician oversight and does not diagnose.</p>
 <ul class="hs-list">
-<li><span class="hs-k">Tested:</span> the full chain on synthetic cases, and value extraction on one de-identified real case.</li>
-<li><span class="hs-k">Clinical validation:</span> scheduled for this quarter (by <span class="nw">December 2026</span>).</li>
+<li><span class="hs-k">Tested:</span> on one de-identified real case (value extraction only) and on a purpose-built synthetic case (the full chain, nine reports).</li>
+<li><span class="hs-k">Clinical validation:</span> A supervised clinical evaluation is being planned; its dates depend on site and ethics approvals.</li>
 </ul>
 <a class="hs-a" href="evidence.html">How it was tested</a>
 </div>
@@ -67,8 +67,19 @@
 </div>
 </div>
 <figure class="hero-viz deep">
-<svg class="sl sl-w" viewBox="0 0 1140 450" role="img" aria-labelledby="hw-t"><title id="hw-t">Synthetic case SYN30. On the report collected 2026-09-08, potassium is printed as 6.4 mmol/L with interval 3.5-5.1. A solid line joins that printed row to the last point of the dated potassium history: 4.4, 4.6, 4.5, 4.8 and 4.7 mmol/L from March 2024 to January 2026, all within the printed interval, then 6.4 on 8 September 2026, above it. A second report, collected 2026-01-20, prints creatinine as 80 µmol/L; LabSense converts it to 0.90 mg/dL under the clinically ratified unit table so it joins the creatinine history, and keeps the printed value for traceability; activation is in progress.</title><rect class="paper" x="0.5" y="10.5" width="476" height="246" rx="10"/><text class="ph" x="24" y="42">Fictional Lab North</text><text class="pm" x="24" y="64">SYN-S30-001 · collected 2026-09-08 · page 1 of 4</text><text class="pk" x="24" y="98">ANALYTE</text><text class="pk" x="212" y="98">RESULT</text><text class="pk" x="268" y="98">UNIT</text><text class="pk" x="398" y="98">INTERVAL</text><line class="rule" x1="24" x2="456" y1="108" y2="108"/><text class="pr " x="24" y="138">Sodium</text><text class="pv " x="212" y="138">137</text><text class="pu" x="268" y="138">mmol/L</text><text class="pu" x="398" y="138">135-145</text><rect class="hl" x="12" y="153" width="456" height="32" rx="6"/><text class="pr strong" x="24" y="175">Potassium</text><text class="pv strong" x="212" y="175">6.4</text><text class="pu" x="268" y="175">mmol/L</text><text class="pu" x="398" y="175">3.5-5.1</text><text class="pr " x="24" y="212">Creatinine</text><text class="pv " x="212" y="212">1.04</text><text class="pu" x="268" y="212">mg/dL</text><text class="pu" x="398" y="212">0.7-1.3</text><text class="pr " x="24" y="244">eGFR</text><text class="pv " x="212" y="244">74</text><text class="pu" x="268" y="244">mL/min/1.73 m²</text><text class="pu" x="398" y="244">&gt;60</text><rect class="paper2" x="0.5" y="290.5" width="476" height="128" rx="10"/><text class="ph" x="24" y="322">Fictional Lab North</text><text class="pm" x="24" y="344">SYN-S30-001 · collected 2026-01-20 · page 1 of 3</text><rect class="hl-u" x="12" y="370" width="456" height="32" rx="6"/><text class="pr " x="24" y="392">Creatinine</text><text class="pv " x="212" y="392">80</text><text class="pu" x="268" y="392">µmol/L</text><text class="pu" x="398" y="392">62-115</text><text class="ck" x="650" y="30">POTASSIUM, mmol/L</text><circle class="pt out" cx="914" cy="26" r="6"/><text class="axis" x="926" y="30">above interval</text><circle class="pt" cx="1052" cy="26" r="5"/><text class="axis" x="1062" y="30">within</text><rect class="plot" x="650" y="52" width="460" height="234" rx="6"/><rect class="band" x="650" y="163.2" width="460" height="93.6"/><line class="bedge" x1="650" x2="1110" y1="163.2" y2="163.2"/><line class="bedge" x1="650" x2="1110" y1="256.8" y2="256.8"/><text class="bl" x="662" y="246.8">printed interval 3.5 to 5.1</text><text class="tick" x="642" y="261.8" text-anchor="end">3.5</text><text class="tick" x="642" y="168.2" text-anchor="end">5.1</text><text class="tick" x="642" y="86.3" text-anchor="end">6.5</text><polyline class="ln" points="706.0,204.1 785.5,192.4 856.5,198.3 924.7,180.7 984.3,186.5 1078.1,87.1"/><circle class="pt" cx="706.0" cy="204.1" r="5.5"/><text class="ptl" x="706.0" y="192.6" text-anchor="middle">4.4</text><text class="axis" x="706.0" y="308" text-anchor="middle">Mar 24</text><circle class="pt" cx="785.5" cy="192.4" r="5.5"/><text class="ptl" x="785.5" y="180.9" text-anchor="middle">4.6</text><text class="axis" x="785.5" y="326" text-anchor="middle">Sep 24</text><circle class="pt" cx="856.5" cy="198.3" r="5.5"/><text class="ptl" x="856.5" y="186.8" text-anchor="middle">4.5</text><text class="axis" x="856.5" y="308" text-anchor="middle">Mar 25</text><circle class="pt" cx="924.7" cy="180.7" r="5.5"/><text class="ptl" x="924.7" y="203.4" text-anchor="middle">4.8</text><text class="axis" x="924.7" y="326" text-anchor="middle">Aug 25</text><circle class="pt" cx="984.3" cy="186.5" r="5.5"/><text class="ptl" x="984.3" y="209.2" text-anchor="middle">4.7</text><text class="axis" x="984.3" y="308" text-anchor="middle">Jan 26</text><circle class="pt out src-pt" cx="1078.1" cy="87.1" r="8"/><text class="ptl out" x="1078.1" y="73.1" text-anchor="middle">6.4</text><text class="axis" x="1078.1" y="326" text-anchor="middle">Sep 26</text><path class="src" d="M468,169 C556,169 566,356 652,356 L1112,356 C1124,356 1130,350 1130,338 L1130,99.1 C1130,87.1 1124,87.1 1116,87.1 L1088.1,87.1"/><circle class="anc" cx="468" cy="169" r="5"/><text class="lk" x="660" y="346">SOURCE LINE</text><text class="drawn" x="760" y="346">Drawn for this page</text><path class="brk-u" d="M468,386 L632,386"/><circle class="anc-u" cx="468" cy="386" r="5"/><rect class="useries" x="641" y="377" width="18" height="18" rx="3"/><text class="rk-u" x="680" y="384">Creatinine 80 µmol/L, report of 2026-01-20</text><text class="rv" x="680" y="408">Converted to 0.90 mg/dL under the ratified unit table.</text><text class="rv" x="680" y="430">Printed value kept; activation in progress.</text></svg><svg class="sl sl-n" viewBox="0 0 360 720" role="img" aria-labelledby="hn-t"><title id="hn-t">Synthetic case SYN30. On the report collected 2026-09-08, potassium is printed as 6.4 mmol/L with interval 3.5-5.1. A solid line joins that printed row to the last point of the dated potassium history: 4.4, 4.6, 4.5, 4.8 and 4.7 mmol/L from March 2024 to January 2026, all within the printed interval, then 6.4 on 8 September 2026, above it. A second report, collected 2026-01-20, prints creatinine as 80 µmol/L; LabSense converts it to 0.90 mg/dL under the clinically ratified unit table so it joins the creatinine history, and keeps the printed value for traceability; activation is in progress.</title><rect class="paper" x="0.5" y="0.5" width="359" height="214" rx="10"/><text class="ph" x="16" y="30">Fictional Lab North</text><text class="pm" x="16" y="52">collected 2026-09-08 · page 1 of 4</text><text class="pk" x="16" y="84">ANALYTE</text><text class="pk" x="150" y="84">RESULT</text><text class="pk" x="268" y="84">RANGE</text><line class="rule" x1="16" x2="344" y1="94" y2="94"/><text class="pr " x="16" y="122">Sodium</text><text class="pv " x="150" y="122">137 mmol/L</text><text class="pu" x="268" y="122">135-145</text><rect class="hl" x="6" y="137" width="348" height="32" rx="6"/><text class="pr strong" x="16" y="159">Potassium</text><text class="pv strong" x="150" y="159">6.4 mmol/L</text><text class="pu" x="268" y="159">3.5-5.1</text><text class="pr " x="16" y="196">Creatinine</text><text class="pv " x="150" y="196">1.04 mg/dL</text><text class="pu" x="268" y="196">0.7-1.3</text><text class="lk" x="16" y="240">SOURCE LINE</text><text class="drawn" x="114" y="240">Drawn for this page</text><text class="ck" x="16" y="276">POTASSIUM, mmol/L</text><rect class="plot" x="44" y="300" width="300" height="200" rx="6"/><rect class="band" x="44" y="395.0" width="300" height="80.0"/><line class="bedge" x1="44" x2="344" y1="395.0" y2="395.0"/><line class="bedge" x1="44" x2="344" y1="475.0" y2="475.0"/><text class="bl" x="52" y="467.0">printed 3.5 to 5.1</text><text class="tick" x="38" y="480.0" text-anchor="end">3.5</text><text class="tick" x="38" y="400.0" text-anchor="end">5.1</text><text class="tick" x="38" y="330.0" text-anchor="end">6.5</text><polyline class="ln" points="78.1,430.0 127.3,420.0 171.3,425.0 213.5,410.0 250.4,415.0 308.4,330.0"/><circle class="pt" cx="78.1" cy="430.0" r="5"/><text class="ptl" x="78.1" y="419.0" text-anchor="middle">4.4</text><text class="axis" x="78.1" y="522" text-anchor="middle">Mar 24</text><circle class="pt" cx="127.3" cy="420.0" r="5"/><text class="ptl" x="127.3" y="409.0" text-anchor="middle">4.6</text><circle class="pt" cx="171.3" cy="425.0" r="5"/><text class="ptl" x="171.3" y="414.0" text-anchor="middle">4.5</text><text class="axis" x="171.3" y="522" text-anchor="middle">Mar 25</text><circle class="pt" cx="213.5" cy="410.0" r="5"/><text class="ptl" x="213.5" y="432.2" text-anchor="middle">4.8</text><circle class="pt" cx="250.4" cy="415.0" r="5"/><text class="ptl" x="250.4" y="437.2" text-anchor="middle">4.7</text><circle class="pt out src-pt" cx="308.4" cy="330.0" r="8"/><text class="ptl out" x="298.4" y="319.0" text-anchor="end">6.4</text><text class="axis" x="308.4" y="522" text-anchor="middle">Sep 26</text><path class="src" d="M346,153 C358,153 356,200 308.4,232 L308.4,318.0"/><circle class="anc" cx="346" cy="153" r="4.5"/><rect class="paper2" x="0.5" y="562.5" width="359" height="156" rx="10"/><text class="pm" x="16" y="590">collected 2026-01-20 · page 1 of 3</text><rect class="hl-u" x="6" y="602" width="348" height="32" rx="6"/><text class="pr " x="16" y="624">Creatinine</text><text class="pv " x="150" y="624">80 µmol/L</text><text class="pu" x="268" y="624">62-115</text><path class="brk-u" d="M30,640 L30,662"/><rect class="useries" x="22" y="664" width="16" height="16" rx="3"/><text class="rv" x="50" y="672">Converted to 0.90 mg/dL; printed value kept.</text><text class="rv" x="50" y="696">Activation in progress.</text></svg>
-<figcaption>Synthetic case SYN30, redrawn from the printed reports and the run&rsquo;s stored record. In the recorded run, the first reading led with this value as &ldquo;Critical Potassium (<span class="nw">6.4 mmol/L</span>)&rdquo;, urgency Emergency (<a href="#stop-4"><span class="nw">stop 4</span></a>).</figcaption>
+<svg class="sl sl-w" viewBox="0 0 1140 450" role="img" aria-labelledby="hw-t"><title id="hw-t">Synthetic case SYN30. On the report collected 2026-09-08, potassium is printed as 6.4 mmol/L with interval 3.5-5.1. A solid line joins that printed row to the last point of the dated potassium history: 4.4, 4.6, 4.5, 4.8 and 4.7 mmol/L from March 2024 to January 2026, all within the printed interval, then 6.4 on 8 September 2026, above it. A second report, collected 2026-01-20, prints creatinine as 80 µmol/L; in the recorded run it was kept as printed in its own unit series. The drawing also shows 0.90 mg/dL as an illustration of the clinically approved conversion rule; the application will apply the rule after activation is verified.</title><rect class="paper" x="0.5" y="10.5" width="476" height="246" rx="10"/><text class="ph" x="24" y="42">Fictional Lab North</text><text class="pm" x="24" y="64">SYN-S30-001 · collected 2026-09-08 · page 1 of 4</text><text class="pk" x="24" y="98">ANALYTE</text><text class="pk" x="212" y="98">RESULT</text><text class="pk" x="268" y="98">UNIT</text><text class="pk" x="398" y="98">INTERVAL</text><line class="rule" x1="24" x2="456" y1="108" y2="108"/><text class="pr " x="24" y="138">Sodium</text><text class="pv " x="212" y="138">137</text><text class="pu" x="268" y="138">mmol/L</text><text class="pu" x="398" y="138">135-145</text><rect class="hl" x="12" y="153" width="456" height="32" rx="6"/><text class="pr strong" x="24" y="175">Potassium</text><text class="pv strong" x="212" y="175">6.4</text><text class="pu" x="268" y="175">mmol/L</text><text class="pu" x="398" y="175">3.5-5.1</text><text class="pr " x="24" y="212">Creatinine</text><text class="pv " x="212" y="212">1.04</text><text class="pu" x="268" y="212">mg/dL</text><text class="pu" x="398" y="212">0.7-1.3</text><text class="pr " x="24" y="244">eGFR</text><text class="pv " x="212" y="244">74</text><text class="pu" x="268" y="244">mL/min/1.73 m²</text><text class="pu" x="398" y="244">&gt;60</text><rect class="paper2" x="0.5" y="290.5" width="476" height="128" rx="10"/><text class="ph" x="24" y="322">Fictional Lab North</text><text class="pm" x="24" y="344">SYN-S30-001 · collected 2026-01-20 · page 1 of 3</text><rect class="hl-u" x="12" y="370" width="456" height="32" rx="6"/><text class="pr " x="24" y="392">Creatinine</text><text class="pv " x="212" y="392">80</text><text class="pu" x="268" y="392">µmol/L</text><text class="pu" x="398" y="392">62-115</text><text class="ck" x="650" y="30">POTASSIUM, mmol/L</text><circle class="pt out" cx="914" cy="26" r="6"/><text class="axis" x="926" y="30">above interval</text><circle class="pt" cx="1052" cy="26" r="5"/><text class="axis" x="1062" y="30">within</text><rect class="plot" x="650" y="52" width="460" height="234" rx="6"/><rect class="band" x="650" y="163.2" width="460" height="93.6"/><line class="bedge" x1="650" x2="1110" y1="163.2" y2="163.2"/><line class="bedge" x1="650" x2="1110" y1="256.8" y2="256.8"/><text class="bl" x="662" y="246.8">printed interval 3.5 to 5.1</text><text class="tick" x="642" y="261.8" text-anchor="end">3.5</text><text class="tick" x="642" y="168.2" text-anchor="end">5.1</text><text class="tick" x="642" y="86.3" text-anchor="end">6.5</text><polyline class="ln" points="706.0,204.1 785.5,192.4 856.5,198.3 924.7,180.7 984.3,186.5 1078.1,87.1"/><circle class="pt" cx="706.0" cy="204.1" r="5.5"/><text class="ptl" x="706.0" y="192.6" text-anchor="middle">4.4</text><text class="axis" x="706.0" y="308" text-anchor="middle">Mar 24</text><circle class="pt" cx="785.5" cy="192.4" r="5.5"/><text class="ptl" x="785.5" y="180.9" text-anchor="middle">4.6</text><text class="axis" x="785.5" y="326" text-anchor="middle">Sep 24</text><circle class="pt" cx="856.5" cy="198.3" r="5.5"/><text class="ptl" x="856.5" y="186.8" text-anchor="middle">4.5</text><text class="axis" x="856.5" y="308" text-anchor="middle">Mar 25</text><circle class="pt" cx="924.7" cy="180.7" r="5.5"/><text class="ptl" x="924.7" y="203.4" text-anchor="middle">4.8</text><text class="axis" x="924.7" y="326" text-anchor="middle">Aug 25</text><circle class="pt" cx="984.3" cy="186.5" r="5.5"/><text class="ptl" x="984.3" y="209.2" text-anchor="middle">4.7</text><text class="axis" x="984.3" y="308" text-anchor="middle">Jan 26</text><circle class="pt out src-pt" cx="1078.1" cy="87.1" r="8"/><text class="ptl out" x="1078.1" y="73.1" text-anchor="middle">6.4</text><text class="axis" x="1078.1" y="326" text-anchor="middle">Sep 26</text><path class="src" d="M468,169 C556,169 566,356 652,356 L1112,356 C1124,356 1130,350 1130,338 L1130,99.1 C1130,87.1 1124,87.1 1116,87.1 L1088.1,87.1"/><circle class="anc" cx="468" cy="169" r="5"/><text class="lk" x="660" y="346">SOURCE LINE</text><text class="drawn" x="760" y="346">Drawn for this page</text><path class="brk-u" d="M468,386 L632,386"/><circle class="anc-u" cx="468" cy="386" r="5"/><rect class="useries" x="641" y="377" width="18" height="18" rx="3"/><text class="rk-u" x="680" y="384">Creatinine 80 µmol/L, report of 2026-01-20</text><text class="rv" x="680" y="408">Recorded run: kept as printed, in its own unit series.</text><text class="rv uc-illus" x="680" y="430">Illustration, approved rule: 0.90 mg/dL.</text></svg><svg class="sl sl-n" viewBox="0 0 360 720" role="img" aria-labelledby="hn-t"><title id="hn-t">Synthetic case SYN30. On the report collected 2026-09-08, potassium is printed as 6.4 mmol/L with interval 3.5-5.1. A solid line joins that printed row to the last point of the dated potassium history: 4.4, 4.6, 4.5, 4.8 and 4.7 mmol/L from March 2024 to January 2026, all within the printed interval, then 6.4 on 8 September 2026, above it. A second report, collected 2026-01-20, prints creatinine as 80 µmol/L; in the recorded run it was kept as printed in its own unit series. The drawing also shows 0.90 mg/dL as an illustration of the clinically approved conversion rule; the application will apply the rule after activation is verified.</title><rect class="paper" x="0.5" y="0.5" width="359" height="214" rx="10"/><text class="ph" x="16" y="30">Fictional Lab North</text><text class="pm" x="16" y="52">collected 2026-09-08 · page 1 of 4</text><text class="pk" x="16" y="84">ANALYTE</text><text class="pk" x="150" y="84">RESULT</text><text class="pk" x="268" y="84">RANGE</text><line class="rule" x1="16" x2="344" y1="94" y2="94"/><text class="pr " x="16" y="122">Sodium</text><text class="pv " x="150" y="122">137 mmol/L</text><text class="pu" x="268" y="122">135-145</text><rect class="hl" x="6" y="137" width="348" height="32" rx="6"/><text class="pr strong" x="16" y="159">Potassium</text><text class="pv strong" x="150" y="159">6.4 mmol/L</text><text class="pu" x="268" y="159">3.5-5.1</text><text class="pr " x="16" y="196">Creatinine</text><text class="pv " x="150" y="196">1.04 mg/dL</text><text class="pu" x="268" y="196">0.7-1.3</text><text class="lk" x="16" y="240">SOURCE LINE</text><text class="drawn" x="114" y="240">Drawn for this page</text><text class="ck" x="16" y="276">POTASSIUM, mmol/L</text><rect class="plot" x="44" y="300" width="300" height="200" rx="6"/><rect class="band" x="44" y="395.0" width="300" height="80.0"/><line class="bedge" x1="44" x2="344" y1="395.0" y2="395.0"/><line class="bedge" x1="44" x2="344" y1="475.0" y2="475.0"/><text class="bl" x="52" y="467.0">printed 3.5 to 5.1</text><text class="tick" x="38" y="480.0" text-anchor="end">3.5</text><text class="tick" x="38" y="400.0" text-anchor="end">5.1</text><text class="tick" x="38" y="330.0" text-anchor="end">6.5</text><polyline class="ln" points="78.1,430.0 127.3,420.0 171.3,425.0 213.5,410.0 250.4,415.0 308.4,330.0"/><circle class="pt" cx="78.1" cy="430.0" r="5"/><text class="ptl" x="78.1" y="419.0" text-anchor="middle">4.4</text><text class="axis" x="78.1" y="522" text-anchor="middle">Mar 24</text><circle class="pt" cx="127.3" cy="420.0" r="5"/><text class="ptl" x="127.3" y="409.0" text-anchor="middle">4.6</text><circle class="pt" cx="171.3" cy="425.0" r="5"/><text class="ptl" x="171.3" y="414.0" text-anchor="middle">4.5</text><text class="axis" x="171.3" y="522" text-anchor="middle">Mar 25</text><circle class="pt" cx="213.5" cy="410.0" r="5"/><text class="ptl" x="213.5" y="432.2" text-anchor="middle">4.8</text><circle class="pt" cx="250.4" cy="415.0" r="5"/><text class="ptl" x="250.4" y="437.2" text-anchor="middle">4.7</text><circle class="pt out src-pt" cx="308.4" cy="330.0" r="8"/><text class="ptl out" x="298.4" y="319.0" text-anchor="end">6.4</text><text class="axis" x="308.4" y="522" text-anchor="middle">Sep 26</text><path class="src" d="M346,153 C358,153 356,200 308.4,232 L308.4,318.0"/><circle class="anc" cx="346" cy="153" r="4.5"/><rect class="paper2" x="0.5" y="562.5" width="359" height="156" rx="10"/><text class="pm" x="16" y="590">collected 2026-01-20 · page 1 of 3</text><rect class="hl-u" x="6" y="602" width="348" height="32" rx="6"/><text class="pr " x="16" y="624">Creatinine</text><text class="pv " x="150" y="624">80 µmol/L</text><text class="pu" x="268" y="624">62-115</text><path class="brk-u" d="M30,640 L30,662"/><rect class="useries" x="22" y="664" width="16" height="16" rx="3"/><text class="rv" x="50" y="672">Recorded run: kept as printed, own series.</text><text class="rv uc-illus" x="50" y="696">Illustration of approved rule: 0.90 mg/dL.</text></svg>
+<figcaption>Synthetic case SYN30, redrawn from the printed reports and the run&rsquo;s stored record. In the recorded run, the first reading led with this value as &ldquo;Critical Potassium (<span class="nw">6.4 mmol/L</span>)&rdquo;, urgency Emergency (<a href="#stop-4"><span class="nw">stop 4</span></a>). Creatinine row: <span class="uc-note" role="note"><span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Illustration</span> <span class="uc-t">Illustration of the clinically approved conversion rule. The recorded run kept this value as printed in its own unit series; the application will apply the rule after activation is verified.</span></span></figcaption>
+<div class="cmp" aria-labelledby="cmp-h">
+<p class="cmp-k">Illustration of an approved rule</p>
+<h3 id="cmp-h">Compare results across labs</h3>
+<p class="cmp-p">Different laboratories can report the same test in different units. LabSense keeps the printed value and unit exactly as printed. Where the clinicians have approved a conversion rule, a comparable value can be shown beside the printed one. In the recorded run, creatinine <span class="nw">80 µmol/L</span> was kept as printed in its own unit series and did not enter the trend; the application does not apply the approved rule yet. Whether the comparable value would inform an assessment has not been tested.</p>
+<div class="tw cmp-tw" tabindex="0" role="region" aria-label="Unit comparison example">
+<table class="ev cmp-t">
+<thead><tr><th scope="col">Printed on the report</th><th scope="col">Comparable value under the approved rule</th><th scope="col">Status</th></tr></thead>
+<tbody><tr><td data-l="Printed on the report"><span class="nw">80 µmol/L</span> creatinine, report collected <span class="nw">2026-01-20</span></td><td data-l="Comparable value under the approved rule"><span class="nw">0.90 mg/dL</span> (illustration)</td><td data-l="Status">Recorded run: kept as printed, in its own unit series. Rule ratified by the Lead Clinician on <span class="nw">10 November 2026</span>; not yet applied by the application.</td></tr></tbody>
+</table>
+</div>
+</div>
 <aside class="src-check" aria-label="Check the source yourself">
 <div class="src-tx"><p class="src-k">Check it yourself</p>
 <p class="src-t">Open the report this value came from and compare: potassium <span class="nw"><span class="num">6.4</span> mmol/L</span>, interval <span class="num"><span class="nw">3.5-5.1</span></span>, collected <span class="nw">2026-09-08</span>, <span class="nw">page 1</span>.</p></div>
@@ -87,8 +98,14 @@
 
 <section class="band context" id="overview" aria-labelledby="ctx-h">
 <div class="wrap">
-<div class="pe-head"><h2 id="ctx-h" class="plain-h">In plain English</h2><p>Three ideas, each shown with a real example from the case on this page.</p></div>
+<div class="pe-head"><h2 id="ctx-h" class="plain-h">How LabSense investigates a case</h2><p>What the LabSense application does with a set of reports, in order.</p></div>
 <div class="pe">
+<div class="flow" aria-label="How LabSense works">
+<h3>From reports to a dated history</h3>
+<p>A patient&rsquo;s lab history is often spread across years of reports from several laboratories. In the LabSense application, a signed-in user can bring those reports together even when they arrive out of order. After a person confirms the patient identity on the first report, LabSense checks subsequent reports against it, reads the results across panels and builds one dated history. Each result keeps its printed value, unit, reference interval and link to the source report. Discrepancies are flagged for review.</p>
+<h3>From the history to a reassessment</h3>
+<p>LabSense reviews the history for findings that warrant attention and shows where the record is incomplete. It asks focused questions about symptoms, family history or other relevant context. In the recorded run this context came only through those questions, after the first reading, and the answers were scripted. When an answer bears on the assessment, LabSense shows what changed, what stayed the same and what still needs investigation. Clinicians can check the evidence behind the assessment and decide what to investigate next.</p>
+</div>
 <figure class="pe-vis" aria-labelledby="pe-cap">
 <div class="pe-before">
 <p class="pe-k">Before: separate reports</p>
@@ -102,16 +119,12 @@
 <ol class="pe-line" aria-label="Potassium, mmol/L, by collection date">
 <li><span class="pe-dt"><span class="nw">Mar 2024</span></span><span class="pe-v">4.4</span></li><li><span class="pe-dt"><span class="nw">Sep 2024</span></span><span class="pe-v">4.6</span></li><li><span class="pe-dt"><span class="nw">Mar 2025</span></span><span class="pe-v">4.5</span></li><li><span class="pe-dt"><span class="nw">Aug 2025</span></span><span class="pe-v">4.8</span></li><li><span class="pe-dt"><span class="nw">Jan 2026</span></span><span class="pe-v">4.7</span></li><li class="up"><span class="pe-dt"><span class="nw">Sep 2026</span></span><span class="pe-v">6.4</span><span class="pe-tag out">Above interval</span></li>
 </ol>
-<p class="pe-note apart conv"><span class="pe-tag convd">Converted</span> Creatinine <span class="nw">80 µmol/L</span> &rarr; <span class="nw">0.90 mg/dL</span><span class="pe-sub">original <span class="nw">80 µmol/L</span> kept</span><span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Activation in progress</span></p>
-<p class="pe-note side"><span class="pe-tag conf">Conflict</span> Creatinine 1.04 and <span class="nw">1.62 mg/dL</span>: both kept, side by side; neither is chosen.</p>
+<p class="pe-note apart conv"><span class="pe-tag convd">Approved rule</span> Creatinine <span class="nw">80 µmol/L</span> &rarr; <span class="nw">0.90 mg/dL</span><span class="pe-sub">illustration, not applied yet; printed <span class="nw">80 µmol/L</span> kept</span></p>
+<p class="pe-note side"><span class="pe-tag conf">Report collision</span> Report of <span class="nw">2026-09-08</span> prints creatinine twice (<span class="nw">1.04</span> and <span class="nw">1.62 mg/dL</span>), both in mg/dL. Neither guessed nor averaged: 1.04 stored, held for review; 1.62 a second printed result, not stored; neither is the current value.</p>
 </div>
-<figcaption id="pe-cap">Drawn for this page from the synthetic case: three of the nine reports, and what LabSense makes of them.</figcaption>
+<figcaption id="pe-cap">Drawn from the worked case: three of the nine reports and how LabSense structures them. <span class="uc-note" role="note"><span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Illustration</span> <span class="uc-t">Illustration of the clinically approved conversion rule. The recorded run kept this value as printed in its own unit series; the application will apply the rule after activation is verified.</span></span></figcaption>
 </figure>
-<ol class="plain" aria-label="LabSense in plain English">
-<li><h3>What LabSense is</h3><p>LabSense is a Clinical Investigational System for clinicians. It reads a patient&rsquo;s laboratory reports, from any date or laboratory, and lines up each test on a single dated history. Every value can be checked against the printed report it came from.</p><p class="pe-ex"><span class="pe-lab">In this case</span> Potassium from six collection dates becomes one line, from <span class="nw">4.4 mmol/L</span> in March <span class="nw">2024 to 6.4 mmol/L</span> in <span class="nw">September 2026</span>.</p></li>
-<li><h3>The problem it solves</h3><p>Lab reports arrive one at a time, often from different laboratories that use different units and normal ranges. Following a single test means paging through report after report, and an important change is easy to miss.</p><p class="pe-ex"><span class="pe-lab">In this case</span> One report gave creatinine as <span class="nw">80 µmol/L</span>; the others used mg/dL. LabSense converts it to <span class="nw">0.90 mg/dL</span> using the clinically ratified unit table, so it joins the same history, and keeps the printed <span class="nw">80 µmol/L</span> beside it for traceability. <span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Activation in progress</span></p></li>
-<li><h3>How it stays dependable</h3><p>When LabSense is not sure, it says so rather than guess. It keeps conflicting values side by side, holds back any value it cannot trust and explains why, confirms whose report it is before storing anything, and shows exactly what each answer changed.</p><p class="pe-ex"><span class="pe-lab">In this case</span> The latest report printed creatinine twice, as 1.04 and <span class="nw">1.62 mg/dL</span>. Both are kept, and neither is chosen.</p></li>
-</ol>
+
 </div>
 </div>
 </section>
@@ -119,16 +132,26 @@
 <section class="band deep" id="metrics" aria-labelledby="met-h">
 <div class="wrap">
 <div class="sec-head">
-<div><p class="eyebrow">Evidence at a glance</p><h2 id="met-h">Tested against real-world complexity</h2></div>
-<p>Real laboratory records are rarely tidy. Clinical validation is scheduled for this quarter (by <span class="nw">December 2026</span>). In a recorded run, LabSense went end to end through a synthetic case, a multi-year record built to be hard; its value extraction has also been compared on one de-identified real case. None of this is clinical validation.</p>
+<div><p class="eyebrow">Evidence at a glance</p><h2 id="met-h">What the worked case demonstrated</h2></div>
+<p>The recorded synthetic case tested the full review workflow. A separate evaluation compared extraction on de-identified patient reports. None of this is clinical validation.</p>
 </div>
-<div class="tiles met">
-<div class="tile"><span class="v">30</span><p>printed pages in <span class="num">9</span> synthetic reports, on <span class="num">7</span> dates (6 collection dates and 1 report date) from <span class="nw">March 2024</span> to <span class="nw">September 2026</span>, uploaded out of order.</p><a class="tile-a" href="#stop-1"><span class="nw">Stop 1</span></a></div>
-<div class="tile"><span class="v">109</span><p>printed result rows reconciled across the nine reports: <span class="num">107</span> stored and <span class="num">2</span> held back, each with the reason it gave. None was dropped without a reason being shown.</p><a class="tile-a" href="#stop-3"><span class="nw">Stop 3</span></a></div>
-<div class="tile"><span class="v">251</span><p>observations from one de-identified real multi-year case: the AI reader against the conventional reader, checked against a frozen reference set (<span class="nw">August 2026</span>). The full chain on real reports is being prepared.</p><a class="tile-a" href="evidence.html#earlier">Earlier tests</a></div>
-<div class="tile"><span class="v">243</span><p>printed value lines read into stored rows by the conventional reader, across <span class="num">46</span> earlier synthetic PDFs in <span class="num">15</span> cases.</p><a class="tile-a" href="evidence.html#earlier">Earlier tests</a></div>
-<div class="tile"><span class="v word">Units reconciled</span><p>Changing units and printed intervals are tracked report by report: creatinine <span class="nw">80 µmol/L</span> is converted to <span class="nw">0.90 mg/dL</span> under the ratified unit table, with the printed value kept, and an amended interval is shown beside the original. <span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Activation in progress</span></p><a class="tile-a" href="#stop-3"><span class="nw">Stop 3</span></a></div>
-<div class="tile"><span class="v word">Row by row</span><p>Every stored value is tied to its printed row and report, with source verification being validated. <span class="rm-l val"><i aria-hidden="true"></i>Being validated</span></p><a class="tile-a" href="evidence.html#status">Feature status</a></div>
+<div class="statbar" role="group" aria-label="The recorded synthetic run in three numbers">
+<div class="sb"><span class="v">30</span><p>printed pages in <span class="num">9</span> synthetic reports, on <span class="num">7</span> dates (6 collection dates and 1 report date), <span class="nw">March 2024</span> to <span class="nw">September 2026</span>, uploaded out of order</p><a class="tile-a" href="#stop-1"><span class="nw">Stop 1</span></a></div>
+<span class="sb-ar" aria-hidden="true"></span>
+<div class="sb"><span class="v">109</span><p>printed result rows reconciled across the nine reports</p><a class="tile-a" href="#stop-3"><span class="nw">Stop 3</span></a></div>
+<span class="sb-ar" aria-hidden="true"></span>
+<div class="sb"><span class="v">107 / 2</span><p><span class="num">107</span> stored, including <span class="num">8</span> documented trend exclusions, and <span class="num">2</span> not stored, each with the reason it gave.</p><a class="tile-a" href="#stop-3"><span class="nw">Stop 3</span></a></div>
+</div>
+<ul class="met-notes">
+<li><strong>Row by row.</strong> Every stored value is tied to its printed row and report, with source verification being validated. <span class="rm-l val"><i aria-hidden="true"></i>Being validated</span> <a href="evidence.html#status">Feature status</a></li>
+</ul>
+<div class="earlier-eval">
+<h3>Earlier extraction evaluation</h3>
+<p class="ee-p">Separate from the synthetic run above: value extraction compared on one de-identified real case, and on earlier synthetic PDFs. Extraction only, not the full chain.</p>
+<div class="ee-g">
+<div class="ee"><span class="v">251</span><p>observations from one de-identified real multi-year case: the AI reader against the conventional reader, checked against a frozen reference set (<span class="nw">August 2026</span>). The full chain on real reports is being prepared.</p><a class="tile-a" href="evidence.html#earlier">Earlier tests</a></div>
+<div class="ee"><span class="v">243</span><p>printed value lines read into stored rows by the conventional reader, across <span class="num">46</span> earlier synthetic PDFs in <span class="num">15</span> cases.</p><a class="tile-a" href="evidence.html#earlier">Earlier tests</a></div>
+</div>
 </div>
 <p class="speed"><span class="speed-k">Measured speed</span> In the recorded run, on the server: each report was read in <span class="nw">6 to 15 s</span>, and each reading returned in under a second (median <span class="nw">375 ms</span>, slowest <span class="nw">766 ms</span>). Step times include fixed waits, so these are upper bounds. <a href="evidence.html#syn30">Run record</a></p>
 </div>
@@ -137,15 +160,10 @@
 <section class="band" id="case" aria-labelledby="case-h">
 <div class="wrap">
 <div class="sec-head">
-<div><p class="eyebrow">The worked case</p><h2 id="case-h">One patient, nine reports, thirty months: from raw PDFs to auditable clinical review</h2></div>
-<p>Six stops, each with one picture and one result. Under each: what you check, what LabSense does, and what stays your decision. Inventories and settings are under &ldquo;More detail&rdquo;.</p>
+<div><p class="eyebrow">The worked case</p><h2 id="case-h">A worked case across 30 months of lab results</h2></div>
+<p>See what one answer changed. In the recorded case, a scripted answer about family history raised concern about inherited lipid risk. The main potassium finding and its urgency stayed the same. <a href="#stop-5">Follow the question and reassessment</a> to see what the system used and what remained unresolved.</p>
 </div>
-<div class="case-note">
-<div class="note"><h3>A recording, played back</h3><p>This website does not read, upload or analyse anything. Every value comes from the run&rsquo;s stored record and the synthetic PDFs, which you can open. Screens marked as captures are LabSense&rsquo;s own; the rest is redrawn from recorded output for legibility.</p></div>
-<div class="note"><h3>One run, start to finish</h3><p>The stops follow a single recorded run on the synthetic case, with every panel of each report read. Details of how it was run are on the evidence page.</p></div>
-</div>
-<p class="legend-line"><span class="tag recorded">Recorded</span> marks output of a test run on a synthetic case. The evidence page explains its other status labels where they first appear.</p>
-
+<p class="legend-line"><span class="tag recorded">Recorded</span> Playback of a single recorded run on a 30-page multi-panel case fixture, with every panel read and scripted evaluation answers. All values come from the stored run record and downloadable PDFs. This website does not read or upload anything; screens marked as captures are LabSense&rsquo;s own, and the rest is redrawn from recorded output.</p>
 <div class="case" id="case-frame">
 <div class="case-bar"><span class="rec">Playback of a recorded run on synthetic case <span class="num">SYN30</span>, <span class="num"><span class="nw">9 November 2026</span></span></span><span><span class="tag recorded">Recorded</span></span></div>
 <div class="case-body">
@@ -291,9 +309,9 @@
 <div>
 <h4>Stored, but kept out of every trend</h4>
 <ul class="recon-list">
-<li>Creatinine <span class="nw">80 µmol/L</span> (<span class="nw">2026-01-20</span>): in this run, kept as printed in its own unit series; conversion under the ratified table is being activated</li>
+<li>Creatinine <span class="nw">80 µmol/L</span> (<span class="nw">2026-01-20</span>): in this run, kept as printed in its own unit series; the recorded build gave a transcription check as the reason, but the cause was a unit difference (see the dated correction beside the film)</li>
 <li>Creatinine <span class="nw">1.04 mg/dL</span> (<span class="nw">2026-09-08</span>): held for review, not a current value; the report prints two values and neither is chosen</li>
-<li>Total cholesterol, all six stored rows: refused by the transcription check</li>
+<li>Total cholesterol, all six stored rows: refused by the transcription check <span class="run-corr" role="note">In the recorded build these values were refused by its transcription check; the real cause was a unit difference (mmol/L), corrected in a later build.</span></li>
 </ul>
 </div>
 </div>
@@ -301,7 +319,7 @@
 <svg class="chart wide" viewBox="0 0 480 320" role="img" aria-labelledby="ch-k-t ch-k-d" focusable="false"><title id="ch-k-t">Potassium, mmol/L</title><desc id="ch-k-d">4.4 on 5 Mar 2024; 4.6 on 17 Sep 2024; 4.5 on 11 Mar 2025; 4.8 on 26 Aug 2025; 4.7 on 20 Jan 2026; 6.4 on 8 Sep 2026. Printed interval 3.5 to 5.1.</desc><rect class="c-band" x="54" y="142.3" width="408" height="91.2"/><line class="c-edge" x1="54" x2="462" y1="142.3" y2="142.3"/><line class="c-edge" x1="54" x2="462" y1="233.5" y2="233.5"/><text class="c-bandlab" x="62" y="225.5">printed interval 3.5 to 5.1</text><text class="c-tick" x="46" y="238.5" text-anchor="end">3.5</text><line class="c-grid" x1="54" x2="462" y1="233.5" y2="233.5"/><text class="c-tick" x="46" y="181.5" text-anchor="end">4.5</text><line class="c-grid" x1="54" x2="462" y1="176.5" y2="176.5"/><text class="c-tick" x="46" y="124.5" text-anchor="end">5.5</text><line class="c-grid" x1="54" x2="462" y1="119.5" y2="119.5"/><text class="c-tick" x="46" y="67.5" text-anchor="end">6.5</text><line class="c-grid" x1="54" x2="462" y1="62.5" y2="62.5"/><line class="c-axis" x1="54" x2="462" y1="262" y2="262"/><polyline class="c-line" points="74.2,182.2 153.5,170.8 224.2,176.5 292.2,159.4 351.6,165.1 445.0,68.2"/><circle class="c-pt" cx="74.2" cy="182.2" r="7"/><text class="c-val" x="74.2" y="167.2" text-anchor="middle">4.4</text><text class="c-date" x="74.2" y="288" text-anchor="middle">Mar 24</text><circle class="c-pt" cx="153.5" cy="170.8" r="7"/><text class="c-val" x="153.5" y="198.6" text-anchor="middle">4.6</text><text class="c-date" x="153.5" y="312" text-anchor="middle">Sep 24</text><circle class="c-pt" cx="224.2" cy="176.5" r="7"/><text class="c-val" x="224.2" y="161.5" text-anchor="middle">4.5</text><text class="c-date" x="224.2" y="288" text-anchor="middle">Mar 25</text><circle class="c-pt" cx="292.2" cy="159.4" r="7"/><text class="c-val" x="292.2" y="187.2" text-anchor="middle">4.8</text><text class="c-date" x="292.2" y="312" text-anchor="middle">Aug 25</text><circle class="c-pt" cx="351.6" cy="165.1" r="7"/><text class="c-val" x="351.6" y="192.9" text-anchor="middle">4.7</text><text class="c-date" x="351.6" y="288" text-anchor="middle">Jan 26</text><circle class="c-pt out" cx="445.0" cy="68.2" r="9.799999999999999"/><text class="c-val out" x="445.0" y="50.4" text-anchor="middle">6.4</text><text class="c-date" x="445.0" y="312" text-anchor="middle">Sep 26</text></svg><svg class="chart narrow" viewBox="0 0 360 250" role="img" aria-labelledby="ch-k-n-t ch-k-n-d" focusable="false"><title id="ch-k-n-t">Potassium, mmol/L</title><desc id="ch-k-n-d">4.4 on 5 Mar 2024; 4.6 on 17 Sep 2024; 4.5 on 11 Mar 2025; 4.8 on 26 Aug 2025; 4.7 on 20 Jan 2026; 6.4 on 8 Sep 2026. Printed interval 3.5 to 5.1.</desc><rect class="c-band" x="36" y="111.5" width="310" height="72.0"/><line class="c-edge" x1="36" x2="346" y1="111.5" y2="111.5"/><line class="c-edge" x1="36" x2="346" y1="183.5" y2="183.5"/><text class="c-bandlab" x="44" y="175.5">printed interval 3.5 to 5.1</text><text class="c-tick" x="28" y="188.5" text-anchor="end">3.5</text><line class="c-grid" x1="36" x2="346" y1="183.5" y2="183.5"/><text class="c-tick" x="28" y="143.5" text-anchor="end">4.5</text><line class="c-grid" x1="36" x2="346" y1="138.5" y2="138.5"/><text class="c-tick" x="28" y="98.5" text-anchor="end">5.5</text><line class="c-grid" x1="36" x2="346" y1="93.5" y2="93.5"/><text class="c-tick" x="28" y="53.5" text-anchor="end">6.5</text><line class="c-grid" x1="36" x2="346" y1="48.5" y2="48.5"/><line class="c-axis" x1="36" x2="346" y1="206" y2="206"/><polyline class="c-line" points="51.4,143.0 111.6,134.0 165.3,138.5 217.0,125.0 262.1,129.5 333.1,53.0"/><circle class="c-pt" cx="51.4" cy="143.0" r="5"/><text class="c-val" x="51.4" y="132.0" text-anchor="middle">4.4</text><text class="c-date" x="51.4" y="224" text-anchor="middle">Mar 24</text><circle class="c-pt" cx="111.6" cy="134.0" r="5"/><text class="c-val" x="111.6" y="123.0" text-anchor="middle">4.6</text><text class="c-date" x="111.6" y="239" text-anchor="middle">Sep 24</text><circle class="c-pt" cx="165.3" cy="138.5" r="5"/><text class="c-val" x="165.3" y="127.5" text-anchor="middle">4.5</text><text class="c-date" x="165.3" y="224" text-anchor="middle">Mar 25</text><circle class="c-pt" cx="217.0" cy="125.0" r="5"/><text class="c-val" x="217.0" y="146.4" text-anchor="middle">4.8</text><text class="c-date" x="217.0" y="239" text-anchor="middle">Aug 25</text><circle class="c-pt" cx="262.1" cy="129.5" r="5"/><text class="c-val" x="262.1" y="150.9" text-anchor="middle">4.7</text><text class="c-date" x="262.1" y="224" text-anchor="middle">Jan 26</text><circle class="c-pt out" cx="333.1" cy="53.0" r="7"/><text class="c-val out" x="333.1" y="40.0" text-anchor="middle">6.4</text><text class="c-date" x="333.1" y="239" text-anchor="middle">Sep 26</text></svg>
 <figcaption><span class="nw">4.4 to 4.8</span> on five earlier collection dates; 6.4 on the latest report.</figcaption></figure>
 <figure class="cap"><img src="assets/syn30/img/mp1_record.webp" width="1394" height="258" loading="lazy" alt="LabSense History screen in a new browser: Rebuilt from the stored record, read-only, for the synthetic case; 103 stored values from 9 reports; creatinine rows with dates, values, printed intervals, source files, and notes such as two reports on this date, both shown, not resolved.">
-<figcaption>Screen capture, a new browser with nothing saved, rebuilding the record from the server. <a href="assets/syn30/captures/CP_SYN30MP1_25_fresh_browser_record_history.png">Full capture</a></figcaption></figure>
+<figcaption>Screen capture, a new browser with nothing saved, rebuilding the record from the server. <a href="assets/syn30/captures/CP_SYN30MP1_25_fresh_browser_record_history.png">Full capture</a> <span class="run-corr" role="note">This capture shows the recorded build&rsquo;s label for creatinine <span class="nw">80 µmol/L</span>, &ldquo;Refused by the transcription check&rdquo;; the real cause was a unit difference, corrected in a later build.</span></figcaption></figure>
 <figure class="cap"><img src="assets/syn30/img/mp1_not_stored.webp" width="1394" height="64" loading="lazy" alt="LabSense list of rows printed on a report but not stored: creatinine 1.62 mg/dL on 2026-09-08, because the report prints this test more than once with different values; and WBC, because no value could be read from the row.">
 <figcaption>Screen capture, the two rows printed but not stored, each with its reason. <a href="assets/syn30/captures/CP_SYN30MP1_27_fresh_browser_original_opened.png">Full capture</a></figcaption></figure>
 </div></details>
@@ -309,7 +327,7 @@
 
 <section class="stop" id="stop-4" aria-label="Stop 4 of 6, the first reading">
 <p class="stop-k"><span class="nw">Stop 4</span> of 6 &middot; First reading (initial assessment)</p>
-<h3>A first reading led by the critical value, with its coverage stated.</h3>
+<h3>Initial assessment and evidence coverage</h3>
 <p class="lead">With every panel read, the first reading covered the latest report&rsquo;s stored results. Potassium leads because <span class="nw">6.4 mmol/L</span> on the current report is above the threshold LabSense treats as critical: it names the main finding &ldquo;Critical Potassium (<span class="nw">6.4 mmol/L</span>)&rdquo; and the concern &ldquo;Critical Electrolyte Abnormality&rdquo;, ranked above the Metabolic concern that LDL drives. It names what it could not assess.</p>
 <div class="stop-split"><div class="stop-src">
 <div class="assess stop-visual" aria-label="First reading, redrawn from the recorded screen">
@@ -351,8 +369,8 @@
 
 <section class="stop" id="stop-5" aria-label="Stop 5 of 6, question and answer">
 <p class="stop-k"><span class="nw">Stop 5</span> of 6 &middot; Targeted question, answer and reassessment</p>
-<h3>Three questions, three scripted answers, and exactly what changed.</h3>
-<p class="lead">The first reading issued three questions, each naming the result that prompted it except the family-history question. Answering is optional.</p>
+<h3>Reassessment after clinical questions</h3>
+<p class="lead">Before the questions, the first reading led with Critical Potassium (<span class="nw">6.4 mmol/L</span>), urgency Emergency, evidence support Moderate (<a href="#stop-4"><span class="nw">stop 4</span></a>). It then issued three questions, each naming the result that prompted it except the family-history question. Answering is optional.</p>
 <div class="stop-split"><div class="stop-src">
 <div class="receipt stop-visual" aria-label="Question, answer and what it changed, redrawn from the recorded screens">
 <div class="rq"><h4>Questions issued and scripted answers, exactly as worded</h4>
@@ -361,7 +379,7 @@
 <li><p class="q">&ldquo;The patient&rsquo;s HbA1c is above the printed interval (6.8). Any increased thirst, frequent urination, or unexplained weight loss?&rdquo;</p><p class="ans"><span class="pill-a">No</span> Recorded. No rule in this version uses this answer, so it did not change the assessment.</p></li>
 <li><p class="q">&ldquo;Is there a family history of early heart disease or very high cholesterol? - A family history of high cholesterol or early heart disease can indicate inherited cardiovascular risk.&rdquo;</p><p class="ans"><span class="pill-a">Yes</span> Used: the change is below.</p></li>
 </ol>
-<p class="scripted">Scripted answers: chosen before the run from a fixed answer map and clicked by a signed-in synthetic evaluator account. LabSense attributed each answer to that signed-in account. They are not a clinician&rsquo;s or a patient&rsquo;s answers.</p>
+<p class="scripted">Scripted answers: chosen before the run from a fixed answer map and clicked by a signed-in synthetic evaluator account. They are not a clinician&rsquo;s or a patient&rsquo;s answers.</p>
 </div>
 <div class="chg"><h4><span class="bdg sage">Changed</span> Familial dyslipidaemia</h4>
 <div class="ba"><p class="b"><small>Before</small><s>&ldquo;sporadic assumed&rdquo;</s></p><span class="arr" aria-hidden="true">&rarr;</span><p class="a"><small>After &ldquo;Yes&rdquo;</small>&ldquo;inherited/<wbr>atherogenic risk raised&rdquo;</p></div>
@@ -378,7 +396,7 @@
 </div>
 </div>
 <div class="stop-audit">
-<p class="result"><span class="result-k">Result</span> The Yes to the family-history question changed one named element, familial dyslipidaemia; the two No answers were recorded and changed nothing. The finding, urgency and evidence support stayed the same, and the screen said so: &ldquo;Answering a question does not by itself close the missing evidence that limits the overall score.&rdquo;</p>
+<p class="result"><span class="result-k">Result</span> The Yes to the family-history question changed one named element, familial dyslipidaemia; the two No answers were recorded and changed nothing. The finding, urgency and evidence support stayed the same, and the screen said so: &ldquo;Answering a question does not by itself close the missing evidence that limits the overall score.&rdquo; Next for clinician review: the potassium result on the original report, then the missing evidence listed above.</p>
 <ul class="roles" aria-label="Roles at this stop">
 <li class="you"><h4>You inspect</h4>The answer beside the question it answers, and the receipt of what moved and what did not.</li>
 <li class="sys"><h4>LabSense contributes</h4>Applies the answer only to the element it bears on, and says when a field stays the same.</li>
@@ -435,14 +453,23 @@
 </div>
 </div>
 <div class="held" id="held" aria-labelledby="held-h">
-<div class="held-head"><p class="eyebrow">Safety restraints</p><h3 id="held-h">Deterministic restraint: five boundary rules that protect patients</h3><p>In clinical work, knowing when not to calculate matters as much as the calculation. These five boundaries are rule-based checks; in synthetic tests LabSense kept each one and gave its reason. Every item links to where it is shown.</p><p class="fc-tag"><span>Fail-closed</span> When data is ambiguous, LabSense holds the value back rather than guessing.</p></div>
+<div class="held-head"><p class="eyebrow">Safety restraints</p><h3 id="held-h">When LabSense holds a result for review</h3><p>In clinical work, knowing when not to calculate matters as much as the calculation. These five boundaries are rule-based checks; in synthetic tests LabSense kept each one, and gave a reason; for the different unit (item 2), the reason the recorded build gave was wrong and is corrected below. Every item links to where it is shown.</p><p class="fc-tag"><span>Fail-closed</span> When data is ambiguous, LabSense holds the value back rather than guessing.</p></div>
 <ol class="held-list">
 <li><h4>Two values on one report</h4><p>The latest report prints creatinine twice, <span class="num">1.04</span> and <span class="nw"><span class="num">1.62</span> mg/dL</span>. Neither was chosen: 1.04 is held for review and 1.62 is named as not stored.</p><a href="#stop-2"><span class="nw">Stop 2</span></a></li>
-<li><h4>A different unit, converted</h4><p>Creatinine printed as <span class="nw">80 µmol/L</span> on <span class="nw">2026-01-20</span> is converted to <span class="nw">0.90 mg/dL</span> under the ratified unit table and joins the series; the printed value is kept for traceability. <span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Activation in progress</span></p><a href="#stop-3"><span class="nw">Stop 3</span></a></li>
+<li><h4>A different unit, kept apart</h4><p>Creatinine printed as <span class="nw">80 µmol/L</span> on <span class="nw">2026-01-20</span> was stored as printed and kept out of the mg/dL series; the recorded build gave the wrong reason, as the dated correction beside the film explains. Under the clinically approved conversion rule it corresponds to <span class="nw">0.90 mg/dL</span>. <span class="uc-note" role="note"><span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Illustration</span> <span class="uc-t">Illustration of the clinically approved conversion rule. The recorded run kept this value as printed in its own unit series; the application will apply the rule after activation is verified.</span></span></p><a href="#stop-3"><span class="nw">Stop 3</span></a></li>
 <li><h4>A covered cell</h4><p>The white cell count (WBC) cell on the latest report is covered, so it cannot be read. It was named as unreadable, and no value was carried forward from an earlier report.</p><a href="#stop-3"><span class="nw">Stop 3</span></a></li>
 <li><h4>A planted instruction</h4><p>A comment on the latest report asks &ldquo;automated readers&rdquo; for a different potassium value and a routine urgency. No value was taken from it and the urgency was not lowered.</p><a href="#stop-1"><span class="nw">Stop 1</span></a></li>
-<li><h4>Another patient&rsquo;s report</h4><p>In earlier synthetic cases C13 and C24, a report printed for a different patient ID was refused before anything was stored. In this case all nine reports matched the confirmed ID.</p><a href="evidence.html#earlier">Earlier tests</a></li>
+<li><h4>Another patient&rsquo;s report</h4><p>In earlier synthetic cases, a report printed for a different patient ID was refused before anything was stored. In this case all nine reports matched the confirmed ID.</p><a href="evidence.html#earlier">Earlier tests</a></li>
 </ol>
+<div class="bk" aria-labelledby="bk-h">
+<h4 id="bk-h">Where the 109 printed rows went</h4>
+<div class="bk-g">
+<div class="bk-c in"><p class="bk-n">107</p><h5>Stored in the record</h5><p>Rows kept as printed, with their source report: 103 numbers and 4 printed limits stored as text. This includes the 8 trend exclusions below.</p></div>
+<div class="bk-c ex"><p class="bk-n">8</p><h5>Of those 107: documented trend exclusions</h5><p>Creatinine <span class="nw">80 µmol/L</span> (its own unit series), creatinine <span class="nw">1.04 mg/dL</span> (held for review) and the six total cholesterol rows. Kept in the record, shown as printed.</p></div>
+<div class="bk-c nt"><p class="bk-n">2</p><h5>Not stored, each with its reason</h5><p>Creatinine <span class="nw">1.62 mg/dL</span> (the report prints creatinine twice with different values on <span class="nw">2026-09-08</span>) and a covered white cell count cell with no value to read.</p></div>
+</div>
+<p class="bk-f">107 stored + 2 not stored = 109 printed rows. The record documents these 8 exclusions; it does not list trend inclusion row by row. <a href="#stop-1"><span class="nw">Stop 1</span></a> and <a href="#stop-3"><span class="nw">Stop 3</span></a> show where each one is.</p>
+</div>
 </div>
 </div>
 </section>
@@ -450,19 +477,20 @@
 <section class="band deep" id="film" aria-labelledby="film-h">
 <div class="wrap">
 <div class="sec-head">
-<div><p class="eyebrow">Product film</p><h2 id="film-h">See LabSense in action (<span class="nw">2 min 59 s</span>)</h2></div>
+<div><p class="eyebrow">Product film</p><h2 id="film-h">See LabSense in action (<span class="nw">2 min 55 s</span>)</h2></div>
 <p>A narrated walkthrough of the 30-page synthetic record in the worked case, from the printed PDFs to the first reading, the answers and the review export. A recording, not a live demonstration; synthetic voice, captions on by default. It closes: &ldquo;This was a recorded run of LabSense, a Clinical Investigational System in active development, on a synthetic case.&rdquo;</p>
 </div>
 <div class="film home-film">
 <figure class="page">
-<video controls preload="none" playsinline poster="assets/media/labsense_film_syn30mp1_v3b_poster.jpg" width="1280" height="720"><source src="assets/media/labsense_film_syn30mp1_v3b_720p.mp4" type="video/mp4"><track kind="captions" src="assets/media/labsense_film_syn30mp1_v3b_captions.vtt" srclang="en" label="English" default>Your browser cannot play this video. <a href="assets/media/labsense_film_syn30mp1_v3b_1080p_captioned.mp4">Download the captioned film</a>.</video>
-<figcaption>Recorded, <span class="nw">2 min 59 s</span>, 720p. Nothing loads until you press play.</figcaption>
+<video controls preload="none" playsinline poster="assets/media/labsense_film_syn30mp1_v3_poster.jpg" width="1280" height="720"><source src="assets/media/labsense_film_syn30mp1_v3_720p.mp4" type="video/mp4"><track kind="captions" src="assets/media/labsense_film_syn30mp1_v3_captions.vtt" srclang="en" label="English" default>Your browser cannot play this video. <a href="assets/media/labsense_film_syn30mp1_v3_1080p_captioned.mp4">Download the captioned film</a>.</video>
+<figcaption>Recorded, <span class="nw">2 min 55 s</span>, 720p. Nothing loads until you press play.</figcaption>
 </figure>
+<p class="film-corr" role="note">Correction, <span class="nw">10 November 2026</span>: at 0:55 the recorded build gave the wrong reason for keeping creatinine <span class="nw">80 µmol/L</span> apart; the real cause was a unit difference. <a class="run-link" href="evidence.html#about-recorded-run">View run notes</a></p>
 <div class="film-links">
-<a href="assets/media/labsense_film_syn30mp1_v3b_1080p.mp4" download>Download 1080p (MP4, <span class="nw">39.5 MB</span>)</a>
-<a href="assets/media/labsense_film_syn30mp1_v3b_1080p_captioned.mp4" download>Download 1080p with captions burned in (MP4, <span class="nw">40.8 MB</span>)</a>
-<a href="assets/media/labsense_film_syn30mp1_v3b_captions.vtt" download>Captions (WebVTT)</a>
-<a href="assets/media/labsense_film_syn30mp1_v3b_transcript.md" download>Transcript with on-screen sources (text)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3_1080p.mp4" download>Download 1080p (MP4, <span class="nw">38.9 MB</span>)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3_1080p_captioned.mp4" download>Download 1080p with captions burned in (MP4, <span class="nw">40.1 MB</span>)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3_captions.vtt" download>Captions (WebVTT)</a>
+<a href="assets/media/labsense_film_syn30mp1_v3_transcript.md" download>Transcript with on-screen sources (text)</a>
 <a class="more-link" href="evidence.html#film">Film section on the evidence page</a>
 </div>
 <div class="tx" data-tx>
@@ -479,29 +507,29 @@
 <li data-start="41.16" data-end="45.25"><span class="tx-t">0:41</span> <span class="tx-x">The run confirmed the printed patient ID, and the other eight reports matched it.</span></li>
 <li data-start="46.27" data-end="52.13"><span class="tx-t">0:46</span> <span class="tx-x">Rebuilt in a new browser from the server, the record lists 103 stored values from 9 reports,</span></li>
 <li data-start="52.28" data-end="54.97"><span class="tx-t">0:52</span> <span class="tx-x">each with its date, printed interval and file.</span></li>
-<li data-start="55.12" data-end="63.84"><span class="tx-t">0:55</span> <span class="tx-x">Creatinine printed as <span class="nw">80 µmol/L</span>, a different unit, was kept as printed and out of the mg/dL series, with the reason shown.</span></li>
-<li data-start="64.87" data-end="73.25"><span class="tx-t">1:04</span> <span class="tx-x">History draws one potassium series across six collection dates, from 4.4 in March <span class="nw">2024 to 6.4</span> in <span class="nw">September 2026</span>.</span></li>
-<li data-start="74.27" data-end="79.07"><span class="tx-t">1:14</span> <span class="tx-x">The first reading leads with Critical Potassium (<span class="nw">6.4 mmol/L</span>), at urgency Emergency.</span></li>
-<li data-start="79.22" data-end="80.85"><span class="tx-t">1:19</span> <span class="tx-x">Evidence support: Moderate.</span></li>
-<li data-start="81.87" data-end="85.64"><span class="tx-t">1:21</span> <span class="tx-x">It states its coverage: 13 of 19 value-bearing lines read.</span></li>
-<li data-start="85.79" data-end="87.73"><span class="tx-t">1:25</span> <span class="tx-x">"Not evaluated does not mean normal."</span></li>
-<li data-start="87.88" data-end="94.71"><span class="tx-t">1:27</span> <span class="tx-x">Two rows were not stored, and are named: a second creatinine, 1.62, and an unreadable white cell count.</span></li>
-<li data-start="95.73" data-end="101.39"><span class="tx-t">1:35</span> <span class="tx-x">Creatinine is printed twice, so 1.04 is held for review and neither value is chosen.</span></li>
-<li data-start="102.40" data-end="109.57"><span class="tx-t">1:42</span> <span class="tx-x">It issued three questions: on potassium 6.4, on HbA1c 6.8, and on family history.</span></li>
-<li data-start="110.60" data-end="116.52"><span class="tx-t">1:50</span> <span class="tx-x">The answers are scripted: No, No and Yes, set before the run and clicked by a synthetic evaluator account.</span></li>
-<li data-start="117.53" data-end="122.12"><span class="tx-t">1:57</span> <span class="tx-x">The two No answers were recorded and changed nothing; no rule in this version uses them.</span></li>
-<li data-start="122.27" data-end="128.26"><span class="tx-t">2:02</span> <span class="tx-x">The Yes changed familial dyslipidaemia from "sporadic assumed" to "inherited/atherogenic risk raised".</span></li>
-<li data-start="128.41" data-end="131.21"><span class="tx-t">2:08</span> <span class="tx-x">Confidence and urgency are stated as unchanged.</span></li>
-<li data-start="132.23" data-end="136.37"><span class="tx-t">2:12</span> <span class="tx-x">After the answers, the finding is still Critical Potassium, at Emergency.</span></li>
-<li data-start="137.40" data-end="141.56"><span class="tx-t">2:17</span> <span class="tx-x">In the new browser, all nine original reports reopened as whole PDFs.</span></li>
-<li data-start="141.71" data-end="144.73"><span class="tx-t">2:21</span> <span class="tx-x">Linking each value to its place on the page is being validated.</span></li>
-<li data-start="145.73" data-end="151.40"><span class="tx-t">2:25</span> <span class="tx-x">Both readings were exported as review snapshots, primary concern Critical Potassium, as on screen.</span></li>
-<li data-start="151.55" data-end="156.73"><span class="tx-t">2:31</span> <span class="tx-x">Because the creatinine conflict is unresolved, each export is marked not for clinical use.</span></li>
-<li data-start="156.88" data-end="160.53"><span class="tx-t">2:36</span> <span class="tx-x">A new browser downloaded the recorded snapshots again, unchanged.</span></li>
-<li data-start="161.53" data-end="167.37"><span class="tx-t">2:41</span> <span class="tx-x">This was a recorded run of LabSense, a Clinical Investigational System in active development, on a synthetic case.</span></li>
-<li data-start="167.52" data-end="170.37"><span class="tx-t">2:47</span> <span class="tx-x">Further features are being validated and are not shown here.</span></li>
-<li data-start="170.52" data-end="172.50"><span class="tx-t">2:50</span> <span class="tx-x">No AI model was called in this run.</span></li>
-<li data-start="172.65" data-end="174.81"><span class="tx-t">2:52</span> <span class="tx-x">LabSense has not been clinically validated.</span></li></ol>
+<li data-start="55.12" data-end="60.04" class="tx-has-corr"><span class="tx-t">0:55</span> <span class="tx-x">Creatinine printed as <span class="nw">80 µmol/L</span> was refused and kept out of the mg/dL series.</span><span class="tx-corr" role="note">Correction, <span class="nw">10 November 2026</span>: at 0:55 the recorded build gave the wrong reason for keeping creatinine <span class="nw">80 µmol/L</span> apart; the real cause was a unit difference. <a class="run-link" href="evidence.html#about-recorded-run">View run notes</a></span></li>
+<li data-start="61.07" data-end="69.45"><span class="tx-t">1:01</span> <span class="tx-x">History draws one potassium series across six collection dates, from 4.4 in March <span class="nw">2024 to 6.4</span> in <span class="nw">September 2026</span>.</span></li>
+<li data-start="70.47" data-end="75.27"><span class="tx-t">1:10</span> <span class="tx-x">The first reading leads with Critical Potassium (<span class="nw">6.4 mmol/L</span>), at urgency Emergency.</span></li>
+<li data-start="75.42" data-end="77.05"><span class="tx-t">1:15</span> <span class="tx-x">Evidence support: Moderate.</span></li>
+<li data-start="78.07" data-end="81.84"><span class="tx-t">1:18</span> <span class="tx-x">It states its coverage: 13 of 19 value-bearing lines read.</span></li>
+<li data-start="81.99" data-end="83.93"><span class="tx-t">1:21</span> <span class="tx-x">"Not evaluated does not mean normal."</span></li>
+<li data-start="84.08" data-end="90.91"><span class="tx-t">1:24</span> <span class="tx-x">Two rows were not stored, and are named: a second creatinine, 1.62, and an unreadable white cell count.</span></li>
+<li data-start="91.93" data-end="97.59"><span class="tx-t">1:31</span> <span class="tx-x">Creatinine is printed twice, so 1.04 is held for review and neither value is chosen.</span></li>
+<li data-start="98.60" data-end="105.77"><span class="tx-t">1:38</span> <span class="tx-x">It issued three questions: on potassium 6.4, on HbA1c 6.8, and on family history.</span></li>
+<li data-start="106.80" data-end="112.72"><span class="tx-t">1:46</span> <span class="tx-x">The answers are scripted: No, No and Yes, set before the run and clicked by a synthetic evaluator account.</span></li>
+<li data-start="113.73" data-end="118.32"><span class="tx-t">1:53</span> <span class="tx-x">The two No answers were recorded and changed nothing; no rule in this version uses them.</span></li>
+<li data-start="118.47" data-end="124.46"><span class="tx-t">1:58</span> <span class="tx-x">The Yes changed familial dyslipidaemia from "sporadic assumed" to "inherited/atherogenic risk raised".</span></li>
+<li data-start="124.61" data-end="127.41"><span class="tx-t">2:04</span> <span class="tx-x">Confidence and urgency are stated as unchanged.</span></li>
+<li data-start="128.43" data-end="132.57"><span class="tx-t">2:08</span> <span class="tx-x">After the answers, the finding is still Critical Potassium, at Emergency.</span></li>
+<li data-start="133.60" data-end="137.76"><span class="tx-t">2:13</span> <span class="tx-x">In the new browser, all nine original reports reopened as whole PDFs.</span></li>
+<li data-start="137.91" data-end="140.93"><span class="tx-t">2:17</span> <span class="tx-x">Linking each value to its place on the page is being validated.</span></li>
+<li data-start="141.93" data-end="147.60"><span class="tx-t">2:21</span> <span class="tx-x">Both readings were exported as review snapshots, primary concern Critical Potassium, as on screen.</span></li>
+<li data-start="147.75" data-end="152.93"><span class="tx-t">2:27</span> <span class="tx-x">Because the creatinine conflict is unresolved, each export is marked not for clinical use.</span></li>
+<li data-start="153.08" data-end="156.73"><span class="tx-t">2:33</span> <span class="tx-x">A new browser downloaded the recorded snapshots again, unchanged.</span></li>
+<li data-start="157.73" data-end="163.57"><span class="tx-t">2:37</span> <span class="tx-x">This was a recorded run of LabSense, a Clinical Investigational System in active development, on a synthetic case.</span></li>
+<li data-start="163.72" data-end="166.57"><span class="tx-t">2:43</span> <span class="tx-x">Further features are being validated and are not shown here.</span></li>
+<li data-start="166.72" data-end="168.70"><span class="tx-t">2:46</span> <span class="tx-x">No AI model was called in this run.</span></li>
+<li data-start="168.85" data-end="171.01"><span class="tx-t">2:48</span> <span class="tx-x">LabSense has not been clinically validated.</span></li></ol>
 </div>
 </div>
 </div>
@@ -510,7 +538,7 @@
 <section class="band" id="cards" aria-labelledby="cards-h">
 <div class="wrap">
 <div class="sec-head">
-<div><p class="eyebrow">Results cards</p><h2 id="cards-h">Four results from the case, in LabSense&rsquo;s own card design.</h2></div>
+<div><p class="eyebrow">Results cards</p><h2 id="cards-h">Results, source details and review status</h2></div>
 <p>The card face carries the status, the printed value against the laboratory&rsquo;s interval, and the result&rsquo;s role in the reading. &ldquo;More detail&rdquo; separates general information about the test from this case and from its history.</p>
 </div>
 <div class="cards">
@@ -521,13 +549,13 @@
 <p class="oc-val"><span class="v"><span class="num">6.4</span> <span class="unit">mmol/L</span></span><span class="ref">Ref: <span class="nw">3.5-5.1</span></span></p>
 <div class="oc-bar" aria-hidden="true"><div class="oc-track"><span class="oc-zone"></span><span class="oc-mk out p94"></span></div><div class="oc-labs"><span>3.5</span><span class="oc-nl">Normal</span><span>5.1</span></div></div>
 <p class="oc-int">High potassium can affect heart rhythm and requires medical attention.</p>
-<p class="ac-line"><span class="nw"><span class="num">+1.7</span> mmol/L</span> since <span class="nw">20 January 2026</span>; <span class="nw">4.4 to 4.8</span> on the five earlier collection dates.</p>
+<p class="ac-line"><span class="nw">+1.7 mmol/L</span> since 20 January 2026; <span class="nw">4.4 to 4.8</span> on five earlier dates.</p>
 <div class="ac-prio"><h4>Action priority</h4><p>The first reading led with it as &ldquo;Critical Potassium (<span class="nw">6.4 mmol/L</span>)&rdquo;, urgency Emergency. Check it on the original report.</p></div>
-<button class="ac-more" type="button" aria-expanded="true" aria-controls="c2-d"><span class="lbl">Less detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+<button class="ac-more" type="button" aria-expanded="false" aria-controls="c2-d"><span class="lbl">More detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
 <div class="ac-detail" id="c2-d">
-<section><h4>About this test</h4><p class="gen">General information, the same for every report: potassium is an electrolyte reported on electrolyte and renal panels.</p></section>
-<section><h4>This case</h4><p>Above the printed interval on the latest report, above a threshold LabSense treats as critical. It drove the main finding and the urgency in the first reading and the reassessment, after a reload, and in both exports.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
-<section><h4>History and source</h4><p><span class="nw"><span class="num">4.4, 4.6, 4.5, 4.8, 4.7</span> mmol/L</span> from <span class="nw">March 2024</span> to <span class="nw">January 2026</span>, then <span class="num">6.4</span> on <span class="nw">8 September 2026</span>.</p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open the PDF</a></p></section>
+<section><h4>What this test measures</h4><p class="gen">General information, the same for every report: potassium is an electrolyte reported on electrolyte and renal panels.</p></section>
+<section><h4>In this case</h4><p>Above the printed interval on the latest report, above a threshold LabSense treats as critical. It drove the main finding and the urgency in the first reading and the reassessment, after a reload, and in both exports.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
+<section><h4>History and source</h4><p><span class="nw"><span class="num">4.4, 4.6, 4.5, 4.8, 4.7</span> mmol/L</span> from <span class="nw">March 2024</span> to <span class="nw">January 2026</span>, then <span class="num">6.4</span> on <span class="nw">8 September 2026</span>.</p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document; pointing to the exact row inside it is not shown yet. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open original report</a></p></section>
 </div>
 </article>
 
@@ -536,30 +564,30 @@
 <ul class="oc-chips"><li class="oc-cat">Lipids</li><li><span class="pill blue">Drives the overridden Metabolic concern</span></li><li><span class="pill amber">Above printed interval</span></li></ul>
 <p class="oc-val"><span class="v"><span class="num">3.1</span> <span class="unit">mmol/L</span></span><span class="ref">Ref: <span class="nw">0-3.0</span></span></p>
 <div class="oc-bar" aria-hidden="true"><div class="oc-track"><span class="oc-zone"></span><span class="oc-mk out p93"></span></div><div class="oc-labs"><span>0</span><span class="oc-nl">Normal</span><span>3.0</span></div></div>
-<p class="oc-int">Elevated LDL drives atherosclerotic plaque formation, increasing cardiovascular event risk proportionally to the degree and duration of elevation.</p>
-<p class="ac-line"><span class="nw"><span class="num">+0.2</span> mmol/L</span> since <span class="nw">14 May 2026</span>, across 5 dates.</p>
+<p class="oc-int">Raised LDL cholesterol is a recognised cardiovascular risk factor.</p>
+<p class="ac-line"><span class="nw">+0.2 mmol/L</span> since 14 May 2026; above printed interval on 3 of 5 dates.</p>
 <div class="ac-prio"><h4>Action priority</h4><p>Review it as part of the Metabolic concern it drove, which ranks below the critical potassium; it is <span class="nw">0.1 mmol/L</span> above the printed upper limit.</p></div>
-<button class="ac-more" type="button" aria-expanded="true" aria-controls="c1-d"><span class="lbl">Less detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+<button class="ac-more" type="button" aria-expanded="false" aria-controls="c1-d"><span class="lbl">More detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
 <div class="ac-detail" id="c1-d">
-<section><h4>About this test</h4><p class="gen">General information, the same for every report: LDL cholesterol is one of the lipids reported on a standard lipid panel.</p></section>
-<section class="review-sec"><h4>This case</h4><p>The record lists LDL as a driver of the Metabolic concern, ranked below and overridden by the critical potassium; it is not a driver of the main finding. The stored record also marks these LDL rows &ldquo;transcription uncertain&rdquo;, although they match the printed reports; whether such a row may drive a finding is a question for clinical review.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
-<section><h4>History and source</h4><p><span class="nw"><span class="num">3.4, 3.2, 3.0, 2.9, 3.1</span> mmol/L</span> from <span class="nw">March 2024</span> to <span class="nw">September 2026</span>; above the printed interval on 3 of 5 dates, and on its upper edge on <span class="nw">11 March 2025</span>.</p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open the PDF</a></p></section>
+<section><h4>What this test measures</h4><p class="gen">General information, the same for every report: LDL cholesterol is one of the lipids reported on a standard lipid panel.</p></section>
+<section class="review-sec"><h4>In this case</h4><p>The record lists LDL as a driver of the Metabolic concern, ranked below and overridden by the critical potassium; it is not a driver of the main finding. The stored record also marks these LDL rows &ldquo;transcription uncertain&rdquo;, although they match the printed reports; whether such a row may drive a finding is a question for clinical review.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
+<section><h4>History and source</h4><p><span class="nw"><span class="num">3.4, 3.2, 3.0, 2.9, 3.1</span> mmol/L</span> from <span class="nw">March 2024</span> to <span class="nw">September 2026</span>; above the printed interval on 3 of 5 dates, and on its upper edge on <span class="nw">11 March 2025</span>.</p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document; pointing to the exact row inside it is not shown yet. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open original report</a></p></section>
 </div>
 </article>
 
 <article class="acard oc b-amber t-held" aria-labelledby="c3-h">
-<h3 id="c3-h"><svg class="held-glyph" viewBox="0 0 44 16" aria-hidden="true"><path d="M2 8h22" stroke="currentColor" stroke-width="2" stroke-dasharray="5 4"/><path d="M30 2l12 12M42 2L30 14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Creatinine</h3>
+<h3 id="c3-h">Creatinine</h3>
 <ul class="oc-chips"><li class="oc-cat">Renal and pre-procedure check</li><li><span class="pill amber">Not used as evidence</span></li><li><span class="pill amber">Held back, with reason</span></li></ul>
 <p class="oc-val"><span class="v"><span class="num">1.04</span><span class="and">and</span><span class="num">1.62</span> <span class="unit">mg/dL</span></span><span class="ref">Ref: <span class="nw">0.7-1.3</span></span></p>
 <div class="oc-bar" aria-hidden="true"><div class="oc-track"><span class="oc-zone"></span><span class="oc-mk hd p55"></span><span class="oc-mk hd p94"></span></div><div class="oc-labs"><span>0.7</span><span class="oc-nl">Normal</span><span>1.3</span></div></div>
 <p class="oc-int">Creatinine is a waste product from normal muscle metabolism, filtered out by the kidneys.</p>
-<p class="ac-line">The latest report prints creatinine twice, with different values. Neither is chosen.</p>
+<p class="ac-line">Printed twice on 8 September 2026 (1.04 and <span class="nw">1.62 mg/dL</span>); neither chosen.</p>
 <div class="ac-prio"><h4>Action priority</h4><p>Held for review, not a current value. Resolve which value is right with the laboratory before using either.</p></div>
-<button class="ac-more" type="button" aria-expanded="true" aria-controls="c3-d"><span class="lbl">Less detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+<button class="ac-more" type="button" aria-expanded="false" aria-controls="c3-d"><span class="lbl">More detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
 <div class="ac-detail" id="c3-d">
-<section><h4>About this test</h4><p class="gen">General information, the same for every report: creatinine is reported on renal panels and is printed in mg/dL or µmol/L depending on the laboratory.</p></section>
-<section class="held-sec"><h4>This case</h4><p><span class="num">1.04</span> (<span class="nw">page 1</span>) is stored as &ldquo;held for review, not a current value&rdquo; and kept out of the trend; <span class="num">1.62</span> (<span class="nw">page 2</span>) is named as not stored. Which value is right is for the laboratory and the clinician.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
-<section><h4>History and source</h4><p><span class="nw"><span class="num">0.98, 1.02, 1.06, 1.25</span> mg/dL</span> from <span class="nw">March 2024</span> to <span class="nw">August 2025</span>. On <span class="nw">2025-08-26</span> the amended report printed a different interval (<span class="nw">0.6-1.1</span>) from the original (<span class="nw">0.7-1.3</span>); both are shown for that date. On <span class="nw">2026-01-20</span> the report printed <span class="nw"><span class="num">80</span> µmol/L</span>; LabSense converts it to <span class="nw">0.90 mg/dL</span> under the ratified unit table and keeps the printed value for traceability. <span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Activation in progress</span></p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open the PDF</a></p></section>
+<section><h4>What this test measures</h4><p class="gen">General information, the same for every report: creatinine is reported on renal panels and is printed in mg/dL or µmol/L depending on the laboratory.</p></section>
+<section class="held-sec"><h4>In this case</h4><p>Both values are in mg/dL, so no unit rule applies. <span class="num">1.04</span> (<span class="nw">page 1</span>) was stored and held for review, and kept out of the trend. <span class="num">1.62</span> (<span class="nw">page 2</span>) was listed as a second printed result and not stored as an observation. Neither was used as the current result. Which value is right is for the laboratory and the clinician.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
+<section><h4>History and source</h4><p><span class="nw"><span class="num">0.98, 1.02, 1.06, 1.25</span> mg/dL</span> from <span class="nw">March 2024</span> to <span class="nw">August 2025</span>. On <span class="nw">2025-08-26</span> the amended report printed a different interval (<span class="nw">0.6-1.1</span>) from the original (<span class="nw">0.7-1.3</span>); both are shown for that date. On <span class="nw">2026-01-20</span> the report printed <span class="nw"><span class="num">80</span> µmol/L</span>, a different unit. The recorded run kept it in its own unit series; an approved rule would give <span class="nw">0.90 mg/dL</span> (an illustration, not applied yet). <span class="uc-note" role="note"><span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Illustration</span> <span class="uc-t">Illustration of the clinically approved conversion rule. The recorded run kept this value as printed in its own unit series; the application will apply the rule after activation is verified.</span></span></p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document; pointing to the exact row inside it is not shown yet. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open original report</a></p></section>
 </div>
 </article>
 
@@ -569,13 +597,13 @@
 <p class="oc-val"><span class="v"><span class="num">1.8</span> <span class="unit">mIU/L</span></span><span class="ref">Ref: <span class="nw">0.4-4.0</span></span></p>
 <div class="oc-bar" aria-hidden="true"><div class="oc-track"><span class="oc-zone"></span><span class="oc-mk in p41"></span></div><div class="oc-labs"><span>0.4</span><span class="oc-nl">Normal</span><span>4.0</span></div></div>
 <p class="oc-int">Normal TSH indicates the pituitary-thyroid axis is functioning within expected limits.</p>
-<p class="ac-line">Printed as <span class="num">&lt;0.01</span> on <span class="nw">20 January 2026</span>, then <span class="num">1.8</span> on <span class="nw">8 September 2026</span>. LabSense records this change and does not interpret it.</p>
+<p class="ac-line"><span class="nw">1.8 mIU/L</span> on 8 September 2026; earlier &lt;0.01 kept as a printed limit.</p>
 <div class="ac-prio"><h4>Action priority</h4><p>Read within the printed interval by the first reading. The earlier <span class="num">&lt;0.01</span> is kept as printed, not trended or graded.</p></div>
-<button class="ac-more" type="button" aria-expanded="true" aria-controls="c4-d"><span class="lbl">Less detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
+<button class="ac-more" type="button" aria-expanded="false" aria-controls="c4-d"><span class="lbl">More detail</span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none"/></svg></button>
 <div class="ac-detail" id="c4-d">
-<section><h4>About this test</h4><p class="gen">General information, the same for every report: TSH is a thyroid function test, usually read together with free T4.</p></section>
-<section class="neutral-sec"><h4>This case</h4><p><span class="num">&lt;0.01</span> is kept in the stored record as printed: a limit, not a measured number, so it is neither trended nor graded. LabSense does not interpret the change from it to 1.8.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
-<section><h4>History and source</h4><p><span class="num">2.1</span> (<span class="nw">2024-03-05</span>), <span class="num">2.6</span> (<span class="nw">2025-03-11</span>), <span class="num">&lt;0.01</span> (<span class="nw">2026-01-20</span>), <span class="nw"><span class="num">1.8</span> mIU/L</span> (<span class="nw">2026-09-08</span>). Free T4 on the <span class="nw">2026-01-20</span> report: <span class="nw"><span class="num">2.4</span> ng/dL</span> against a printed <span class="nw">0.8-1.8</span>; on the latest report <span class="num">1.2</span>.</p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open the PDF</a></p></section>
+<section><h4>What this test measures</h4><p class="gen">General information, the same for every report: TSH is a thyroid function test, usually read together with free T4.</p></section>
+<section class="neutral-sec"><h4>In this case</h4><p><span class="num">&lt;0.01</span> is kept in the stored record as printed: a limit, not a measured number, so it is neither trended nor graded. LabSense does not interpret the change from it to 1.8.</p><p>LabSense&rsquo;s output shown here gives no follow-up guidance.</p></section>
+<section><h4>History and source</h4><p><span class="num">2.1</span> (<span class="nw">2024-03-05</span>), <span class="num">2.6</span> (<span class="nw">2025-03-11</span>), <span class="num">&lt;0.01</span> (<span class="nw">2026-01-20</span>), <span class="nw"><span class="num">1.8</span> mIU/L</span> (<span class="nw">2026-09-08</span>). Free T4 on the <span class="nw">2026-01-20</span> report: <span class="nw"><span class="num">2.4</span> ng/dL</span> against a printed <span class="nw">0.8-1.8</span>; on the latest report <span class="num">1.2</span>.</p><p class="ac-src">Report collected <span class="nw">2026-09-08</span>, opens as the whole document; pointing to the exact row inside it is not shown yet. <a href="assets/syn30/reports/SYN30_R7_coll_2026-09-08.pdf">Open original report</a></p></section>
 </div>
 </article>
 
@@ -587,33 +615,21 @@
 <section class="band alt" id="shown" aria-labelledby="shown-h">
 <div class="wrap">
 <div class="sec-head">
-<div><p class="eyebrow">Why LabSense</p><h2 id="shown-h">Shown today, and what is still being built</h2></div>
-<p>The left column is what the recorded runs show. Nothing in the right column is shown today; each item carries its label. The <a href="evidence.html#why">evidence page</a> explains how each mechanism works.</p>
+<div><p class="eyebrow">Why LabSense</p><h2 id="shown-h">What is still being built</h2></div>
+<p>Nothing in this list is shown today; each item carries its label. The <a href="evidence.html#why">evidence page</a> explains how each mechanism works.</p>
 </div>
-<ul class="rm-key" aria-label="Labels used on this page"><li><span class="rm-l shown"><i aria-hidden="true"></i>Shown on synthetic cases</span></li><li><span class="rm-l val"><i aria-hidden="true"></i>Being validated</span></li><li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span></li><li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span></li><li><span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Activation in progress</span><span class="uc-k-t">unit conversion, not yet switched on</span></li></ul>
+<ul class="rm-key" aria-label="Labels used on this page"><li><span class="rm-l shown"><i aria-hidden="true"></i>Shown on synthetic cases</span></li><li><span class="rm-l val"><i aria-hidden="true"></i>Being validated</span></li><li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span></li><li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span></li><li><span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Illustration</span><span class="uc-k-t">approved unit conversion rule, not yet applied by the application</span></li></ul>
 <div class="diff2">
-<div class="diff-col shown-col">
-<h3><span class="rm-l shown"><i aria-hidden="true"></i>Shown on synthetic cases</span></h3>
-<p class="diff-sub">Shown today in recorded runs on synthetic cases; value extraction has also been compared on one de-identified real case.</p>
-<ul>
-<li><h4>One history per test</h4><p>One dated history across laboratories, dates and panels, joined only in the same unit.</p></li>
-<li><h4>Holds back instead of guessing</h4><p>Discordant values are held back with the reason instead of one being chosen.</p></li>
-<li><h4>Checks whose report it is</h4><p>Identity is confirmed once; reports printed for another patient ID are refused before storage.</p></li>
-<li><h4>Says what it did not assess</h4><p>The first reading lists the results it did not read, so a gap is visible.</p></li>
-<li><h4>A receipt for every answer</h4><p>Bounded follow-up questions, with a before-and-after receipt of what each answer changed and what it did not.</p></li>
-<li><h4>The original stays the original</h4><p>Each stored report reopens as the whole original document, and each reading exports as a snapshot that names its build.</p></li>
-</ul>
-</div>
 <div class="diff-col later-col">
 <h3><span class="diff-h"><span class="nw">In development</span> and planned</span></h3>
 <ul class="dev-list">
-<li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>Unit conversion table ratified by the Lead Clinician on <span class="nw">10 November 2026</span>; activation in progress</p></li>
+<li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>Unit conversion table ratified by the Lead Clinician on <span class="nw">10 November 2026</span>; not yet applied by the application</p></li>
 <li><span class="rm-l val"><i aria-hidden="true"></i>Being validated</span><p>Source verification of each stored value against its printed row, with checksums</p></li>
 <li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>Clicking a value to highlight its row on the printed page</p></li>
 <li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>A multi-centre library of laboratory report formats, each checked row by row</p></li>
 <li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>A disagreement calibration database: reader disagreements and how clinicians resolved them</p></li>
 <li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span><p>Laboratory quality reports on missing intervals and duplicates</p></li>
-<li><span class="rm-l plan"><i aria-hidden="true"></i>Planned: this quarter</span><p>Clinician-supervised evaluation sessions and multi-centre clinical validation under ethical protocols, scheduled for this quarter (by <span class="nw">December 2026</span>)</p></li>
+<li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span><p>Clinician-supervised evaluation sessions and multi-centre clinical validation under ethical protocols. A supervised clinical evaluation is being planned; its dates depend on site and ethics approvals.</p></li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span><p>Hospital record integration (FHIR) and other evidence sources</p></li>
 </ul>
 <p class="off-note"><span class="rm-l off"><i aria-hidden="true"></i>Built, switched off</span> An AI model reading first, with the deterministic reader as an independent check that can only raise a disagreement. Not yet run live.</p>
@@ -627,12 +643,12 @@
 <ul>
 <li>This website stores nothing, sets no cookies and loads nothing from other sites.</li>
 <li>Every case shown is synthetic: fictional patients and a fictional laboratory.</li>
-<li>LabSense runs on one local machine behind a sign-in; remote use is not permitted until a lifetime for backend credentials is built.</li>
+<li>LabSense runs on one local machine behind a sign-in; remote use is not permitted yet.</li>
 <li>In the recorded run, requests that bypassed the sign-in gateway, and reads across cases or roles, were refused.</li>
 <li>The nine synthetic reports and their checksums are published, so a reopened report can be compared byte for byte.</li>
 </ul>
 </div>
-<p class="stage-line">Pre-pilot Clinical Investigational System. The full chain is tested on synthetic cases; value extraction has also been compared on one de-identified real case. Clinical validation is scheduled for this quarter (by <span class="nw">December 2026</span>); regulatory review follows, as set out in the <a href="#roadmap">roadmap</a>.</p>
+<p class="stage-line">Pre-pilot Clinical Investigation System. The full chain is tested on synthetic cases; value extraction has also been compared on one de-identified real case. A supervised clinical evaluation is being planned; its dates depend on site and ethics approvals. Regulatory review follows, as set out in the <a href="#roadmap">roadmap</a>.</p>
 </div>
 </div>
 </section>
@@ -641,18 +657,10 @@
 <section class="band fits" id="fits" aria-labelledby="fits-h">
 <div class="wrap">
 <div class="sec-head">
-<div><p class="eyebrow">Context</p><h2 id="fits-h">Where LabSense fits</h2></div>
-<p>LabSense works alongside the clinical systems already in use and does not replace any of them. Each kind of tool below does a different job well.</p>
+<div><p class="eyebrow">Clinical workflow fit</p><h2 id="fits-h">Where LabSense fits</h2></div>
+<p>When a clinical question depends on results spread across several reports, LabSense brings the evidence into one dated review alongside the health record and lab portal. Clinicians can open the source report, see why a disputed value was held and check what changed after a follow-up answer.</p>
 </div>
-<div class="fit-colh" aria-hidden="true"><span>Kind of tool</span><span>What it does well</span><span>LabSense&rsquo;s different focus</span></div>
-<ol class="fit-list">
-<li class="fit-row"><h3 class="fit-cat">Electronic health record platforms</h3><div class="fit-well"><p class="fit-k">What it does well</p><p>Hold the hospital record, run in-chart alerts and support research on very large pooled datasets.</p></div><div class="fit-ls"><p class="fit-k">LabSense&rsquo;s different focus</p><p>Starts from the laboratory PDF reports a clinician already has, including reports from different laboratories, and builds one dated history per test.</p></div></li>
-<li class="fit-row"><h3 class="fit-cat">Chart assistants</h3><div class="fit-well"><p class="fit-k">What it does well</p><p>Work inside the health record to surface possible diagnoses and help draft notes; several are in use at large health systems.</p></div><div class="fit-ls"><p class="fit-k">LabSense&rsquo;s different focus</p><p>A narrower task: it reads multi-year lab reports and keeps each lab&rsquo;s printed reference interval next to each value.</p></div></li>
-<li class="fit-row"><h3 class="fit-cat">Medical literature engines</h3><div class="fit-well"><p class="fit-k">What it does well</p><p>Answer clinical questions with cited references from published research.</p></div><div class="fit-ls"><p class="fit-k">LabSense&rsquo;s different focus</p><p>Answers a different question: what a patient&rsquo;s own results have done over time, with each value traced to the report it came from.</p></div></li>
-<li class="fit-row"><h3 class="fit-cat">Diagnostic references</h3><div class="fit-well"><p class="fit-k">What it does well</p><p>Help clinicians build a differential, often with large image libraries for skin conditions.</p></div><div class="fit-ls"><p class="fit-k">LabSense&rsquo;s different focus</p><p>Focuses on laboratory values rather than images.</p></div></li>
-<li class="fit-row"><h3 class="fit-cat">General-purpose language models</h3><div class="fit-well"><p class="fit-k">What it does well</p><p>Fluent and fast at reading text. Peer-reviewed studies report that they can produce statements not supported by the source, omit details and misread laboratory results, so clinical use needs careful checking.<a class="fn-ref" href="#fits-refs" aria-label="Sources for this statement">1</a></p></div><div class="fit-ls"><p class="fit-k">LabSense&rsquo;s different focus</p><p>Holds back a value that conflicts with another printed value or has a unit it cannot reconcile, and shows the reason, instead of guessing. It also asks a targeted follow-up question where a result calls for one.</p></div></li>
-</ol>
-<p class="fit-refs" id="fits-refs"><span class="fn-n">1</span> Hager et al., Nature Medicine 2024, <a href="https://doi.org/10.1038/s41591-024-03097-1">doi:10.1038/s41591-024-03097-1</a>; Cadamuro et al., Clinical Chemistry and Laboratory Medicine 2023, <a href="https://doi.org/10.1515/cclm-2023-0355">doi:10.1515/cclm-2023-0355</a>; Asgari et al., npj Digital Medicine 2025, <a href="https://doi.org/10.1038/s41746-025-01670-7">doi:10.1038/s41746-025-01670-7</a>.</p>
+<ul class="fit-acts" aria-label="Three things you can inspect in the recorded case"><li><a href="#stop-6">Open the original report behind a result</a></li><li><a href="#held">See why a disputed value was held</a></li><li><a href="#stop-5">Check what changed after a follow-up answer</a></li></ul>
 </div>
 </section>
 <section class="band" id="roadmap" aria-labelledby="road-h">
@@ -661,7 +669,7 @@
 <p class="eyebrow">Roadmap</p>
 <h2 id="road-h">Where LabSense is going</h2>
 <p class="rm-vision">A lab history a clinician can trust, from any laboratory. For every value, LabSense aims to know which report it came from, whether it can be compared with earlier results, and what must change if it is corrected.</p>
-<p class="rm-status">The full chain is tested on synthetic cases, and value extraction on one de-identified real case. No site, partner or trial has been agreed. The one date shown is the schedule for clinical validation to begin; every other step waits for the gate before it.</p>
+<p class="rm-status">The full chain is tested on synthetic cases, and value extraction on one de-identified real case. No site, partner or trial has been agreed, and no date is shown: each step waits for the gate before it.</p>
 <ul class="rm-key" aria-label="Labels used in the roadmap"><li><span class="rm-l shown"><i aria-hidden="true"></i>Shown on synthetic cases</span></li><li><span class="rm-l val"><i aria-hidden="true"></i>Being validated</span></li><li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span></li><li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span></li></ul>
 </div>
 <ol class="rm">
@@ -671,7 +679,7 @@
 <li><span class="rm-l shown"><i aria-hidden="true"></i>Shown on synthetic cases</span>Values it cannot trust held back with the reason; reports printed for another patient refused before storage.</li>
 <li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span>Further development of the parts not shown on this site, checked with repeat recorded runs on synthetic cases.</li>
 <li><span class="rm-l val"><i aria-hidden="true"></i>Being validated</span>Source verification of each stored value against its printed row, with checksums.</li>
-<li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>Security work needed before any remote use, including a time limit on backend sign-ins.</li>
+<li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>Security work needed before any remote use, covering how remote access is secured and checked.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A first live run of the AI reading path on synthetic cases, checked by the deterministic reader. The path is built and switched off.</li>
 </ul>
 <div class="rm-gate"><p class="rm-gk">Gate to Next</p><p>The synthetic cases are read correctly on both reading paths, checked against answers written in advance, and remote access passes its security checks.</p></div>
@@ -679,7 +687,7 @@
 <li class="rm-h next"><div class="rm-top"><span class="rm-n">Next</span><h3>Test with clinicians and real reports</h3><p class="rm-intro">Each step needs the one before it and the approvals it names.</p></div>
 <ul class="rm-items">
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A written protocol for the supervised sessions in which clinicians review LabSense output on synthetic cases.</li>
-<li><span class="rm-l plan"><i aria-hidden="true"></i>Planned: this quarter</span>Clinician-supervised evaluation sessions and multi-centre clinical validation are in the pipeline, scheduled to begin this quarter (by <span class="nw">December 2026</span>).</li>
+<li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>Clinician-supervised evaluation sessions and multi-centre clinical validation under ethical protocols. A supervised clinical evaluation is being planned; its dates depend on site and ethics approvals.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A published set of synthetic test cases, their expected answers and a scoring script, so anyone can rerun the checks.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A first review of de-identified real reports, only after ethics approval, stored locally, with no outside AI model.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>Export of the checked history in a standard hospital format (FHIR), with a link back to each source report.</li>
@@ -696,6 +704,7 @@
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A record of reviewed corrections, so a fix to one error updates every conclusion that depended on it while the original stays unchanged.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>Laboratory partnerships, including results signed at the source.</li>
 <li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>A patient&rsquo;s checked history in an open format that other systems can read without LabSense.</li>
+<li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span>Clinician-reviewed follow-up or alerts, and inputs such as ECG, where evidence supports them.</li>
 </ul>
 <div class="rm-gate rm-not"><p class="rm-gk">Not on the roadmap</p><p>LabSense will not diagnose, prescribe or order tests, and will not adjust a printed value to make it fit a trend.</p></div>
 </li>
@@ -711,31 +720,32 @@
 <h2 id="acc-h">Request a supervised evaluation</h2>
 <p class="lede">LabSense is available for private demonstrations and structured evaluations with hospital departments, clinical investigators and health-system technology evaluators. This website is a static page with no upload; an evaluation is a supervised session with LabSense on synthetic reports.</p>
 <p class="who-for">For clinicians reviewing long lab histories, and for laboratories that want to discuss an evaluation. Not for patients reading their own results.</p>
-<div class="btns"><a class="btn primary" href="mailto:nafees.kundi@gmail.com?subject=LabSense%20supervised%20evaluation%20request&amp;body=Name%3A%0D%0AOrganisation%3A%0D%0ARole%3A%0D%0AWhat%20you%20would%20like%20to%20evaluate%3A%0D%0ASuggested%20times%3A%0D%0A">Request a supervised evaluation</a><button type="button" class="btn primary eval-open" hidden>Request a supervised evaluation</button><a class="btn" href="assets/labsense_evidence_summary_2026-11-10.pdf" download><span>Download the evidence summary, <span class="nw">10 November 2026</span> (PDF, <span class="nw">362 KB</span>)</span></a></div>
+<div class="btns"><a class="btn primary" href="mailto:labsenseclinical@gmail.com?subject=LabSense%20supervised%20evaluation%20request&amp;body=Name%3A%0D%0AOrganisation%3A%0D%0ARole%3A%0D%0AWhat%20you%20would%20like%20to%20evaluate%3A%0D%0ASuggested%20times%3A%0D%0A">Request a supervised evaluation</a><button type="button" class="btn primary eval-open" hidden>Request a supervised evaluation</button><a class="btn" href="assets/labsense_evidence_summary_2026-11-10.pdf" download><span>Download the evidence summary, <span class="nw">10 November 2026</span> (PDF, <span class="nw">388 KB</span>)</span></a></div>
+<p class="avail"><strong>Available today:</strong> the self-guided worked case on this page, and supervised evaluation sessions on synthetic reports.</p>
 <div class="contact">
 <p class="contact-l">Or write to</p>
-<p class="contact-row"><span class="addr num" id="contact-addr">nafees.kundi@gmail.com</span><button type="button" class="copy-btn" data-copy="contact-addr">Copy address</button><span class="copy-status" role="status" aria-live="polite"></span></p>
+<p class="contact-row"><span class="addr num" id="contact-addr">labsenseclinical@gmail.com</span><button type="button" class="copy-btn" data-copy="contact-addr">Copy address</button><span class="copy-status" role="status" aria-live="polite"></span></p>
 <p class="contact-g">Please include your name, clinical title, institution and what you want to evaluate. Never send real patient records.</p>
 </div>
 </div>
 <div class="panel-box">
-<h4>Evaluation protocol</h4>
-<ul class="proto"><li>Sessions use synthetic reports only.</li><li>Real patient records must never be sent by email or any public channel.</li><li>A session walks through the steps below.</li></ul>
-<ol class="steps-list">
+<div class="pb-g"><h4>Evaluation protocol</h4>
+<ul class="proto"><li>Sessions use synthetic reports only.</li><li>Real patient records must never be sent by email or any public channel.</li><li>A session walks through the steps below.</li></ul></div>
+<div class="pb-g"><ol class="steps-list">
 <li>Reports read row by row into one history, with identity confirmed</li>
 <li>The first reading and what it did not assess</li>
 <li>A question, an answer and its receipt</li>
 <li>A stored report reopened as the original PDF</li>
 <li>The review snapshot export</li>
-</ol>
-<p>In a session, reports come from LabSense&rsquo;s synthetic library. Uploading your own files is not available yet, and real patient reports are not accepted.</p>
+</ol></div>
+<div class="pb-g"><p>In a session, reports come from LabSense&rsquo;s synthetic library. Uploading your own files is not available yet, and real patient reports are not accepted.</p></div>
 </div>
 </div>
 
 <dialog class="eval-dlg" id="eval-dlg" aria-labelledby="eval-dlg-h">
 <form class="eval-form" id="eval-form" novalidate>
 <h3 id="eval-dlg-h">Request a supervised evaluation</h3>
-<p class="eval-note">This opens an email to nafees.kundi@gmail.com in your own mail program. Nothing is stored or sent by this website. Never include real patient records.</p>
+<p class="eval-note">This opens an email to labsenseclinical@gmail.com in your own mail program. Nothing is stored or sent by this website. Never include real patient records.</p>
 <label for="ev-name">Name</label><input id="ev-name" name="name" type="text" autocomplete="name" required>
 <label for="ev-role">Role or specialty</label><input id="ev-role" name="role" type="text" required>
 <label for="ev-inst">Institution</label><input id="ev-inst" name="institution" type="text" autocomplete="organization" required>
