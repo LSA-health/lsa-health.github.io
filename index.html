@@ -6,11 +6,11 @@
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>LabSense AI: years of lab reports, read into one history you can check</title>
-<meta name="description" content="LabSense AI is a Clinical Investigation System (CIS) designed to support physician review across complex laboratory histories. Evaluated on de-identified patient records and synthetic clinical fixtures; not yet clinically validated.">
+<meta name="description" content="LabSense AI is a Clinical Investigation System (CIS) designed to support physician review across complex laboratory histories. Full workflow tested on synthetic cases; not clinically validated.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LabSense AI">
 <meta property="og:title" content="LabSense AI: years of lab reports, read into one history you can check">
-<meta property="og:description" content="LabSense AI is a Clinical Investigation System (CIS) designed to support physician review across complex laboratory histories. Evaluated on de-identified patient records and synthetic clinical fixtures; not yet clinically validated.">
+<meta property="og:description" content="LabSense AI is a Clinical Investigation System (CIS) designed to support physician review across complex laboratory histories. Full workflow tested on synthetic cases; not clinically validated.">
 <meta property="og:url" content="https://lsa-health.github.io/">
 <meta property="og:image" content="https://lsa-health.github.io/assets/og/labsense_og.png">
 <meta property="og:image:width" content="1200">
@@ -58,7 +58,7 @@
 <div class="hero-status">
 <p class="hs-stmt">LabSense is a Clinical Investigation System (CIS) designed to support physician review. It operates under clinician oversight and does not diagnose.</p>
 <ul class="hs-list">
-<li><span class="hs-k">Tested:</span> on one de-identified real case (value extraction only) and on a purpose-built synthetic case (the full chain, nine reports).</li>
+<li><span class="hs-k">Tested:</span> on a purpose-built synthetic case (the full chain, nine reports) and on earlier synthetic cases.</li>
 <li><span class="hs-k">Clinical validation:</span> A supervised clinical evaluation is being planned; its dates depend on site and ethics approvals.</li>
 </ul>
 <a class="hs-a" href="evidence.html">How it was tested</a>
@@ -133,7 +133,7 @@
 <div class="wrap">
 <div class="sec-head">
 <div><p class="eyebrow">Evidence at a glance</p><h2 id="met-h">What the worked case demonstrated</h2></div>
-<p>The recorded synthetic case tested the full review workflow. A separate evaluation compared extraction on de-identified patient reports. None of this is clinical validation.</p>
+<p>The recorded synthetic case tested the full review workflow. None of this is clinical validation.</p>
 </div>
 <div class="statbar" role="group" aria-label="The recorded synthetic run in three numbers">
 <div class="sb"><span class="v">30</span><p>printed pages in <span class="num">9</span> synthetic reports, on <span class="num">7</span> dates (6 collection dates and 1 report date), <span class="nw">March 2024</span> to <span class="nw">September 2026</span>, uploaded out of order</p><a class="tile-a" href="#stop-1"><span class="nw">Stop 1</span></a></div>
@@ -143,13 +143,12 @@
 <div class="sb"><span class="v">107 / 2</span><p><span class="num">107</span> stored, including <span class="num">8</span> documented trend exclusions, and <span class="num">2</span> not stored, each with the reason it gave.</p><a class="tile-a" href="#stop-3"><span class="nw">Stop 3</span></a></div>
 </div>
 <ul class="met-notes">
-<li><strong>Row by row.</strong> Every stored value is tied to its printed row and report, with source verification being validated. <span class="rm-l val"><i aria-hidden="true"></i>Being validated</span> <a href="evidence.html#status">Feature status</a></li>
+<li><strong>Row by row.</strong> Every stored value is linked to the report it came from and its date. Page- and line-level links are not yet implemented. <span class="rm-l val"><i aria-hidden="true"></i>Being validated</span> <a href="evidence.html#status">Feature status</a></li>
 </ul>
 <div class="earlier-eval">
 <h3>Earlier extraction evaluation</h3>
-<p class="ee-p">Separate from the synthetic run above: value extraction compared on one de-identified real case, and on earlier synthetic PDFs. Extraction only, not the full chain.</p>
+<p class="ee-p">Separate from the synthetic run above: value extraction compared on earlier synthetic PDFs. Extraction only, not the full chain.</p>
 <div class="ee-g">
-<div class="ee"><span class="v">251</span><p>observations from one de-identified real multi-year case: the AI reader against the conventional reader, checked against a frozen reference set (<span class="nw">August 2026</span>). The full chain on real reports is being prepared.</p><a class="tile-a" href="evidence.html#earlier">Earlier tests</a></div>
 <div class="ee"><span class="v">243</span><p>printed value lines read into stored rows by the conventional reader, across <span class="num">46</span> earlier synthetic PDFs in <span class="num">15</span> cases.</p><a class="tile-a" href="evidence.html#earlier">Earlier tests</a></div>
 </div>
 </div>
@@ -453,7 +452,7 @@
 </div>
 </div>
 <div class="held" id="held" aria-labelledby="held-h">
-<div class="held-head"><p class="eyebrow">Safety restraints</p><h3 id="held-h">When LabSense holds a result for review</h3><p>In clinical work, knowing when not to calculate matters as much as the calculation. These five boundaries are rule-based checks; in synthetic tests LabSense kept each one, and gave a reason; for the different unit (item 2), the reason the recorded build gave was wrong and is corrected below. Every item links to where it is shown.</p><p class="fc-tag"><span>Fail-closed</span> When data is ambiguous, LabSense holds the value back rather than guessing.</p></div>
+<div class="held-head"><p class="eyebrow">Safety restraints</p><h3 id="held-h">When LabSense holds a result for review</h3><p>In clinical work, knowing when not to calculate matters as much as the calculation. These five boundaries are rule-based checks; in synthetic tests LabSense kept each one, and gave a reason; for the different unit (item 2), the reason the recorded build gave was wrong and is corrected below. Every item links to where it is shown.</p><p class="fc-tag"><span>Fail-closed</span> When data is ambiguous, LabSense holds the value back rather than guessing.</p><p>Known limitation: in a later synthetic test, a value held for review because its own report printed the test twice still appeared as a finding in the consultation summary. This is being corrected; until then, check every finding against the stored record.</p></div>
 <ol class="held-list">
 <li><h4>Two values on one report</h4><p>The latest report prints creatinine twice, <span class="num">1.04</span> and <span class="nw"><span class="num">1.62</span> mg/dL</span>. Neither was chosen: 1.04 is held for review and 1.62 is named as not stored.</p><a href="#stop-2"><span class="nw">Stop 2</span></a></li>
 <li><h4>A different unit, kept apart</h4><p>Creatinine printed as <span class="nw">80 µmol/L</span> on <span class="nw">2026-01-20</span> was stored as printed and kept out of the mg/dL series; the recorded build gave the wrong reason, as the dated correction beside the film explains. Under the clinically approved conversion rule it corresponds to <span class="nw">0.90 mg/dL</span>. <span class="uc-note" role="note"><span class="rm-l dev uc-mark"><i aria-hidden="true"></i>Illustration</span> <span class="uc-t">Illustration of the clinically approved conversion rule. The recorded run kept this value as printed in its own unit series; the application will apply the rule after activation is verified.</span></span></p><a href="#stop-3"><span class="nw">Stop 3</span></a></li>
@@ -637,7 +636,7 @@
 </div>
 <div class="evgrid" id="stage">
 <h3 class="evgrid-h">Where LabSense stands</h3>
-<p class="evgrid-p">It supports a clinician&rsquo;s assessment and does not make a diagnosis. Clinical sign-off covers a limited set of rules, co-signed on <span class="nw">29 September 2026</span> by the clinical lead; outputs have not been independently reviewed. How it was tested is on the <a href="evidence.html">evidence page</a>.</p>
+<p class="evgrid-p">It supports a clinician&rsquo;s assessment and does not make a diagnosis. A limited set of rules has been reviewed by a clinician; outputs have not been independently reviewed or validated. How it was tested is on the <a href="evidence.html">evidence page</a>.</p>
 <div class="canshow">
 <h3>What you can check yourself</h3>
 <ul>
@@ -648,7 +647,7 @@
 <li>The nine synthetic reports and their checksums are published, so a reopened report can be compared byte for byte.</li>
 </ul>
 </div>
-<p class="stage-line">Pre-pilot Clinical Investigation System. The full chain is tested on synthetic cases; value extraction has also been compared on one de-identified real case. A supervised clinical evaluation is being planned; its dates depend on site and ethics approvals. Regulatory review follows, as set out in the <a href="#roadmap">roadmap</a>.</p>
+<p class="stage-line">Pre-pilot Clinical Investigation System. The full chain is tested on synthetic cases. A supervised clinical evaluation is being planned; its dates depend on site and ethics approvals. Regulatory review follows, as set out in the <a href="#roadmap">roadmap</a>.</p>
 </div>
 </div>
 </section>
@@ -669,7 +668,7 @@
 <p class="eyebrow">Roadmap</p>
 <h2 id="road-h">Where LabSense is going</h2>
 <p class="rm-vision">A lab history a clinician can trust, from any laboratory. For every value, LabSense aims to know which report it came from, whether it can be compared with earlier results, and what must change if it is corrected.</p>
-<p class="rm-status">The full chain is tested on synthetic cases, and value extraction on one de-identified real case. No site, partner or trial has been agreed, and no date is shown: each step waits for the gate before it.</p>
+<p class="rm-status">The full chain is tested on synthetic cases. No site, partner or trial has been agreed, and no date is shown: each step waits for the gate before it.</p>
 <ul class="rm-key" aria-label="Labels used in the roadmap"><li><span class="rm-l shown"><i aria-hidden="true"></i>Shown on synthetic cases</span></li><li><span class="rm-l val"><i aria-hidden="true"></i>Being validated</span></li><li><span class="rm-l dev"><i aria-hidden="true"></i>In development</span></li><li><span class="rm-l plan"><i aria-hidden="true"></i>Planned</span></li></ul>
 </div>
 <ol class="rm">
